@@ -1,0 +1,142 @@
+\documentclass[a4paper,11pt]{article}
+
+\usepackage{revy}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[danish]{babel}
+
+\revyname{DIKUrevy}
+\revyyear{2010}
+\version{1.1}
+\eta{$3.5$ minutter}
+\status{Færdig}
+
+\title{wait();}
+\author{Kristine, Munter, Jakob}
+\melody{Poul Sørensen (Poeten): ``Der kommer altid en sporvogn og en pige til''}
+
+\begin{document}
+\maketitle
+
+\begin{roles}
+	\role{S}[Naja] Semafor. Bevæger sig meget stift. Selvhøjtidelig Skrankepave
+	\role{P}[Kristine] Proces. Agil hurtigløber. Har travlt
+	\role{X}[Munter] Instruktør
+\end{roles}
+
+\begin{props}
+	\prop{Politislikkepind (google for billede. Så kan ser stå Stop semaforen istedet for politiet)}[Rekvisitgruppe] Til Semaforen
+	\prop{Konduktørkostume}[Vi skulle have det fra videooptagelse] Til Semaforen
+	\prop{Aerodynamisk cykelhjelm}[Kristine] Til Processen
+        \prop{Superhelte Kappe}[Rekvisitgruppe] Til Processen
+	\prop{Superhelte outfit}[Rekvisitgruppe] Til Processen
+	\prop{Lyd: DING}[] Klokke fra sporvogn
+\end{props}
+
+\scene Tæppe fra og lys på tom scene
+\scene Spot på højre sorte sidegardin
+
+\begin{song}
+\scene P spikker hovedet ud af side tæppet (spot på semafor)
+
+\sings{P} Wrrrrnnnn...
+
+\scene P trækker hovedet tilbage og stikker det derefter ud af næste sidetæppe (spot på semafor)
+
+\sings{P} Wrrrrnnnn... Wrrrrnnnn... Wrrrrnnnn...
+
+\scene P kommer ind på scenen og står i superhelte positur
+
+\sings{P} Af bussen, af bussen, her kommer jeg.
+\scene P Løber hen over scenen
+\sings{P} Jeg er den sejeste proces og jeg løser alt for dig.
+\sings{P}[Mens P løber til anden side af scenen] Wrrrrnnnn...
+
+\scene {S} Kommer gående ind stift og stiller sig i forrest på scenen
+
+\sings{P}[Imens S gaar, loeber P frem og tilbage på scenen] {Plus 3 Lig 5 Minus 4} 
+
+\scene Lyd: DING
+\scene P løber over mod S
+\scene S holder politislikkepinden op og stikker armen ud foran P, som bliver stoppet
+\sings{S} Holdt, Stop, Vent!
+\sings{P} En semafor - ikke nu igen. Hvad nu???
+\sings{S} Processer ingen adgang
+
+\scene Band: Musikken starter
+
+\sings{S}[vers] Du skal se dig for min ven og vente på signaler
+\sings{P} Signaler nej, jeg stopper ej når jeg er godt på vejs
+\sings{S} Når jeg siger wait så skal du gør' som jeg befaler
+\sings{P} Stop mig hvis du kan, for jeg er ikke særlig nice.
+          Jeg vil bestemme mer,
+\sings{S} betyder intet her. Du valgte selv at parallelisér
+\sings{P} Argh øv!
+
+\sings{S}[omkv.] Der kommer altid et interrupt og snyder dig
+\sings{P} næh, der skal langt mere til for at afbryde mig
+\sings{S} Kan du så stille dig pænt i kø
+\sings{P} Næh jeg vil forrest
+\sings{S}[afbryder] så har man hørt en loppe gø
+\sings{P} Du gør jo dette blot for at ku' genere mig
+\sings{S} ja, jeg har al magten til at suspendere dig
+\sings{P} Lad mig nu køre
+\sings{S} du venter
+\sings{P} jeg kører
+\sings{S} du venter
+\sings{P} jeg kører
+\sings{S} du venter Her!
+
+\sings{S}[vers] Jeg kan gi' respekt og frygt hos alle programmører
+\sings{P} Og hva' så! Du er jo blot et bump der på min færd
+\sings{S} Jeg er den der afgør, om du stopper eller kører
+\sings{P} Var vi ikke fler så var du ikke noget værd
+\sings{S} Mit værd er ubestrid, systemet er solidt
+\sings{P} Og min tålmodighed er blevet slidt
+\sings{S} Though shit!
+
+\sings{S}[omkv.] Der kommer altid et interrupt det kan du tro
+\sings{P} Nu gider jeg ikke læng're bare stå og glo
+\sings{S} Denne resource er reserver't!
+          Du ved vel nok det' forkert at kør' kontinuert
+\sings{P} Det her det ender jo med den rene sultedød
+\sings{S} Tag den med ro, der er ingen her der lider nød
+\sings{P} Kan jeg nu køre
+\sings{S} du venter
+\sings{P} jeg kører
+\sings{S} du venter
+\sings{P} jeg kører
+\sings{S} du venter Her!
+
+\sings{P}[vers] Jeg har ventet nok nu. Jeg vil ikke vente mere.
+\sings{S} Nu igen, jeg synes at du er mig lidt distræt
+\sings{P} Hørte du mig eller skal jeg virklig' repetere
+\sings{S} Din parent sku' ha' sagt det er forkert med busy wait
+\sings{P} Hva sir du om min mor?!?
+\sings{S} Jeg siger ikke spor. Jeg er jo blot en simpel semafor
+
+\sings{S}[omkv] Der kommer altid et wait når du mindst venter det
+\sings{P} Næh, nu skal du ikke blive helt forvent dertil
+          Nu er det nok, ikke mere block!
+\sings{S} Jeg blir så træt af processers meget brok brok brok
+\sings{P} Så er det nok, jeg er vred og terminerer nu!
+\sings{S} Ja du kan ganske vist ikke blive mere sur
+\sings{P} Jeg terminerer!
+\sings{S} du tør ik!
+\sings{P} Jeg gør det
+\sings{S} du tør ik!
+\sings{P} Jeg gør det og jeg er slut! \act{Falder sammen}
+
+\scene Band: Musik afsluttes
+\scene Lyd: DING
+
+\sings{S} \act{Smiler stort og skifter til grønt}
+\sings{S} Så er der fri bane!
+\sings{S} Hallo...
+
+\scene Lys slukkes, tæppe for
+
+\end{song}
+
+\end{document}
+

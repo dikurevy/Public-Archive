@@ -1,0 +1,161 @@
+\documentclass[danish]{article}
+\usepackage{revy}
+\usepackage[utf8]{inputenc}
+\usepackage{babel}
+\usepackage{a4wide}
+
+\title{Pyxelsort}
+\author{marvin}
+
+\version{1 -- færdig} % HUSK AT AJOURFØRE VERSIONSNUMMER!!
+
+\revyyear{1999}
+
+\begin{document}
+\maketitle
+
+\begin{roles}
+  \role{S1-S4} 4 subrutiner
+\end{roles}
+
+\begin{props}
+  \prop{kasser} 8 kvadratiske kasser med bogstaverne henh. d,e,i,k,r,u,v,y
+\end{props}
+
+\begin{sketch}
+
+\scene Der spilles Fever til.
+
+\scene Opføres á la Quicksort-sketchen; bare horisontalt. Optimalt skulle den
+opføres vertikalt, men det giver for store problemer med ASCII 32.
+
+\begin{verbatim}
+
+(Kasserne står på scenen og danner "diku revy")
+
+(Evt. skilt: "Min yndlingsalgoritme: Pyxelsort")
+
+S1: (Kommer ind på scenen, kigger, flytter "diku" til venstre, "revy" til
+    højre. Kigger. Kalder på S2)
+
+syncronize {
+S1: (flytter "di" til venstre, "ku" til højre. Kigger. Kalder på S3)
+S2: (flytter "re" til venstre, "vy" til højre. Kigger. Kalder på S4)
+}
+
+syncronize {
+S1: (flytter og vender "d" til venstre, flytter "i" til højre)
+S3: (flytter "k" til venstre, flytter og vender "u" til højre)
+S2: (flytter "r" til venstre, flytter "e" til højre)
+S4: (flytter "v" til venstre, flytter "y" til højre)
+}
+
+syncronize {
+S1: (samler til "pi")
+S3: (samler til "nk")
+S2: (samler til "er")
+S4: (samler til "yv")
+}
+
+S3, S4: (Exit)
+S1, S2: (Vinker)
+
+syncronize {
+S1: (samler til "pink")
+S2: (samler til "yver")
+}
+
+S2: (Exit)
+S1: (Vinker)
+
+S1: (samler til "pink yver". Kigger. Klør sig i håret. Ryster på hovedet)
+
+
+S1: ("pink" v, "yver" h)
+S1: (Kalder på S2)
+
+syncronize {
+S1: ("p" v, "ink" h.)
+S2: ("yv" v, "er" h. Kalder på S4)
+}
+
+syncronize {
+S1: (vender "p")
+S2: ("v" v, "y" h)
+S4: ("e" v, "r" v)
+}
+
+syncronize {
+S1: (Flytter "ink" til "e". Skubber evt. til S2)
+S4: (Flytter "y" til "r")
+S2: (Piller negle)
+}
+
+S4: (Exit)
+S1, S2: (Vinker)
+
+syncronize {
+S1: (samler "vinke")
+S2: (flytter "yr" til "d" og samler "dyr")
+}
+
+S2: (Exit)
+S1: (Vinker. Samler "vinkedyr")
+
+
+S1: (Kigger anderkendende. Studser. Ryster på hovedet)
+
+S1: ("vink" v, "edyr" h. Kalder på S2)
+
+syncronize {
+S1: ("vi" v, "nk" h)
+S2: ("ed" v, "yr" h)
+}
+
+S2: (Kalder på S4)
+S1: (Piller negle)
+
+syncronize {
+S1: (Kigger på sit ur, tripper)
+S2: ("e" v, vender og flytter "d" h)
+S4: ("y" v, "r" h)
+}
+
+
+syncronize {
+S1: (flytter "y" til "nk", samler "ynk")
+S2: (flytter "vi" til "p", samler "vip")
+S4: (flytter "e" til "r", samler "er")
+}
+
+syncronize {
+S2, S4 (Løfter deres ord, flytter mod venstre)
+S1: (Løfter sit ord, går bagom og stiller det til højre, så der nu står "vip
+    er ynk")
+}
+
+S2,S4: (Exit)
+S1: (Vinker)
+
+
+S1: (Kigger anderkendende. Studser. Ryster på hovedet. Skal til at starte
+    igen)
+
+S2,S3,S4: (Kommer ind med bajere. Peger på bajere, peger på S1, gør
+    drik-af-flaske-bevægelser)
+
+S1: (Kigger på S[2..4]. Kigger på ordene. Kigger på S[2..4]. Opgiver ord)
+
+S1,S2,S3,S4: (Exit, drikkende, pjattende)
+
+(Lys ud. Tæppe)
+
+\end{verbatim}
+
+\end{sketch}
+
+\end{document}
+%%% Local Variables: 
+%%% mode: latex
+%%% TeX-master: t
+%%% End: 

@@ -1,0 +1,238 @@
+\documentclass[a4paper,11pt]{article}
+
+\usepackage{revy}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[danish]{babel}
+
+\revyname{DIKUrevy}
+\revyyear{2008}
+% HUSK AT OPDATERE VERSIONSNUMMER
+\version{1.4}
+\eta{$6$ minutter}
+\status{Ikke færdig}
+
+\title{Trådsketchen}
+\author{Sandfeld, Troels, Mikkel}
+
+\begin{document}
+\maketitle
+
+\begin{roles}
+	\role{F}[] Metafortæller
+	\role{RH}[] Rødhætte
+	\role{U}[] Store stygge ulv
+	\role{G1}[] Første lille gris
+	\role{G2}[] Anden lille gris
+	\role{G3}[] Tredje lille gris
+	\role{B}[] Bedste (voice over)
+\end{roles}
+
+\begin{props}
+	\prop{Hus af strå}[Rekvisitgruppen]
+	\prop{Hus af pandekager}[Rekvisitgruppen]
+	\prop{Bedstes hus}[Rekvisitgruppen]
+	\prop{Skov}[Rekvisitgruppen]
+	\prop{Semafor}[Rekvisitgruppen] 2 flag, rødt og grønt
+	\prop{3 grisetryner}[Rekvisitgruppen]
+	\prop{Blond paryk}[Rekvisitgruppen] til rødhætte
+	\prop{Rød hætte}[Rekvisitgruppen]
+	\prop{Fyldig bondepigekjole}[Rekvisitgruppen] gerne med underkjole
+	\prop{2 ens fletkurve}[Rekvisitgruppen]
+	\prop{Rigtige pandekager}[Rekvisitgruppen]
+	\prop{Falsk pandekage}[Rekvisitgruppen] Stof eller papir
+	\prop{Kyskhedsbælte}[Rekvisitgruppen] Kan være en hængelås-ting som skal være synlig når RH løfter op i kjolen.
+\end{props}
+
+  
+\begin{sketch}
+
+\scene F står på scenen og gestikulerer begejstret
+
+\says{F} Mine damer og herrer! Jeg vil nu introducere en verdensnyhed.
+\says{F} Vi har, for at optimere DIKUrevyen, valgt at udnytte de moderne muligheder for ekstrem multiprogrammering og kan dermed udføre revyen på hele to kerner, samtidigt!
+	Den første kerne er på venstre side af scenen, og den anden kerne er på højre side af scenen.
+\says{F} Det har neturligvis også givet nye muligheder for besparelser, såsom delte ressourcer.
+	Delte ressourcer kan dog være tricky, da man skal holde øje med race-conditions, starvation og ikke mindst de frygtede deadlocks.
+	Derfor er det godt at den ene delte ressource er mig, så skulle sketchen være i trygge hænder. \act{Blinker til publikum}
+\says{F} Læn jer nu blot tilbage og ny simultaneventyret ``Rødhætte og de tre små grise''
+
+\scene Tæppe fra
+\scene Lys: Højre side
+
+\says{F} Der var engang 3 små grise... 
+
+\scene Lys: Venstre side
+\scene F løber over på venstre side
+
+\says{F} og en lille Rødhætte. Det hed hun fordi hendes hætte var så rød.
+
+\scene Lys: Højre side
+\scene F løber over på højre side
+
+\says{F} De små grise var rejst hjemmefra og skulle hver især bygge deres eget lille hus.
+\says{Grise} Vi skal hver bygge vores eget lille hus.
+
+\scene Lys: Venstre side
+\scene F løber over på venstre side
+
+\says{F} Rødhætte var sendt afsted med en kurv af godter til sin syge bedstemor som boede langt ude i skoven.
+\says{RH} Jeg skal ud til min syge bedstemor som bor langt ude i skoven. \act{Traller rundt i skoven}
+
+\scene Lys: Højre side
+\scene F løber over på højre side
+
+\says{F} Den første lille gris byggede sit hus af strå.
+\says{G1} Jeg tror jeg vil bygge mit hus af strå
+\says{F} ... for det virkede som en god idé.
+
+\scene G1 bygger sit hus.
+\scene Ulven kommer ind på scenen.
+
+\says{F} Inde i skoven på vejen til Bedstemors hus boede en stor styg ulv, som var meget sulten og meget fæl.
+\says{U} Jeg er meget sulten og meget fæl.
+\says{F} Ulven, som var så sulten, kom forbi den første lille gris' hus.
+\says{U} Luk mig ind, luk mig ind lille gris. Eller jeg vil puste og pruste til dit hus falder omkuld.
+\says{F} Og ulven pustede og prustede til huset væltede omkuld og spiste den første lille gris.
+
+\scene Lys: Venstre side
+\scene F løber over på venstre side
+
+\says{F} Inde i den mørke skov stødte Rødhætte på den store stygge ulv.
+
+\scene Ulven går truende over mod Rødætte
+
+\says{U} Goddag Rødhætte.
+\says{RH} Goddag ulv.
+
+\scene Lys: Højre side
+\scene F løber over på højre side
+
+\says{F} Den anden lille gris var mere snedig og havde en kurv med værktøj, så han kunne bygge et rigtigt hus.
+\says{G2} Jeg har en kurv med værktøj så jeg kan bygge et rigtigt hus.
+\scene G2 stiller værktøjskurven midt på scenen
+
+\scene Lys: Venstre side
+
+\says{U} Hvad er det du har under forklædet?
+\says{RH} Det er pandekager.
+
+\scene Rødhætte stiller kurven midt på scenen lige ved siden af værktøjskurven
+\scene F løber over i venstre side
+
+\says{F} Ulven tænkte
+\says{U} ``Det var da en lækker lille sag''
+\says{F} ... og udtænkte en udspekuleret plan.
+
+\scene G2 samler Rødhættes kurv op i stedet for værktøj
+
+\says{U} Tag og se dig omkring engang. Se hvor dejlige blomsterne er. Nyd dem, duft til dem.
+\says{RH} Jeg tror jeg vil plukke en smuk buket til min bedste.
+\says{F} Men straks fandt Rødhætte endnu flottere blomster længere væk og kom længere og længere ind i skoven.
+\says{F} Imens gik ulven den \emph{korteste vej} til bedstes hus.
+
+\scene Lys: Højre side
+\scene F løber over på højre side
+
+\says{F} Ulven kom nu forbi den anden lille gris, som havde bygget sit hus af... øh... Pandekager?
+\says{U} Luk mig ind, luk mig ind lille gris. Eller jeg vil puste og pruste... mens jeg æder mig mæt i pandekager.
+\says{F} Og ulven pustede og prustede... og åd pandekager.
+
+\scene Lys: Venstre side
+\scene F løber over på venstre side
+
+\says{F} Imens havde Rødhætte plukket en smuk buket og kom nu til bedstes hus, hvor hun fandt døren åben... øh... eller rettere lukket?
+
+\scene Rødhætte går op til bedstes hus hvor døren er lukket
+\scene Fortælleren ser forvirret ud
+\scene Rødhætte banker på bedstes dør
+
+\says{B} Kom ind!
+\says{F} Hov! Stop! Vent! Frys kerne 1!
+
+\scene Rødhætte fryser.
+
+\says{F} Du må vist hellere vente på denne her semafor.
+
+\scene Fortælleren giver Rødhætte to flag og sætter hende i semafor position
+
+\scene Lys: Højre side
+\scene F løber over på højre side
+
+\scene Fortælleren japper sig hurtigt igennem det næste stykke for at indhente kerne 1
+\says{F} Som sagt: Og ulven pustede og prustede til huset væltede omkuld og spiste den anden lille gris.
+
+\scene Lys: Venstre side
+\scene F løber over på venstre side
+
+\says{F} Og fordi ulven havde gået den \emph{korteste vej} kom han først til bedstes hus, og bankede på døren.
+\scene Ulven kynder sig over op den anden side af scenen
+\says{U} Jeg kom først til bedstes hus.
+\scene Ulven går fordi den frosne Rødhætte og skuler til hende
+\scene Ulven banker på døren
+\says{B} Kom ind.
+\says{F} Ulven gik nu ind og fandt bedste i sengen, og fordi han var så sulten, slugte han hende i én mundfuld.
+\says{F} Ulven tog nu bedstes kyse og natkjole på, for det var en del af hans snedige plan.
+\says{U} Det er en del af min snedige plan.
+
+\scene Lys: Højre side
+\scene F løber over på højre side
+
+\says{F} Imens havde den tredje lille gris, som var den snedigste af de tre, bygget sit hus af mursten.
+\says{G3} Jeg har bygget mit hus af mursten.
+\says{F} Men ulven kom nu forbi den tredje gris' lille hus
+\scene Ulven kigger ud af bedstes hus
+\says{U} Hvad?
+\says{F} Jeg sagde: Men ulven kom nu fordi den tredje gris' lille hus.
+
+\scene Ulven slæber sig propfyldt ud af bedstes hus fra venstre side og over på højre side af scenen
+
+\says{F} ... og var stadig Ååh så sulten.
+\says{U} Jeg er stadig Ååh så sulten...
+
+\says{F} Den tredje lille gris løb ind i sit hus og løste \emph{alle} døre
+\scene Den tredje lille gris løber ind i bedstes hus fra højre side og låser dørene
+\says{G3} Du får mig aldrig.
+
+\says{U} Luk mig ind, luk mig ind lille gris. Eller jeg vil \act{pust} puste og pruste til dit hus falder omkuld.
+\scene Ulven pruster af mæthed
+\says{G3} Bare kom an store stygge ulv.
+
+\scene Rødhætte vifter med semaforen
+\says{RH} Hej hej, hallå altså!
+\says{F} Ja okay, bare fortsæt kerne 1.
+
+\scene Lys: Hele scenen
+
+\says{F} Ulven pustede og prustede... og Rødhætte kom nu til bedstes hus, hvor hun fandt døren åben... øh... \act{fuck}, eller låst.
+\scene Rødhætte banker på den låste dør
+\says{RH} Hallåå Bedste, luk mig ind, lissom!!
+\says{G3} Nej, jeg lukker dig ikke ind!
+\says{U} \act{Pust} \act{Prust}!
+
+\scene Rødhætte banker på den låste dør
+\says{RH} Hallåå Bedste, luk mig ind, lissom!!
+\says{G3} Nej, jeg lukker dig ikke ind!
+\says{U} \act{Pust} \act{Prust}!
+
+\scene Rødhætte banker på den låste dør
+\says{RH} Hallåå Bedste, luk mig ind, lissom!!
+\says{G3} Nej, jeg lukker dig ikke ind!
+\says{U} \act{Pust} \act{Prust}!
+
+\scene Fortælleren forsøger at redde sit skind
+\says{F} Og de levede lykkeligt til deres dages ende...
+\scene Fortælleren skynder sig at løbe sin vej
+
+\scene Rødhætte banker på den låste dør
+\says{RH} Hallåå Bedste, luk mig ind, lissom!!
+\says{G3} Nej, jeg lukker dig ikke ind!
+\says{U} \act{Pust} \act{Prust}!
+
+\scene Rødhætte banker på den låste dør
+\says{RH} Hallåå Bedste, luk mig ind, lissom!!
+\says{G3} Nej, jeg lukker dig ikke ind!
+\says{U} \act{Pust} \act{Prust}!
+
+\end{sketch}
+\end{document}

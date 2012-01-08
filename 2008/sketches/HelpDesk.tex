@@ -1,0 +1,122 @@
+\documentclass[a4paper,11pt]{article}
+
+\usepackage{revy}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[danish]{babel}
+
+\revyname{DIKUrevy}
+\revyyear{2008}
+% HUSK AT OPDATERE VERSIONSNUMMER
+\version{0.3}
+\eta{$4$ minutter}
+\status{Ikke færdig}
+
+\title{Help Desk}
+\author{Revygruppen}
+
+\begin{document}
+\maketitle
+
+\begin{roles}
+\role{S}[Jakob] Sælger
+\role{K}[Troels] Køber
+\role{KL}[Guldfisk] Kæmpeklips
+\end{roles}
+
+\begin{props}
+\prop{Dansk ordbog}[Done]
+\prop{Engelsk ordnog}[Done]
+\prop{Tysk ordbog}[Done]
+\prop{Fransk ordbog}[Done]
+\prop{Densk/Engelsk ordbog}[Done]
+\prop{Flipover}[]
+\prop{Kuglepind}[Jakob]
+\prop{Blyant}[Jakob]
+\prop{Limstift}[Jakob]
+\prop{Rettelak}[Jakob]
+\prop{Saks}[Jakob]
+\prop{Klipsekostume}[]
+\prop{Sælgekostume}[Jakob]
+\prop{Navneskilt}[Jakob]
+\prop{Studerendekostume}[Troels]
+\prop{Bord}
+\end{props}
+
+  
+\begin{sketch}
+\scene{K har en sæk hvor alle objekter sælgeren sælger ham bliver placeret i.
+Hver gang der købes noget nyt skal sælgeren også have penge, så K skal
+have en stor bunke penge}
+
+\says{K}      Undskyld hvad er det her for et sted?
+\says{S}      Det er en boghandel
+\says{K}      Godt, så er jeg kommet det rigtige sted hen
+\says{K}      Jeg skal til skriftlig eksamen på DIKU. Jeg har fået af vide, at
+alle elektroniske ydre enheder er bandlyste.
+\says{S}      Så ingen linieskriver?
+\says{K}      Ingen linieskriver. Hvordan skal jeg nogensinde kunne skrive noget uden?
+\says{S}      Jo, nu skal du se her \act{viser ham en kuglepen}. Prøv engang at skrive med den.
+\says{K}[dobbeltklikker på kuglepennen, så stiften ryger ud
+  og ind igen]. Hvordan åbner man den. Dobbeltklik virker ikke.
+\says{S}      Jamen ser du. Du skal kun klikke een gang.
+\says{K}[prøver at gøre det, bliver lidt flov og kværulerer]  Det er
+jo inkonsistent. Man åbner altid med et dobbeltklik. Det er imod alle
+HCI-principper om vanedannelse. Den var aldrig gået hos Georg.
+\says{S}      Sa så, indlæringskurven er kun lidt stejlere end Emacs. Prøv
+nu bare at skrive lidt.
+\says{K}      [begynder at skrive, og siger derefter bebrejdende] Denne font
+er jo ulæselig. Hvordan vælger jeg en anden?
+s:      [overpædagogisk] Det er MEGET besværligt at installere en ny
+font. Det jo en opgradering. Det kræver flere uger på aftenskole.
+\says{K}      Det har jeg virkelig ikke tid til. Lad mig lige komme i
+gang.\act{begynder at skrive, begynder at lyse lidt op} Nå, sådan her. Ah,
+det er sgu' da meget let \act{kigger ikke på papiret, mens han skriver
+pludselig ud over sidekanten, opdager det pludselig}. Hey, hvor blev
+de sidste tegn af?
+\says{S}      Man har mange flere muligheder når man skriver på papir, så du
+skal selv sørge for at gå en linie ned.
+\says{K}[bevæger kuglepenne lodret ned og skriver videre ud over sidekanten]
+\says{S}      Nej ikke bare ned, du skal bruge en vognretur \act{skubber hans håd tilbage}
+\says{K}      Ahh, ok. \act{Skriver videre} Hov, er der ikke nogen stavekontrol?
+\says{S}     Jojo. Vi har endda flere forskellige sprogversioner. Her er en
+dansk, her er en tysk, her er en engelsk og her en Fransk. Hvor mange
+vil du have? \act{Klasker tykke bind op på disken}
+\says{K}      Jeg tror bare jeg nøjes med den danske.
+\says{S}      Er du nu helt sikker, vi har også oversættermoduler \act{hiver
+dansk/engelsk ordbog frem}
+\says{K}      Nej, det der oversætter - det er jeg færdig med. Jeg bestod med et
+stort 2-tal.
+       Det minder mig forresten om; jeg får nok brug for rette lidt til
+rundt omkring. Hvad med         undo og slette-funktionerne?
+\says{S}      Jo da, så skal du enten opgradere til en model blyant, eller
+bruge udvidelsespakken rette-lak.
+\says{K}      Jamen, lad mig så få det med \act{køber blyant og rette-lak og S
+kaster det i sækken}.
+\says{K}      Det er meget godt alt sammen. Det vigtigste for mig er at jeg
+kan cut'n'paste. Det er sådan jeg laver al min kode.
+\says{S}      Det er ikke noget problem. Så skal du anskaffe dig dette
+eksternt klip-modul \act{finder en saks og viser den frem, tager
+  papiret og klipper afsnittet ud. Smider derefter saksen i sækken}
+\says{K}      Nåå, på \_den\_ måde \act{tager afsnittet og sætter det et andet sted på
+papiret, hvorefter det falder ned}. Hov, vent, det virker jo ikke.
+\says{S}      Nååå, du vil også indsætte tekst. Jamen, så skal du bruge
+klister-udvidelses-modulet \act{finder en limstift frem og limer afsnittet
+fast på papiret}.
+\says{K}      Der er godt nok meget man skal lære. Kan jeg bare kontakte dig
+hvis jeg skal bruge hjælp?
+\says{S}      Nej, men jeg har noget meget bedre til dig 
+\scene{En kæmpeklips KL kommer ind}
+\says{K}      Nooooooo
+\says{S}[Råber efter ham] Husk at tage sikkerhedskopier. Jeg har hørt der
+er bogorme i omløb
+\scene{Tæppe}
+
+\end{sketch}
+\end{document}
+
+%%% Local Variables: 
+%%% mode: latex
+%%% TeX-master: t
+%%% End: 
+

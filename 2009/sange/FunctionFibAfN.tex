@@ -1,0 +1,55 @@
+\documentclass[a4paper,11pt]{article}
+
+\usepackage{revy}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[danish]{babel}
+
+\revyname{DIKUrevy}
+\revyyear{2009}
+\version{1.0}
+\eta{3 minutter}
+\status{Færdig}
+
+\title{function fib(n)}
+\author{Jakob og Kristine}
+\melody{Sarah Brightman og Andrea Bocelli: ``Time To Say Goodbye''}
+
+\begin{document}
+\maketitle
+
+\begin{roles}  
+\role{S}[Bo Elling] Sanger
+\role{K}[Pigekor] Kor
+\end{roles}
+
+\begin{song}
+  \sings{S} Læser man på diku skal man kunne programmere rekursioner
+Man kan gøre det i matlab kun med ganske få allokationer
+
+  \sings{S} let som en leg
+kod med mig, med mig
+
+  \sings{S} tænd for din laptop
+slå nu guien fra med matlab no desktop
+vi kan programmer'
+og kalkuler'
+fibonaccis talrække
+
+  \sings{K} 
+  function fib(n)
+  p = 0;
+  A = 1
+  for j = 1 : n
+    temp = A;
+    A = A + p
+    p = temp;
+  end
+ 
+\sings{K} og programmet er slut
+  
+  Skulle man være i tvivl om hvordan omkvædet skal synes, kan noderne findes i filen FunctionFibAfN\_noder.pdf :-)
+\end{song}
+
+\end{document}
+

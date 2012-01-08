@@ -1,0 +1,173 @@
+\documentclass[a4paper,11pt]{article}
+
+\usepackage{revy}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[danish]{babel}
+
+\revyname{DIKUrevy}
+\revyyear{2008}
+% HUSK AT OPDATERE VERSIONSNUMMER
+\version{1.1}
+\eta{$4$ minutter}
+\status{Ikke færdig}
+
+\title{Pakkedansen}
+\author{Munter, Klaes, Bo Elling}
+
+\begin{document}
+\maketitle
+
+\begin{roles}
+\role{K}[Troels] Klient
+\role{S}[Allan] Server
+\role{LE}[Hanne] Lene Espersen
+\role{P}[Bo Elling] Politibetjent
+\role{D1}[Klaes] Data 1
+\role{D2}[Johan] Data 2
+\role{ST1}[Munter] Statist 1
+\role{ST2}[MadSS] Statist 1
+\end{roles}
+
+\begin{props}
+\prop{Skilt: Alice}[Rekvisitholdet] Allan
+\prop{Skilt: Bob}[Rekvisitholdet] Troels
+\prop{Skilt: Eve}[Rekvisitholdet] Hanne
+\prop{Skilt: Plod}[Rekvisitholdet] Bo Elling
+\prop{4x Skilt: DATA}[Rekvisitholdet]
+\prop{3x Skilt: GET}[Rekvisitholdet]
+\prop{2x Skilt: ACK}[Rekvisitholdet]
+\prop{2x Skilt: FIN}[Rekvisitholdet]
+\prop{1x Skilt: SYN}[Rekvisitholdet]
+
+\prop{2x Pakkekostume}[Rekvisitholdet] Til D2+D2. Kasser der går fra navlen til knæene. Hængt op i enten bælte eller 
+seler.
+\prop{1x Politihjelm}[Rekvisitholdet] Bo Elling
+\prop{1x Politistav}[Rekvisitholdet] Bo Elling
+\prop{1x Politiskjorte}[Rekvisitholdet] Bo Elling
+\prop{2x SUN T-shirts}[Allan + Troels] Allan og Troels
+\end{props}
+
+  
+\begin{sketch}
+
+\scene{Tæppe fra, lys op.}
+\scene{Fra venstre mod højre står på scenen: Server (Alice), D1, D2, Klient (Bob).}
+\scene{Server og Klient træder et skridt frem.}
+\scene{Musikken starter. Les lanciers Tur 1.}
+
+\says{0:00 - 0:05} Alle bukker/nejer for publikum.
+		D1+D2 trækker hen bag Klienten.
+		Klient og server bukker for hinanden.
+\says{0:05 - 0:10} Klienten præsenterer et SYN og giver det til D1.
+\says{0:10 - 0:15} SYN pakke danser fra klient til server.
+		De danser armkrog.
+\says{0:15 - 0:20} SYN/ACK pakke danser fra server til klient.
+		De danser armkrog.
+\says{0:20 - 0:25} ACK pakke danser fra klient til server.
+		De danser armkrog.
+\says{0:25 - 0:30} Pakke og server hilser på hinanden og pakken trækker in bag serveren.
+\says{0:30 - 0:35} Klienten præsenterer et GET request og giver det til D2.
+\says{0:35 - 0:40} GET Request danser fra klient til server.
+		De danser armkrog.
+\says{0:40 - 0:45} Data1 pakke danser fra server til klient.
+		Holder en foldet plakat hvor der står DATA.
+		Slipper plakaten halvvejs så den folder ud. Plakaten indeholder p0rn.
+\says{0:45 - 0:50} Data1 pakke holder plakaten op foran klient.
+		Data2 pakke danser fra server til klient.
+		Har anden halvdel af plakaten.
+		Samme koreografi som Data1 i forrige trin.
+\says{0:50 - 0:55} Data2 holder plakat op foran klient.
+		FIN/ACK pakke danser fra klient til server.
+		Pakken danser armkrog med serveren.
+\says{0:55 - 1:00} ACK pakke danser fra server til klient.
+		Forbindelsen er lukket.
+
+\says{1:00 - 1:05} Klient og server bukker til publikum og til hinanden.
+\says{1:05 - 1:10} SYN pakke danser fra klient til server
+		De danser armkrog
+\says{1:10 - 1:15} SYN/ACK pakke danser fra server til klient
+		De danser armkrog
+\says{1:15 - 1:20} ACK pakke danser fra klient til server
+		De danser armkrog
+		Lenes Espersen træder ind på scenen
+\says{1:20 - 1:25} Klienten præsenterer et GET.
+\says{1:25 - 1:30} GET pakke danser fra klient til server.
+		Lene Espersen opdager pakken og kigger på serveren.
+		Lene Espersen begynder at lokke ting der kommer fra serveren.
+\says{1:30 - 1:35} Data1 pakke danser fra server til Lene Espersen.
+		Data1 viser sit indhold til Lene Espersen.
+\says{1:35 - 1:40} Data1 pakke danser fra Lene Espersen til klient.
+		Data1 viser sit indhold til klient.
+		Data2 pakke danser fra server til Lene Espersen.
+		Data2 pakke viser sit indhold til Lene Espersen.
+\says{1:40 - 1:45} Data2 pakke danser fra Lene Espersen til klient.
+		Data2 viser sit indhold til klient.
+\says{1:45 - 1:50} Klient opdager Lene Espersen og bliver sur.
+		FIN/ACK pakke danser fra klient til server.
+		Pakken danser armkrog med serveren.
+\says{1:50 - 1:55} ACK pakke danser fra server til klient.
+		Forbindelsen er lukket.
+\says{1:55 - 2:00} Klient finder en gigentisk nøgle frem.
+	Klient låser sin datamat.
+
+
+\scene{Musik skifter til Tur 3}
+
+\says{2:00 - 2:05} D1 træder frem og nejer.
+		D1 tager elefanthue på.
+		D1 træder tilbage.
+\says{2:05 - 2:10} D2 træder frem og nejer.
+		D2 tager elefanthue på.
+		D2 træder tilbage.
+\says{2:10 - 2:15} D1 med GET svanser hen til Lene Espersen og stopper foran hende
+\says{2:15 - 2:23} D1 ryster på hovedet og nægter logning.
+		D1 går videre til Server.
+\says{2:23 - 2:25} D1 og Server danser armkrog.
+\says{2:25 - 2:35} D1 og D2 danser/svanser lykkeligt og hurtigt rundt om Lene Espersen
+		Lene Espersen drejer forvirret rundt og kan ikke finde ud af noget.
+
+\scene{Musik stopper.}
+
+\says{2:35 - 2:40} D1 og D2 stopper.
+		Lene Espersen trækker elefanthuerne af dem.
+		Lene Espersen fløjter højt i sin trillefløjte.
+		D1 og D2 flygter af scenen.
+		
+\scene{Musik skifter til Tur 5}
+
+\says{2:40 - 2:45} Politi kommer marcherende ind, stive bevægelser
+\says{2:45 - 2:50} Lene Espersen og Politi hilser på hinanden.
+\says{2:50 - 2:58} Lene Espersen danser armkrog. MEGET stive bevægelser. MARCH!
+		Først højre arm i krog, derefter venstre arm i krog mens der heiles under march.
+\says{2:58 - 3:02} Politi marcherer til server
+\says{3:02 - 3:07} Politi holder elefanthue op og peger på den.
+		Server ryster på hovedet nægtende.
+\says{3:07 - 3:12}
+		1. slag: Politi truer med staven. Server bliver bange
+		2. slag: Server peger på klient. Politi kigger i den retning.
+		3. slag: Politi vender om på hælen og peger mod klienten.
+\says{3:12 - 3:21} Politi sniger/svanser over til klienten.
+		Politi stopper eventuelt og gemmer sig bag Lene Espersen undervejs.
+\says{3:21 - 3:25} Politiet banker på døren 4 gange i takt med musikken.
+\says{3:25 - 3:30} Klienten vender sig overrasket mod døren.
+		Klienten gør hen til døren.
+		Klienten åbner døren.
+\says{3:30 - 3:37} Politiet trænger ind.
+		Håndgemæng mellem Politi og Klient.
+		Politi lægger Klient i håndjern.
+\says{3:37 - 3:41} Politiet fører Klienten ud.
+\says{3:41 - 3:46} Lene Espersen marcher ud.
+\says{3:46 - 3:54} Tæppet trækkes til.
+\says{3:54 - 4:00} Lyset går ud over tre omgange, følgende hvert slag i musikken
+
+\scene{Tæppe}
+
+\end{sketch}
+\end{document}
+
+%%% Local Variables: 
+%%% mode: latex
+%%% TeX-master: t
+%%% End: 
+
