@@ -1,0 +1,113 @@
+\documentclass[danish]{article}
+\usepackage{revy}
+\usepackage[utf8]{inputenc}
+\usepackage{babel}
+\usepackage{a4wide}
+
+\usepackage{pifont}
+\usepackage{calc}
+
+\newsavebox{\fminibox} \newlength{\fminilength}
+\newenvironment{fminipage} [1][\linewidth] {
+\setlength{\fminilength}{#1-2\fboxsep-2\fboxrule}%
+\begin{lrbox}{\fminibox}\begin{minipage}{\fminilength}}
+{\end{minipage}\end{lrbox}\noindent\fbox{\usebox{\fminibox}}}
+
+\newenvironment{todo}{%
+  \renewcommand{\labelitemi}{{\LARGE \ding{46}}}%
+  \renewcommand{\labelitemii}{{\LARGE \ding{46}}}%
+  \renewcommand{\labelitemiii}{{\LARGE \ding{46}}}%
+  \renewcommand{\labelitemiv}{{\LARGE \ding{46}}}%
+          \begin{fminipage}\begin{itemize}}{\end{itemize}\end{fminipage}}
+
+\title{Den Svenske Koder}
+\author{Sidsel, Bobo, Duck, Uphfe}
+
+\version{1.0}
+   % HUSK AT AJOURFØRE VERSIONSNUMMER!!
+   % - Ok, ska' nok!
+
+\revyyear{1998}
+
+\begin{document}
+\maketitle
+
+\begin{roles}
+  \role{K} Den Svenske Koder -- Kokkekluns og med armene bundet ind
+  til siden over albuerne
+  \role{O} Oprydder -- samler kort op undervejs. (Nå, måske ikke
+  alligevel) 
+  \role{V} Voice -- styrer koderens stemme.
+\end{roles}
+
+\begin{props}
+  \role{1 bord}
+  \role{1 stykke sort stof} hæftet på bordet
+  \role{3 gryder}
+  \role{2 sedler} med sort tusch påskrevet \emph{INSORT} og
+  \emph{MERGESORT} 
+  \role{3 spil kort}
+  \role{1 økse eller kødhammer}
+  \role{Den svenske kok melodi} Enten brændt eller live
+  \role{Quake rocket launcher lyd} Forhåbentlig brændt
+  \role{Skæg} Til at dække koderens mund med så det ikke ses at der er
+  voice på.
+\end{props}
+
+Der står et bord på scenen med de tre gryder med et spil kort foran
+hver gryde. I de to første gryder ligger de to sedler. \emph{INSORT} i
+den første og \emph{MERGESORT} i den anden. Øksen er placeret under
+bordet. Med lidt held kan det hele bæres ind i een omgang.
+
+\begin{sketch}
+
+\scene Den svenske kok melodi starter.
+
+\says{V}[hele tiden, i takt med musikken, pånær når der skal siges
+noget] Hey-dy-bøy-di-bøy-di-muyf-muyf-muyf-muyf \act{nynner som kokken
+gør}
+
+\scene Koderen kommer ind, stiller sig ved bordet. Han fægter med
+armene og ser ud til at sige sine karakteristiske lyde.
+
+\scene Koderen tager en seddel op af den første gryde og viser den
+frem. Viser folk at der står \emph{INSORT}.
+
+\says{V} Insort!
+
+\scene Koderen krøller sedlen sammen og smider den over skulderen,
+tager nu et kort fra bunken op i hånden. Herefter tager koderen et
+mere og et mere og et mere og stopper ind mellem de andre mens det ser
+ud som om han tæller og sorterer. Får undervejs sat kortene op som en
+korthånd. Ved det fjerde ser koderen helt forvirret ud og ryster på
+hovedet og kaster det hele over skulderen. Også bunken med kort!
+
+\scene Koderen går nu videre til næste gryde. Tager en seddel op af
+gryden og viser folk at der står \emph{MERGE SORT}.
+
+\says{V} Merge sort!
+
+\scene
+Koderen tager hele bunken op og deler
+den over i to halve, en i hver hånd. Koderen prøver nu at flette
+kortene ind i hinanden over gryden ved at nærmest kaste dem sammen mod
+hinanden. Dette går også galt og han ryster på hovedet og kaster gryden
+væk!
+
+\says{V}[mumlende] Meget sort.
+
+\scene Koderen går nu videre til den sidste gryde. Vender den om så
+bunden er opad. Lægger bunken af kort ovenpå. Bukker sig ned under
+bordet og finder øksen/kødhammeren frem. Ser vild ud og begynder at
+banke på kortene og gryden. Stopper så op.
+
+\says{V}[meget tydeligt] QUAKESORT.
+
+\scene Koderen tæsker videre, Tæppe for ret hurtigt.
+ 
+\scene Efter tæppet er kommet for kan man høre en rocket launcher. Der
+skal høres et skrig.
+
+\end{sketch}
+
+\end{document}
