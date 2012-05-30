@@ -1,0 +1,64 @@
+\documentclass[a4paper,11pt]{article}
+\usepackage{revy}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[danish]{babel}
+
+\revyname{DIKUrevy}
+\revyyear{2012}
+% HUSK AT OPDATERE VERSIONSNUMMER
+\version{1.0}
+\eta{$0.5$ minut}
+% Her skrives et estimat af sangens/sketchens varighed
+\status{Færdig}
+
+\title{Penisbeviset}
+\author{Søren, Sander, Klaes \& Jenny}
+
+\begin{document}
+\maketitle
+
+\begin{roles}
+	\role{S}[Taus] Studerende
+	\role{E}[Julie] Eksaminator
+	\role{X}[NB] Instruktør
+\end{roles}
+
+\begin{props}
+	\prop{Whiteboard}[Person, der skaffer]
+\end{props}
+
+\begin{sketch}
+
+\scene Lys op. 2 personer står på scenen. S står ved whiteboard og har lige færdigskrevet sit bevis. På tavlen står der:\\\\
+Sætning:
+$$ P(penis) = 1 + 2 + \cdots + penis = \frac{penis(penis + 1)}{2} $$
+Bevis:\\
+\indent $P(1)$ er sandt, da $1 = \frac{1 \cdot 2}{2}$\\
+\indent Antag, at $P(penis)$ er sandt. Så gælder:
+$$
+\begin{array}{ll}
+	1 + 2 + \cdots + penis + penis + 1 & = \frac{penis(penis + 1)}{2} + penis + 1 \\
+	& = \frac{(penis + 1)(penis + 2)}{2}
+\end{array}
+$$
+hvilket beviser at $P(penis + 1)$ er sandt - Paa den side der vender vaek, og det samme med $n$ paa den side publikum kan se.
+
+\scene S læser beviset op. Efter et stykke tid afbryder E.
+\says{E} Du må sgu undskylde jeg afbryder dig.
+\says{S} Det gør ingenting.
+\says{E} For det første, det er skide godt. Det er helt rigtigt.
+\says{S} Tak.
+\says{E} Men jeg tænker, er det ikke lidt underligt at du skriver $n$?
+\says{S} Er det mærkeligt jeg skriver n?
+\says{E} Ja det synes jeg. $n$ er for upræcist.
+\says{S} Det kan jeg godt se. Det har jeg ikke tænkt over.
+\says{E} Øhhh, nu får jeg en ide. I stedet for at skrive $n$, kunne du saa skrive penis?
+\scene Han vender tavlen og siger
+\says{S} Skrive penis i stedet for n?
+\says{E} Ja, tag den med penis!
+\says{S} Det var ogsaa saadan, at jeg blev bachelor.
+\scene Lys ned.
+
+\end{sketch}
+\end{document}

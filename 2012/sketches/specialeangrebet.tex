@@ -1,0 +1,207 @@
+\documentclass[a4paper,11pt]{article}
+\usepackage{revy}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[danish]{babel}
+\revyname{DIKUrevy}
+\revyyear{2012}
+% HUSK AT OPDATERE VERSIONSNUMMER
+\version{1.0}
+\eta{$4$ minutter}
+\status{Færdig}
+\title{Specialeangrebet}
+\author{Mikkel, Troels, Sune, Nana}
+\begin{document}
+\maketitle
+\begin{roles}
+  \role{S}[Jenny] Studerende
+  \role{C}[Ejnar] Censor
+  \role{V}[Morten] Vejleder
+  \role{X}[Troels] Instruktør
+\end{roles}
+\begin{props}
+  \prop{Diaspræsentation}[Troels]
+  \prop{Bord}
+  \prop{To stole}
+  \prop{Pistol}
+  \prop{Papirrod}
+\end{props}
+\begin{sketch}
+
+\scene{Almindelig eksamensscene, alle tre står på scenen.  På en tavle
+  er et dias med teksten ``DIKUrevyen præsenterer:
+  Specialeangrebet!''.  Der lydes en fanfare.}
+
+\says{V} Ja, goddag og velkommen til specialeforsvar på DIKU.  Der er
+jo dukket flere tilhørere op end sædvanligt, men mon ikke vi kan finde
+plads.  Jeg gør opmærksom på at dette er en eksamenssituation, og at I
+derfor skal være helt stille undervejs.
+
+\act{Alle hilser på hinanden}
+
+\says{C} Og det er så mig der er censor i dag.  Værsgo, Jenny, du går
+bare i gang.  Hvad er det dit speciale handler om?
+
+\says{S} \act{Fnyser hånligt} Det burde du da allerede vide.  Men
+nuvel: titlen på mit speciale er ``Almene Teoridannelser om generisk
+programmering af numeriske løsninger til sædvanlige \textit{og}
+partielle differentialligninger, med specielt henblik på anvendelse af
+Standard Fortran 76, og dennes henvisninger til Turings artikel, "Über
+die Wesen des Primtalalgorimus des kvadratischer Bubblesort anno 1943"
+- bilag F.  Ført, nu og i fremtiden!''.  Jeg har i løbet af mit
+arbejde naturligvis også måtte løse en række andre småproblemer.
+
+\says{S} Jeg måtte rette en fejl i et af mine værktøjer...
+
+\scene{Dias: ``Fjerne Python's GIL''}
+
+\says{S} Tilpasse platformene til mit arbejdsmiljø...
+
+\scene{Dias: ``Porte Linux til en Etch-a-Sketch''}
+
+\says{S} Samt undersøge kompleksiteten af mine algoritmer.
+
+\scene{Dias: ``Afgøre om $P=NP$''}
+
+\says{C} \act{Afbryder} Og hvad har du så fundet ud af?
+
+\says{S} \act{Klagende} Sig mig, har du ikke engang læst mit speciale? jeg
+har brugt måneder på det!
+
+\act{V ser lidt skræmt ud}
+
+\says{C} Jo selvfølgelig, lad mig lige... \act{C samler specialet op fra
+bordet og bladrer i det}
+
+\says{S} Du skulle bare læse et sølle abstrakt!  Har du slet ingen
+respekt for den forskning jeg har lavet?!
+
+\says{C} Jo, men vær nu rimelig, jeg synes bare ikke du præsenterer
+nok data til at underbygge de konklusioner, som du...
+
+\says{S} \act{Afbryder} Og hvad baserer du så dét på?
+
+\says{C} \act{Forvirret} Dit speciale..?
+
+\says{S} \act{Smiler nedladende} Altså ét datapunkt?  Så synes jeg
+snarere, at det er dig, der overfortolker her.
+
+\says{V} Rolig, jeg tror måske vi kommer lidt ud af en tangent,
+selvfølgelig er din censor godt inde i dit speciale.
+
+\says{S}[Skipper hurtigt en masse dias] Det kan vi hurtigt få
+afgjort!
+
+\act{Dias: En stor tabel med en masse tal}
+
+\says{S}[Peger på et af tallene] Hvad viser dét?
+
+\says{C}[Bladrer i specialet] Jeg erindrer ikke lige den figur...
+
+\says{S} \act{Himler med øjnene og stønner, er meget ophidset} Tallet
+på position $i,j$ er LIX-tallet for sætning $i$ på side $j$.  Sig mig,
+hvordan kan du have læst mit speciale, og ikke øjeblikkelig genkende
+dets struktur på letlæselig form?
+
+\says{C} Jamen...
+
+\says{S} Fra bunden af: Denne matriks tager...\act{afventende}
+
+\says{C} ...tager et kvantitivt syn på...
+
+\says{S}[afbryder] Nej!  Den tager lang tid at skrive i \LaTeX{}!  Har
+du slet ingen forståelse for datalogi?
+
+\says{V} \act{Rejser sig og adskiller de to} Jenny, kan du ikke
+fortælle os lidt om din arbejdsmetodik?
+
+\says{S}[Samler censorens rettenoter op fra bordet] Faktisk har jeg
+selv nogle spørgsmål.  Jeg ser at du ikke har noteret så meget omkring
+mit valg af Hackson's algoritme.  Hvordan kan det egentlig være?
+
+\says{C}[Står nu hen mod præsentationen, mens S sidder ved bordet] Den
+ser ud da ud som om...
+
+\says{S} Men du tænker ikke på hvorfor jeg ikke henviser til
+Peterson's algoritme?
+
+\says{C} Altså, den er jeg sikker på også ville være et fint valg...
+
+\says{S} Den er jo lort!  Peterson er forældet og har dokumenterede
+fejl!  Har du slet ikke sat dig ind i litteraturen?  Et bedre valg
+ville derimod være...?
+
+\says{C} Markus's reverse?
+
+\says{S} For bagvendt.
+
+\says{C} Schneier's march?
+
+\says{S} For frembrusende.
+
+\says{C} Jyrki's datorkorv \act{bevidst uforståeligt}?
+
+\says{S}[Kigger vantro] For Jyrki.
+
+\says{V} Jeg tror det er bedst at vi går videre, hvad med den konkrete
+programmering...
+
+\scene{C gør tegn på at sætte sig tilbage ved bordet, men bliver
+  afbrudt af S.}
+
+\says{S} Jeg ser at du har bidt særligt mærke i min brug af SML; kan
+du redegøre for hvorfor du finder dét interessant?
+
+\says{C} Altså, det er jo et dødt sprog...
+
+\says{S} FORKERT! ``På DIKU opstanden fra de døde'' - kan du ikke de
+Hellige Skrifter?
+
+\scene{V nikker indforstået.}
+
+\says{C} Hvad snakker du om?  Matlab er da noget mere...
+
+\says{S} Hvad fuck er et det for et fucking uciviliseret sprogbrug?
+
+\says{C} Jamen jeg forstår overhovedet ikke hvad der foregår!
+
+\act{S kommer med en lang rant, hvor under C langsomt kryber sammen på gulvet}
+
+\says{S} Og du skulle være min censor?  Din mide, din orm, din
+søpølse, du er ikke værdig til at undervise i en børnehave, nej ikke
+engang på RUC! Min lillefinger ved mere om datalogi end du nogen sinde
+har lært, hvad har du overhovedet af kvalifikationer?!
+
+\says{C} Jeg har været professor i 10 år
+
+\says{S} Jeg vil tørre min røv med dit professorat!  Du kan jo ikke en
+gang skrive Hello World i Python!
+
+\says{V} Jeg tror vi har set nok.  Lad os votere.
+
+\act{Alle står og venter i nogle sekunder, hvorefter V vifter C ud,
+  der forbløffet forlader scenen.  V og S vender sig mod hinanden og
+  nikker indforstået.}
+
+\says{V} Ja, så må du godt komme ind igen.
+
+\act{C kommer ind og ser lidt forvirret ud, S trækker en pistol og
+  skyder ham.}
+
+\scene{Nu bliver det besværligt: Lyset dæmpes og scenen rekonfigureres
+  (hurtigt!) på en sådan måde at V og C forsvinder, og S sidder og
+  sover ved et rodet bord.}
+
+\says{S}[mumler i søvne] 13-skalaen bare for min skyld... jo, jeg
+tager bare PhD-graden med... Turing-award...
+
+\says{V}[kommer ind] Så Jenny, kommer du ned til dit specialeforsvar?
+
+\scene{S vågner med et sæt og ser meget forskræmt ud i et par
+  sekunder.  Hun Rækker derefter ind under bordet, trækker en pistol
+  ud, tager ladegreb, og kigger med beslutsom mine på publikum.}
+
+\scene{Lys ned, tæppe for}
+
+\end{sketch}
+\end{document}
