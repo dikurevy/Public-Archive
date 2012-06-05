@@ -1,0 +1,256 @@
+\documentclass[a4paper,11pt]{article}
+\usepackage{revy}
+\usepackage[utf8]{inputenc}
+\revyyear{1992}
+
+\begin{document}
+
+\title{Grundlæggende datalogi: ``BASICviden''}
+
+\author{Jacob, Kristoffer, Gnyf, Ole}
+
+\version{1.0}
+
+
+\maketitle
+
+\begin{roles}
+
+\role{Interviewer}
+
+\role{Professor Grydeske}
+
+
+
+Naur-type med et halvt ton salt.
+
+\role{Mange andre optrændende, bl.a.:}
+
+\role{CPU} Centralenheden. En bogholdertype, der evt. skifter tøj
+når operativsystemet skifter kontekst.
+
+\role{RAM}   Indre lager. Lagerarbejder.
+
+\role{Skærm, Printer, Modem, Knap (tastatur)} Ydre enheder, hver med
+specielle karakteristika (se nedenfor). Alle skal have en dims at slå
+CPU i hovedet med (afbrydelser). Dimsen (evt. en skumgummihammer?)
+skal have en størrelse, der afhænger af enhedens prioritet. D.v.s.
+Knap,Skærm,RAM,Printer,Modem.
+
+\end{roles}
+
+\begin{sketch}
+
+\says{Interviewer} I serien DR derinde er vi nu i professor
+Grydeskes kolonihave for at høre mere om det indre af en datamaskine.
+Professor Grydeske er jo kendt fra sin tid som sekretær for ALGOL-42
+gruppen, og er i dag foregangsmand indenfor sproget MODULA-17. Han har
+desuden skrevet bøgerne ``EBNF på 117 forskellige måder'' og ``En
+konfus undersøgelse af paletknive''. Og professor, hvad kan De
+egentlig fortælle os?
+
+\says{Professor} Jo, det centrale i en datakantine er jo
+paletkniven. Og det kan jeg fortælle meget om. I min bog skriver jeg
+på side 397, at man kan bruge en paletkniv på mange interessante og
+spændende måder. Man kan f.eks. tage et egern, og stoppe.......
+
+\says{Interviewer} Jo ja øh, men vi ville jo gerne høre noget om
+{\em datamaskiner}!
+
+\says{Professor} {\AA}h undskyld, jeg hørte vist galt. Ja, det
+centrale i en {\em datamaskine} er centralenheden, også kaldet en
+CPU. Der er 2 forskellige typer af CPU'er. Man skal endelig aldrig
+komme til at koge dem sammen, fordi så bliver paletkniven ødelagt.
+
+\says{Interviewer} Ja, og de 2 typer kaldes for RISC og CISC, ikke sandt.
+
+\says{Professor} Ja. Til en portion RISC-CPU'er skal man bruge 5
+stk, der skal koge i 1 minut. Når man laver CISC-CPU skal man kun
+bruge 1, men den skal koge i 5 minutter. Paletkniven skal endelig ikke
+koges med i nogen af tilfældende.
+
+\says{Interviewer} Men er der ellers forskel på de 2 typer?
+
+\says{Professor} RISC-arkitekturen udmærker sig ved at have få,
+små og hurtige instruktioner. Sammenlignet med CISC-instruktioner,
+der er mange, store og langsomme. Jeg har forberedt et lille eksempel.
+Normalt vil det kun tage et mikrosekund, men vi har snydt, og viser
+det i langsom gengivelse:
+
+\scene
+(5 personer (RISC-instruktioner i sportstøj) kommer løbende ind på
+scenen i en lang række, hver af dem udfører en lille ting, og
+sammenlagt skal de have hægtet et element ind i en liste)
+
+\says{Professor} Se, det var smart, hvis en CISC-instruktion skulle
+gøre dette ville det se således ud:
+
+\scene
+(2-3 personer, bundet sammen i et ormeagtigt kostume kommer ind på
+scenen. De diskuterer højlydt om hvem der skal gøre hvad med hvem,
+og foretager indhægtningen)
+
+\says{Professor} Ja, og som enhver kan se er det meget sjovere at
+være RISC-instruktion! Der er dog visse problemer med
+RISC-processorer, for på en RISC skal data og selve instruktionerne
+være det der hedder alignet.
+
+\says{Interviewer} Alignet? Har det noget med lagner at gøre?
+
+\says{Professor} Nej, det kan man vist ikke sige. Det er nemmest at
+vise det med et eksempel. For en RISC-maskine skal det være således:
+
+\scene
+(På scenen skal der være en låge. Vi har en RISC-instruktion inde
+på scenen, som venter på data. Instruktionen skal være polstret,
+så den passer præcis til lågen. Efter 3 sekunder kommer en
+lagermand med data til instruktionen. Data er i en kasse, der passer
+præcist til lågen.)
+
+\says{Professor} På RISC-maskiner er programmerne altså lavet,
+så både instruktioner og data ligger på lige adresser i forhold til
+ord-bredden. For en CISC-maskine, derimod, er dette ikke nødvendigt.
+Der sker nogenlunde dette:
+
+\scene
+(Vi har 1 2-mands CISC-instruktion, der godt kan komme igennem, men de
+kommer gående skævt ind på lågen. De skilles; halvdelen går
+igennem, den ene beskriver en lille cirkel, og går også igennem. De
+samles på den anden side af lågen. De venter på lidt data. En
+lagerarbejder kommer med en kasse. Kassen skal være delbar, og have
+samme størrelse som den første kasse. Kassen kommer skævt ind på
+havelågen; det er derfor nødvendigt at dele kassen for at få data
+ind på scenen)
+
+\says{Interviewer} Men professor Grydeske, tror De ikke, at dette er
+for avanceret for seerne? Kan De ikke forklare om hvordan en
+datamaskine fungerer på et lidt højere niveau?
+
+\says{Professor} Det kan da godt være De har ret. Men jeg synes nu,
+det er meget simpelt --- og let at forstå. På et højere niveau har
+datamaskinen et såkaldt operativsystem. Det er et system, der styrer,
+hvordan maskinen opererer --- heraf navnet. Og i den forbindelse vil
+jeg gerne anbefale knive fra Raadvad --- de kan dels bruges i en
+datakantinge, men også til at foretage forskellige operationer.
+F.eks. har jeg udført plastisk kirurgi på min kone, og det hjalp
+sgu. Se, jeg startede med at lægge et snit $\ldots$
+
+\says{Interviewer}[Afbryder] Ja, men hvordan fungerer sådan et
+operativsystem? 
+
+\says{Professor} Ja, vi kan betragte et lille eksempel. Det kræver en
+centralenhed (en såkaldt CPU), det indre lager (kaldet RAM) --- det
+kommer egentlig først ved årsskiftet, men vi har snydt lidt; et
+tastatur (knap og nap) og en skærm.
+
+\scene
+(Når professoren nævner en enhed, kommer den på scenen. Skilte
+på maven?)
+
+Et bord mærket CPU og et andet lige ved siden af mærket RAM;
+ved hvert bord sidder den pågældende enhed. Ved CPU-bordets
+anden side er et skilt, hvor der står "Afbrydelser" med plads
+til at hænge et ekstra skilt; fra starten står der "Lukket".
+Rundt omkring står de ydre enheder med papskilte på. De
+sover. Bagved er et pengeskab.
+
+CPU tager støvlerne af, vender derefter skiltet under afbrydelser så
+der nu står "åben". CPU sætter sig ned; de ydre enheder sover.
+
+
+\says{CPU} Er jeg igang med noget?
+\says{RAM} Ja: kommandofortolkeren.
+\says{CPU} Javel! (læser lidt) TASTATUR!
+\scene 
+(TASTATUR vågner, begynder at rende rundt blandt publikum for at
+blive trykket på.)
+
+\says{CPU}[afleverer kommandofortolkerbunken til RAM] Er der andet?
+\says{RAM} Her: din orm. Den trænger til at bevæge sig lidt.
+\says{CPU}[læser lidt. Til RAM] Stik mig lige 0xFFED5546...
+\says{RAM} øjeblik, det kræver lige fire cykelklokker 
+\says{RAM}[ringer fire gange på en cykelklokke] Her {\em (rækker
+en stor * til CPU).}
+\says{CPU} Hovsa en asterix ... hvem skal den mon sendes til?
+\says{CPU}[vender *en om, hvor der er frimærke og modtager på] Aha! SKÆRM??
+\says{SKÆRM}[vågner, gaber, etc. i et stykke tid endnu]
+\says{CPU}[afleverer ormen til RAM] Er der mere?
+\says{RAM} Nix.
+\says{CPU}[fremdrager Playboy og smider stængerne på bordet]
+\says{SKÆRM}[kommer hen til CPU og afbryder CPU] Var der noget,
+      der sku' vises?
+\says{CPU}[lægger sirligt etc., og rækker *en til SKæRM.
+Genoptager læsningen]
+\says{SKÆRM} Tak. 
+\says{SKæRM}[forlader CPU, går rundt blandt publikum og viser
+      *en frem]
+\says{RAM} Ahem! Hm. øhm. 
+\says{CPU} Er du der nu igen.....
+\says{RAM} Ja, jeg har en lille primtalsørken, der gerne vil være stor...
+\says{RAM}[Rækker processen til CPU]
+\says{CPU}[Sukker] Man har da heller aldrig fred til at udvide sin horisont.
+\says{CPU}[Lægger Playboy sirligt væk, og læser i stedet for
+primtalsprocessen] Suk. Nåh, hvor var det jeg gjorde af min kugleramme?
+\says{CPU}[Roder rundt på sit bord, indtil kuglerammen dukker frem
+af rodet] Lad mig nu se: 2 op, og 5 i mente. Det giver ..... 8. øh...
+Er 8 et primtal? Nej, det kan ikke passe. 4 $\times$ 2 det er 4 + 4,
+det er 8. Nej, 8 er ikke et primtal. Nåh, fejl i udregningen,
+forfra.. 5 op, og 2 i mente. Det giver .... 41. Det var vist bedre.
+Nåh, det må være nok tid til den proces.
+\says{CPU}[Afleverer bunken til RAM. Finder Playboy frem o.s.v.]
+\says{RAM}[Efter en lille pause prikker RAM CPU på skulderen] Det
+er altså dig, der skal lave noget. Det kan ikke være meningen, at
+jeg skal holde styr på dig hele tiden. Her: din orm.
+\says{CPU}[Læser surt i ormeprocesbunken. Siger til RAM] Stik mig
+0xFFED5546... 
+\says{RAM} øjeblik, det kræver lige 4 cykelklokker.
+\says{RAM}[Ringer fire gange på en cykelklokke] Her {\em (rækker
+en stor * til CPU).}
+\says{CPU} Det er jo nok til skærmen igen.... SKæRM! {\em
+(fremdrager Playboy)} 
+\says{SKÆRM}[Vender tilbage til scenen, og afbryder CPU] Har du
+mere til mig?
+\says{CPU}[lægger sirligt etc., og rækker *en til SKÆRM.
+Genoptager læsningen]
+\says{SKÆRM} Tak. 
+\says{SKÆRM}[forlader CPU, går rundt blandt publikum og viser
+      *erne frem] This line intentionally left blank
+
+\scene
+(Når nogen trykker på tastaturet, render TASTATUR op på scenen, og
+afbryder CPU. TASTATUR stiller sig i en evt. kø ved CPU, og afbryder:
+TASTATUR slår CPU i hovedet med sin dims)
+
+\says{CPU}[lægger sirligt Playboy til side o.s.v.] Ja? Er der noget?
+
+\says{TASTATUR}[Afleverer en seddel til CPU] Jeg er blevet trykket
+på maven. Her!
+
+\says{CPU}[Læser sedlen] Hm, Hm, Hm....
+
+\says{TASTATUR}[Render ud blandt publikum o.s.v.]
+
+\says{CPU}[Afleverer seddel til RAM, og siger] Stik mig lige
+kommandofortolkeren.
+
+\says{RAM} Her!
+
+\says{CPU}[Læser noget i stakken af kommandoer] Lad mig lige få
+tegnet igen!
+
+\says{RAM}[Afleverer tegnet]
+
+\says{CPU}[Putter tegnet ind i bunken, og afleverer
+kommandofortolkeren til RAM igen]
+
+\says{Professor} Ja, og det bliver bare gentaget og gentaget og
+gentaget og gentaget og gentaget og gentaget og gentaget og gentaget
+og gentaget og gentaget og gentaget og $\ldots$
+
+\scene 
+(Lyset dæmpes omkring det 2. gentaget. Professoren dæmper stemmen i
+takt med lyset....)
+
+\end{sketch}
+
+\end{document}
