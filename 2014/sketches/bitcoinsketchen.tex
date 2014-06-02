@@ -1,0 +1,245 @@
+\documentclass[a4paper,11pt]{article}
+
+\usepackage{revy}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[danish]{babel}
+\usepackage{hyperref}
+
+
+\revyname{DIKUrevy}
+\revyyear{2014}
+% HUSK AT OPDATERE VERSIONSNUMMER
+\version{1.0}
+\eta{$4$ minutter}
+\status{Færdig}
+
+\title{Bitcoin-sketchen}
+\author{Phillip, Troels, Brøns, Bette-Mikkel}
+
+\begin{document}
+\maketitle
+
+\begin{roles}
+\role{F1}[Daniel] Forsker
+\role{F2}[Sebastian] Forsker
+\role{B}[Arinbjörn] Bartender
+\role{G1}[Ejnar] Caféen?-gæst
+\role{G2}[Simon] Caféen?-gæst
+\role{G3}[Brainfuck] Some guy
+\role{G4}[Nana] Caféen?-gæst
+\role{G5}[Nanna] Caféen?-gæst
+\role{G6}[Peter] Caféen?-gæst
+\role{G7}[Troels] Caféen?-gæst
+\role{M1}[Kasper] Matematiker
+\role{M2}[Niels] Matematiker
+\role{M3}[Bitre-Mikkel] Matematiker
+\role{K}[Caro] Prebens kone
+\role{PS}[Person] Publikumssufflør
+\role{H}[Amanda] Helle-Thorning Schmidt (fra politisk permutation)
+\role{X}[Troels] Instruktør
+\end{roles}
+
+\begin{props}
+\prop{Læssevis af ringbind}[]
+\prop{Kagerulle}[]
+\prop{Flødeskumskage}[]
+\end{props}
+
+
+\begin{sketch}
+
+\scene{Helt mørkt. Spot på F1.}
+
+\says{F1} Godaften. Jeg hedder Preben.
+
+\scene{F1 peger til den ene side.}
+
+\says{F1} Og dette er min kollega, Preben.
+
+\scene{Spot på F2.}
+
+\says{F2} I kender jo alle til bitcoin.
+
+\says{F1} Men da vi er timelønnede, så lad os lige opsummere:
+
+\says{F2} Bitcoin er en såkaldt krypto-valuta.
+
+\says{F1} Det lyder måske lidt kryptisk, så lad os lige opsummere:
+
+\says{F2} Dette bliver en meget lang sketch...
+
+\says{F1} Så lad os lige opsummere:
+
+\says{F2} Bitcoin er en valuta, der ikke er styret af nogen centralbank, men
+derimod et distribueret peer-to-peer-netværk.
+
+\says{F1} Nu hvor I forstår alle detaljerne, kan vi undersøge brugernes praktiske
+interaktion med systemet.
+
+\says{F2} Vi er på Caféen?.
+
+\scene{Caféen?-lys, bar-disk i den ene side af scenen. Der er også
+  nogle gæster (G1-G2). Mos Eisley Cantina Theme spilles i
+  baggrunden:
+\url{http://youtu.be/stbYF6XpTYE?t=6s}}
+
+\scene{F1 går op til baren.}
+
+\says{F1} Undskyld, hvor meget koster en GT?
+
+\scene{Over\TeX: Bitcoin-kursen fluktuerer helt vildt.}
+
+\says{B} Hvornår vil du købe den?
+
+\scene{F1 og B kigger op på bitcoin-kursen. Der er monteret et
+  enarmet-tyveknægt-agtigt håndtag i baren.}
+
+\scene{F1 trækker i håndtaget.}
+
+\scene{Over\TeX: Kursen fryser.}
+
+\says{B} Det bliver 8 bitcoins.
+
+\says{F1}[til publikum] Ser I, bitcoins er baseret på kryptografi. Jeg kan
+bevise at jeg er møntens ejer, fordi jeg har dens private nøgle. For at
+overføre mine bitcoins til sælgeren...
+
+\scene{B bukker for publikum.}
+
+\says{F1} ... er jeg nødt til at signere hans offentlige nøgle ved hjælp af
+simpel elliptisk-kurve-kryptografi. Det er ganske enkelt.
+
+\says{F1}[til bartenderen] Har du en blyant jeg må låne?
+
+\scene{F1 kigger grundigt på B's navneskilt, og begynder at skrible på
+  et stykke papir.}
+
+\says{F2} Ja, vi har jo alle med stor bekymring set, hvordan NSA er
+begyndt at overvåge al elektronisk kommunikation. Derfor er alle
+\textit{fornuftige} mennesker efterhånden gået over til
+offline-bitcoins. Man bør således foretage alle de nødvendige
+beregninger i hånden.
+
+\scene{F1 står stadig i baren, og beregner hashen i hånden. Køen bag
+  ham vokser og vokser.}
+
+\says{F1}[vender sig mod publikum] Er dette bare ikke meget smartere
+end tradionelle papir-penge?
+
+\says{F2}[til publikum] Nu skal bartenderen så verificere at de
+overførte bitcoins faktisk eksisterer. Til det formål bruger vi den
+såkaldte blockchain. En distribueret liste over \textit{alle}
+bitcoin-transaktioner nogensinde.
+
+\scene{B tager papiret fra F1. B bukker sig ned bag baren, tager et
+  KÆMPE ringbind op, bladrer lidt i det, og sætter et kryds.}
+
+\says{B} Jep, det er noteret.
+
+\says{B}[til de andre gæster på Caféen?] Kan I andre ikke også lige så
+skrevet det ned?
+
+\scene{Alle på Caféen? stopper hvad de er i gang med, og finder KÆMPE
+  ringbind frem fra den blå luft. De begynder at bladre, finder den
+  rigtige side, og skribler lidt med en blyant eller lign.}
+
+\says{G1} Det er noteret!
+
+\says{G2} Jeg er også færdig!
+
+\says{B}[til F1] Fint, her er din øl.
+
+\says{B} Næste!
+
+\scene{Næste kunde betjenes. Der kommer 5 über-nørdede matematikere
+  ind på Caféen?. De har alle ukæmmet hår og det samme tøj på: Hvide
+  polo-trøjer (som er for lange), kuglepenne og lommeregnere i
+  brystlommen.}
+
+\says{F1} Åh nej! Matematikere!
+
+\says{F2}[til publikum] Siden bitcoin-netværket er konsensus-baseret,
+kan man påvirke beslutningerne hvis man har størsteparten af
+netværkets regnekraft.
+
+\scene{B forlader scenen for at hente noget ude på lageret(og klæde om til næste sketch)}
+
+\says{M1} Sikke en flot bitcoin du har der.
+
+\scene{M2 og M3 begynder at omringe F1.}
+
+\says{M1} Det ville jo være en skam, hvis jeg kunne bevise at det var min. Tag
+den fra ham drenge!
+
+\scene{M2 og M3 har nu helt omringet F1, og begynder at taste febrilsk
+  på deres lommeregnere.}
+
+\says{F1} Stop dem, stop dem! De tager mine penge!
+
+\scene{Alle matematikerne står omkring F1 og regner. På et tidspunkt
+  bliver de færdige, løber over til de andre gæster på Caféen?, og
+  viser stolt resultatet af deres beregninger frem.}
+
+\says{G1} Ja, det kan jeg godt se.
+
+\says{F1} Jeg er ruineret!
+
+\scene{Matematikerne forlader Caféen?.}
+
+\says{F2} I skal ikke være bekymrede. Det er ikke første gang vi mister alle
+vores bitcoins. En gang hver anden måned er der en stor børs, der bliver
+hacket.
+
+\says{F1} Ja, det er en herlig følelse at være fri for statens formynderiske
+indflydelse!
+
+\scene{G3 kommer løbende ind på scenen.}
+
+\says{G3} Hey, gutter! Preben har givet 0,04392 bitcoin til en stripper! Siger I
+det lige videre?
+
+\says{G2}[pifter efter publikum] HEY! I DER! PREBEN HAR BETALT EN
+STRIPPER!
+
+\scene{Prebens kone (K) kommer løbende ind på scenen med en kagerulle
+  og en flødeskumskage i hænderne.}
+
+\says{K} \textit{Min} Preben?! Nej, det passer altså ikke! Han skrev i
+\textit{min} blockchain at han brugte dem på at købe en buket
+blomster.
+
+\says{F2} Som I kan se, opstår der nogle gange en kortvarig uenighed på grund af
+blockchainens distribuerede natur. Men konsensus genvindes altid hurtigt.
+
+\scene{K smasker en kage i hovedet på G3 og slår alle gæsterne på
+  Caféen? bevistløse med sin kagerulle.}
+
+\says{K}[vender sig mod publikum] Hvad købte Preben?
+
+\scene{Publikumssuffløren holder et skilt op, hvorpå der står "BLOMSTER".}
+
+\scene{F1 forsøger at genvinde ro og orden i salen.}
+
+\says{F1} Det er muligt at I endnu ikke er helt overbeviste. Men vi har i hvert
+fald fået overbevist Helle Thorning. Faktisk har regeringen besluttet at
+binde kronen op på bitcoin-kursen. Lad os se hvordan det går med
+finanslovsforhandlingerne:
+
+\scene{Over\TeX: Bitcoin-kursen svinger stadig. Nedenunder ses et
+  regneark og nogle grønne/røde søjler der svinger i takt til kursen.}
+
+\scene{H kommer løbende ind på Caféen? og tager fat
+  i håndtaget.}
+
+\says{H} Finansloven er vedtaget .....nu!
+
+\scene{Over\TeX: H trækker i håndtaget. Bitcoin-kursen og finansloven
+  fryser med røde tal over det hele.}
+
+\scene{Lys ud.}
+
+\says{H} Pißß...
+
+\end{sketch}
+\end{document}

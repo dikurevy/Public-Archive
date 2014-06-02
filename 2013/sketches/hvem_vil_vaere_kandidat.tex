@@ -1,0 +1,295 @@
+\documentclass[a4paper,11pt]{article}
+
+\usepackage{revy}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[danish]{babel}
+
+
+\revyname{DIKUrevy}
+\revyyear{2013}
+% HUSK AT OPDATERE VERSIONSNUMMER
+\version{1.0}
+\eta{6 minutter}
+\status{Færdig}
+
+\newcommand{\question}[3]{\fbox{\parbox{10cm}{
+\begin{textrm}
+#1
+\end{textrm}
+
+\begin{tabular}{c|c}
+  0. &         1.\\\hline
+  #2 & #3
+\end{tabular}
+}}}
+
+\title{Hvem vil være kandidat?}
+\author{Troels, Nana, Phillip, Brainfuck, Søren Pilgård}
+
+\begin{document}
+\maketitle
+
+\begin{roles}
+\role{I}[Troels] Instruktør
+\role{V}[Spectrum] Vært
+\role{P}[Simon] Preben (en rus)
+\role{T} Torben Mogensen (præindspillet voiceover)
+\end{roles}
+
+\begin{props}
+\prop{Musik og jingles fra "`Hvem vil være Millionær?"'}[AV]
+\prop{Spørgsmåls-overheads}[AV]
+\end{props}
+
+
+\begin{sketch}
+
+  \scene{To stole og et bar-bord. Talk-show-agtigt. Frit udsyn til
+    projektor/bagvæg. V sidder i den ene stol.}
+\scene{Jingle}
+
+\says{V} Godaften, og velkommen til "`Hvem vil være kandidat?"'
+
+\says{V} Det er første år med den nye studieordning. Vi glæder os til at se
+hvad vores nye studerende er i stand til. Og lad os byde ham hjertelig
+velkommen.  Tag rigtigt godt imod... Simon!
+
+\says{P}[lidt sky] Hej, hej...
+
+\says{V} Nå, Simon. Hvad bringer dig her?
+
+\says{P} Jeg har læst på HTX de sidste 3 år, og jeg har kodet en smule Delphi.
+
+\says{V} Og du vil gerne være kandidat. Hvad kunne du tænke dig at lave bagefter?
+
+\says{P} Netcompany har vist mig sådan et organisationsdiagram, og
+det har virkelig inspireret mig.
+
+\says{V} Det lyder... spændende. Lad os se at komme i gang.
+
+\scene{Jingle}
+
+\scene{Underlægnings-tema \#1 begynder}
+
+\scene{Første spørgsmål ses på bagvæggen:}
+
+
+\question{Hvilket af disse to binære tal er størst?}{}{}
+
+\says{V}[læser højt fra bagvæggen] Hvilket af disse to binære tal er størst?
+
+\says{P}[ivrig] Det ved jeg godt, det er selvfølg--
+
+\says{V}[afbryder P] Og svarmulighederne er...
+
+\scene{Svar-mulighederne dukker op på bagvæggen og bliver læst højt af
+V, én efter én, fra venstre til højre:}
+
+\question{Hvilket af disse to binære tal er størst?}{1}{0}
+
+\says{V} ..."`0: 1"'. Eller er det "`1: 0"'?.
+
+\says{P} Øh... 1?
+
+\says{V} Du vælger 1?
+
+\says{P} Ja!
+
+\says{V} Og det er dit endelige svar?
+
+\says{P} Det er det største tal, så det er mit endelige svar.
+
+\scene{Svar \#1 (højre søjle, værdi "`0"') bliver markeret. \scene{Jingle}}
+
+\says{V} Svarmulighed nummer 1 er blevet valgt.
+
+\says{P} Nej, vent! Jeg mente--
+
+\scene{Jingle}
+
+\scene{Den valgte svarmulighed bliver markeret som korrekt (m. grøn
+  eller lign...)}
+
+\scene{Jingle}
+
+\says{V} Og den rigtige svarmulighed er... 1! ...altså "`0"'. Tillykke. Du har
+nu 7.5 ECTS.
+
+\says{P} Men... men...
+
+\says{V} Ja, der er selvfølgelig tale om to-kompliments-repræsentation, så
+det drejer sig om henholdsvis -1 og 0. Der var du hurtig.
+
+\says{P} ...
+
+\says{V} Næste spørgsmål!
+
+\scene{Jingle}
+
+\scene{V læser spørgsmål og svarmuligheder op efterhånden som de
+bliver vist på skærmen:}
+
+\question{KEN er en...}{Opvaskemaskine}{Desinficeringsmaskine}
+
+\says{P} Åh, men KEN er da en opvaskemaskine!
+
+\says{V} \act{stikker P en lussing}
+
+\says{P} Av!  Øeh... Jeg mener desinficeringsmaskine.
+
+\says{V} Og det er dit endelige svar.
+
+\says{P} Ja.
+
+\says{V} Det var ikke et spørgsmål.
+
+\scene{Svar \#1 ("`Desinficeringsmaskine"') bliver markeret markeret som korrekt. \scene{Jingle}}
+
+\says{V} Du er nu oppe på 22.5 ECTS. Det er længere en de fleste
+kommer her på studiet. Vi går videre til næste spørgsmål.
+
+\scene{Jingle}
+
+\scene{V læser spørgsmål og svarmuligheder op efterhånden som de
+bliver vist på skærmen:}
+
+\question{Hvis din pegerpeger peger på noget andet end en peger, så er pegerpegerens pegning blevet hvad?}
+{Gal}{Forkert}
+
+\says{P}[tænker et stykke tid] Den er svær. Jeg vil gerne bruge en
+livline og ringe til min vejleder.
+
+\says{V} Vi ringer til din vejleder.
+
+\scene{Riiiiing, riiiiing, riiiiing}
+
+\says{T} Hej, det er Torben...
+
+\says{P} Hej Torben! Jeg sidder lige...
+
+\says{T} ... jeg kan desværre ikke komme til telefonen lige nu, da jeg er
+inde og se DIKUrevy. Men læg en besked efter tonen, så ringer jeg
+tilbage om et par timer.
+
+\scene{Man hører et par takter af musikken fra Monkey Island,
+hvorefter der bliver lagt på.}
+
+\says{V} Vil du bruge endnu en livline?
+
+\says{P} Hmm... Jeg tror faktisk jeg kan huske noget fra det faglige
+indhold på rusturen.
+
+\scene{P tager en rusturssangbog frem og bladrer lidt i den...}
+
+\says{P} Ah, her er den! \act{Synger} Hvis din peger-peger peger på
+noget andet end en peger, så er peger-pegerens pegning gået hen og
+blevet gal...
+
+\scene{Svar \#0 ("`Gal"') bliver markeret som korrekt.  Jingle.}
+
+\says{V} Hvis du dropper ud nu, så får du lov at gå hjem med 75 ECTS.
+
+\says{P} Jeg vil gerne lige se det næste spørgsmål.
+
+\scene{V læser spørgsmål og svarmuligheder op efterhånden som de}
+bliver vist på skærmen:
+
+\question{Hvilken fil har vi \texttt{cat}'et ind i \texttt{/dev/audio}?}{/dev/random}{~jyrki/paper.pdf}
+
+\scene{Man hører højttalerstøj.}
+
+\says{P} (lytter intenst til støjen) Mmm... Det er... Jeg synes
+overhovedet ikke det giver mening.
+
+\scene{Svar \#1 ("`Jyrki"') bliver markeret.  Jingle.}
+
+\says{V} Og det er dit endelige svar?
+
+\says{P} Hvad?
+
+\scene{Den valgte svarmulighed bliver markeret som korrekt.  Jingle.}
+
+\says{V} Tillykke!  Du har nu 120 ECTS. Lad os gå videre til næste spørgsmål.
+
+\scene{Jingle}
+
+\scene{V læser spørgsmål og svarmuligheder op efterhånden som de}
+bliver vist på skærmen:
+
+\question{Hvad er den objektivt bedste editor?}{Emacs}{VI}
+
+\says{P} Tja, det skal jo være den \textit{objektivt} bedste editor,
+så jeg må hellere spørge publikum.
+
+\says{V} Vi spørger publikum.
+
+\scene{Publikumsjingle!  Der kommer en "`stemmetæller"' frem på
+  bagvæggen. Publikum råber. Stemmetælleren fluktuerer, men ligger
+  nogenlunde 50/50 på Emacs og \texttt{vi}. Indimellem dukker der
+  søjler for andre editorer op (gedit, \texttt{ed}, Eclipse, ...)}
+
+\says{V} Uafgjort?
+
+\says{P} Jeg synes at jeg hørte flest Emacs.
+
+\scene{Svar \#0 ("`Emacs"') bliver markeret.  Jingle.}
+
+\says{V} Husk, hvis du svarer rigtigt nu, får du 180 ECTS og er bachelor. Men
+hvis du svarer forkert, mister du det hele. Måske er det på tide at trække sig?
+
+\says{P} Publikum har talt.  Jeg vælger Emacs!
+
+\scene{Den valgte svarmulighed bliver markeret som korrekt. Jingle.}
+
+\says{V} Tillykke, du er nu bachelor i datalogi!
+
+\says{V} Du har nu sikret dig 180 ECTS uanset hvad. ...medmindre KU smider
+dine resultater væk, selvfølgelig. Har du lyst til at fortsætte på
+kandidaten?
+
+\says{P} Jeg er klar.
+
+\scene{Underlægningstema \#3 begynder.}
+
+\scene{Jingle}
+
+\scene{V læser spørgsmål og svarmuligheder op efterhånden som de
+bliver vist på skærmen:}
+
+\question{Hvilket af de følgende 2 udsang er korrekt?}  {$P =
+  \textrm{NP}$}{$P \neq \textrm{NP}$}
+
+\says{V} Hvis du svarer rigtigt på dette spørgsmål bliver du
+kandidat. Det er alt eller intet!
+
+\says{P} Hmm... Jeg vil gerne bruge min sidste livline.
+
+\says{V} Fornuftigt.  Datamat, fjern ét af de forkerte svar
+
+\scene{Jingle.}
+
+\says{V}[utålmodigt] Jeg sagde: Datamat, fjern ét af de forkerte svar.
+
+\scene{Jingle}
+
+\says{V} Datamat?
+
+\scene{Jingle}
+
+\scene{V og P venter.}
+
+\scene{Jingle}
+
+\scene{V og P venter.}
+
+\scene{Jingle}
+
+\scene{V og P venter.}
+
+\scene{Jingle}
+
+\scene{Lys ud, tæppe for}
+
+\end{sketch}
+\end{document}

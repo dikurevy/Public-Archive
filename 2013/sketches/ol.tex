@@ -1,0 +1,261 @@
+\documentclass[a4paper,11pt]{article}
+
+\usepackage{revy}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[danish]{babel}
+
+
+\revyname{DIKUrevy}
+\revyyear{2013}
+% HUSK AT OPDATERE VERSIONSNUMMER
+\version{0.1}
+\eta{$5$ minutter}
+\status{Ikke færdig}
+
+\title{$O(L)$}
+\author{Troels, Brainfuck, Phillip}
+
+\begin{document}
+\maketitle
+
+\begin{roles}
+  \role{I}[Troels] Instruktør
+  \role{K0}[Mikkel] Kommentator
+  \role{K1}[Brainfuck] Kommentator
+  \role{I0}[Kristoffer] Undtagelseskaster
+  \role{I1}[Jonas] Undtagelseskaster
+  \role{I2}[Kasper] Nopslædeløber
+  \role{I3}[Lasse] Nopslædeløber
+  \role{I4}[Ejnar] Forhindringsscroller
+  \role{I5}[Mathias] Forhindringsscroller
+  \role{D}[Daniel] Dommer
+\end{roles}
+
+\begin{props}
+  \prop{Sportstøj til idrætsudøverne}
+  \prop{NOPslæde}[Person, der skaffer]
+  \prop{To datamater}[Person, der skaffer]
+  \prop{100-meter scrolls animation}[AV]
+  \prop{Undtagelseskast-animation}[AV]
+\end{props}
+
+
+\begin{sketch}
+
+  \scene{I0-I5, K0, K1 og D står på scenen. Vi antager at vi har en Turing-scene
+    med uendeligt meget plads. Alle pånær I3 hopper/løber på stedet
+    (de varmer op). I5 gnubber på sin mus.}
+
+  \says{K0} Godaften og velkommen til $O(L)$ 2016! Vi har kodet i 4 år, og har
+  forberedt et fantastisk program for jer.
+
+  \says{K1} Ja, jeg har faktisk kildeteksten lige her.
+
+  \says{K0} Og vi kan se at atleterne er begyndt at opvarme deres caches.
+
+  \says{K1} Pånær Lasse, som bruger just-in-time, dvs. ingen, opvarmning.
+
+  \says{K0} Og aftenens første disciplin er "undtagelseskast".
+
+  \scene{I0 træder frem og sætter sig ved sin datamat, I1 varmer
+    fortsat op i baggrunden, de andre atleter forlader scenen.}
+
+  \says{D} Er første deltager ved at være klar? 3... 2... 1...
+
+  \says{D} Kast din undtagelse!
+
+  \scene{I0 udfører et undtagelseskast.  På baglærredet ses et program
+    der kaster en undtagelse - en debugger viser en stack trace der
+    når ret højt op, før undtagelsen bliver grebet.  I0 fejrer sit
+    kast.}
+
+  \says{K0} Et storslået kast!  Det vil blive svært at overgå.
+
+  \scene{I1 træder frem og udfører et undtagelseskast.}
+
+  \says{K1} Spændingen stiger i auditoriet...
+
+  \scene{I1 kaster en undtagelse der ikke når særligt langt op.}
+
+  \says{K0} Arj, det var ærgeligt.  Det ser ud til at sejren går til...
+
+  \says{K1}[afbryder] Vent!
+
+  \scene{Debuggeren crasher pludseligt.}
+
+  \says{K1} Undtagelsen er nået helt ud til debuggeren...
+
+  \scene{Baglærredet viser en kernel panic med en stack trace.}
+
+  \says{K0} ...og hele vejen til kernen!  Det minder mig om $O(L)$ i
+  '78 hvor Stroustrup jo netop fremprovokerede en såkaldt....
+
+  \scene{D udnævner I1 til sejrherre.  I1 fejrer sin sejr.}
+
+  \says{K1} Og det er blevet tid til næste disciplin.
+
+  \scene{I2 og I3 går ind på scenen og begynder at sætte NOP-slæden op.}
+
+  \says{K0} Ja, og det er jo det klassiske NOP-slædeløb.  Deltagerne
+  er allerede ved at sætte NOP-slæden op.
+
+  \scene{I2 og I3 er vildt overgearede, løber på stedet, etc.  De
+    stiller sig bag deres stole.}
+
+  \says{K0} Der har været en del kritik af denne disciplins faglige
+  relevans, men langtids-slack er altså en datalogisk tradition af
+  stor kulturel betydning.  Selveste Peter Naur sagde faktisk til mig,
+  i 1965, at når man smurte sig en mad i kantinen, så...
+
+  \scene{\textbf{Pistolskud!}}
+
+  \says{K1} Og der lød startskuddet!
+
+  \scene{I2 og I3 kaster sig ned på stolene og stirrer stift ud i luften.}
+
+  \says{K0} Og mens der bliver NOPet til det yderste her på banen, kan vi jo
+  snakke om nogle af de mange protester som O(L)-kommitéen har været
+  oppe imod.
+
+  \says{K1} Den lokale idrætsforening DIKULAN, har påpeget at
+  storøkonomiske kræfter er begyndt at fylde for meget, efter at O(L)
+  er kommet til DIKU. Den "lille gamer" bliver glemt. Der er kun plads
+  til elite-sportsgrene, såsom clockcykelløb, bin-athlon, og
+  OSM-ugeopgaver.
+
+  \says{K0} En lokal dilettant ved navn Jyrki Katajainen udtaler: "Ja, även
+  jag också helt amatörmässigt och inte gillar så mycket skicklighet."
+
+  \scene{I2 og I3 sidder stadig og glor ud i luften.}
+
+  \says{K1} Der har også været meget kritik af finansierings-modellen bag O(L).
+
+  \says{K0} Ja, KU har brugt et 3-cifret kronebeløb på at afholde dette
+  arrangement, hvilket er mere end en fordobling af DIKUs normale
+  drifts-budget.
+
+  \scene{I2 begynder at læse i en SML-bog.}
+
+  \says{K1} Uuhh.. hov vent! Kasper er begyndt at kede sig, og er gået
+  i gang med at lave noget fornuftigt.
+
+  \says{D}[til I2] Du er ude!
+
+  \scene{I3 jubler, I2 ærgrer sig og smider SML-bogen på gulvet}
+
+  \scene{D kommer ind på scenen. Han peger på I3. I2 og I3 forlader
+    scenen og tager deres NOPslæde med sig.}
+
+  \says{K0} Og det bringer os til aftenens sidste disciplin. Det længe ventede
+  100 meter forhindrings-scroll.
+
+  \scene{I4 og I5 træder frem.}
+
+  \says{K1} De lokale arrangører har fundet en 100 meter lang kommentartråd på
+  Slashdot.
+
+  \says{K0} Ja, forhindrings-scroll er jo anderkendt som root blandt
+  de atletiske discipliner.  Hvis man lægger mærke til Mathias
+  påklædning, så minder den meget om Steve Jobs dengang han selv
+  deltog i de tidlige scrollkonkurrencer på Usenet.  Det var jo
+  dengang hvor...
+
+  \scene{\textbf{Pistolskud!}  I4 og I5 sætter sig med deres datamater
+    og mus, D forlader scenen, og der kommer et screendump fra hver
+    skærm op på bagvæggen i salen.}
+
+  \says{K1} Startskuddet er gået!
+
+  \says{K0} Og Ejnar tager hurtigt føringen. Hans mus er top-tunet!
+  Scroll-hjulet ligger i et velsmurt såkaldt "olympisk leje".
+
+  \says{K1} Ja, det er stadig en teknologi-drevet sport, selvom det jo
+  ikke er mange år siden at præstations-fremmende tastetryk såsom Page
+  Down og End blev bandlyst.
+
+  \says{K0} Det har helt klart gjort sporten en del mere spændende.
+
+  \says{K1} Og deltagerne er efterhånden nået 30 meter ned i tråden. Ejnar har
+  lagt sig solidt foran.
+
+  \says{K0} Det lader til at han har fundet en skjult indstilling i
+  about:config, som nedsætter linjeafstanden til $-0.01$.
+
+  \scene{I4 scroll'er langsommere og langsommere.}
+
+  \says{K1} Hov, hvad er det?! Ejnar er stødt ind i en forhindring!
+
+  \scene{En kommentar med følgende overskrift ses på I4's skærm: "Linux
+    har ingen fremtid på desktoppen, før Symantec får lavet en port af
+    Norton Antivirus." Han fortsætte med at scroll'e langsomt forbi.}
+
+  \says{K0} Formår han at komme forbi?
+
+  \scene{I4 stopper med at scroll'e.}
+
+  \says{K0,K1} Neeeej...!
+
+  \says{K1} Han falder for trolden! Han besvarer indlægget!
+
+  \scene{I4 skriver ``du har ikke brug for anti-virus. Linux har
+   indbygget immunitet overfor alle skadelige programmer!''}
+
+  \says{K0}[Ryster på hovedet] Det kan tage lang tid at komme videre nu.
+
+   \scene{I4 taster løs på sin kommentar. I5 scroll'er nærmere med stor hast.}
+
+   \says{K1} Og Mathias nærmer sig... tager han føringen?!!
+
+   \scene{I5 stopper med at scroll'e, og begynder at besvare I4's indlæg.}
+
+   \says{K0} Nej! Han bider på Ejnars indlæg!
+
+  \scene{I5 svarer på I4's indlæg: "`Du tager fejl!"'}
+
+  \scene{I4 svarer på I5's indlæg: "`Din mor tager fejl!"'}
+
+   \scene{I5 svarer på I4's indlæg: "`Din mor er tyk!"'}
+
+    \says{K1} Dette sker desværre kun alt for ofte i denne disciplin. Vi kan
+   komme til at være her hele aftenen folkens.
+
+   \scene{I4 kommer til at kigge over på skærmbilledet over scenen, og
+     opdager at det er I5 han skriver med (peger skiftevis overrasket
+     på overskærmen og på I5). I4 begynder panisk at scroll'e videre.}
+
+   \says{K0} Og Ejnar er videre!
+
+   \says{K1} Men hvad med Mathias?
+
+   \scene{I5 læner sig tilfreds tilbage, fordi han har vundet debatten.
+   Skriver i tråden: "`Nå, det kan du nok ikke svare tilbage på, hva'?"'
+   Han sidder i et par sekunder, kigger over på I4, og husker pludselig
+   at han er midt i en konkurrence. I5 begynder at scroll'e videre.}
+
+   \says{K1} Og Mathias er tilbage! De scroll'er derudaf.
+
+   \says{K0} Man kan se at det piner dem at skulle ignorere alle de mennesker
+   der tager fejl på internettet. Men de har vinder-instinktet.
+
+   \says{K1} De har "`eyes on the prize"', som man siger i kolonierne.
+
+    \scene{I4 når bunden af tråden, rejser sig og udfører en sejrs-dans.}
+
+   \says{K0} Og Ejnar har nået bunden! Der er stor jubel...
+
+   \says{K1} Men vent! Der er blevet indlæst 50 nye kommentarer!
+
+   \says{K0} Mathias stormer forbi, oooogg... Mathias når først til EOF!
+
+   \says{K1} Mathias vinder! En storslående terminering her i Store UP1.
+
+   \says{K0} Og en passende lukke-parentes for dette års $O(L)$.
+
+   \says{K1} Vi ses om 2 år i Lille UP1 til Pawel Winter $O(L)$. Til discipliner
+    som synkronprogrammering, unboksning og det noget risikable long jump.
+
+   \scene{Tæppe}
+
+\end{sketch}
+\end{document}
