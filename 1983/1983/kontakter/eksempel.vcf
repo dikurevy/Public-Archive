@@ -1,0 +1,27 @@
+BEGIN:VCARD
+VERSION:3.0
+FN:DIKUrevy ledelse
+N:;revyboss;;;
+EMAIL;TYPE=INTERNET;TYPE=HOME:revyboss@diku.dk
+END:VCARD
+
+BEGIN:VCARD
+VERSION:3.0
+FN:DIKUrevy revytter
+N:;DIKUrevy;;;
+EMAIL;TYPE=INTERNET;TYPE=HOME:revy@diku.dk
+END:VCARD
+
+BEGIN:VCARD
+VERSION:3.0
+FN:FysikRevy ledelse
+N:;FysikRevy;;;
+EMAIL;TYPE=INTERNET;TYPE=HOME:revy@fys.ku.dk
+END:VCARD
+
+BEGIN:VCARD
+VERSION:3.0
+FN:FysikRevy revyster
+N:;Revyster;;;
+EMAIL;TYPE=INTERNET;TYPE=HOME:revyster@fys.ku.dk
+END:VCARD
