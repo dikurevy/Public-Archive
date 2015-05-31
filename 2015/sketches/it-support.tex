@@ -1,0 +1,171 @@
+\documentclass[a4paper,11pt]{article}
+
+\usepackage{revy}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[danish]{babel}
+
+
+\revyname{DIKUrevy}
+\revyyear{2015}
+% HUSK AT OPDATERE VERSIONSNUMMER
+\version{0.1}
+\eta{$6$ minutter}
+\status{Sjov}
+
+\title{IT-support for systemadministratorer}
+\author{Niels, Troels, Brainfuck, Signe}
+
+\begin{document}
+\maketitle
+
+\begin{roles}
+\role{A}[Brandt] Systemadministrator
+\role{I}[Troels] IT-supporter
+\role{X0}[Troels] Instruktør
+\role{X1}[Amanda] Bonusinstruktør
+\end{roles}
+
+\begin{sketch}
+
+\scene{A og I sidder i hver sin ende af scenen.}
+
+\scene{A sidder ved en skærm og trykker Enter.}
+
+\says{A} Hov?
+
+\scene{A tager et telefonrør op og ringer til et nummer.}
+
+\says{I} Det er IT-support for systemadministration.  Hvad kan jeg hjælpe dig
+med?
+
+\says{A} Når jeg kører 'ping diku.dk', får jeg 'No route found'.
+
+\says{I} Det lyder ikke godt!  Hvad er din IP-adresse?
+
+\says{A} 2.12.144.91.
+
+\says{I} Og din MAC-adresse?
+
+\says{A} c5:85:08:44:37:43.
+
+\says{I} Hmm, det lyder meget rigtigt.  Kan du ikke lige køre uname streg a?
+
+\says{A} Den siger uname streg a kolon mellemrum command not found.
+
+\says{I} Undskyld, jeg mente uname mellemrum streg a.
+
+\says{A} Øjeblik. \act{taster} Linux mellemrum novonordisk mellemrum 3 punktum
+14 streg 2 streg amd 64 mellemrum hashtag 1 mellemrum S M P mellemrum Debian
+mellemrum 3 punktum 14 punktum 15 streg 2 mellemrum startparantes 2014 streg 08
+streg 09 slutparantes mellemrum x 86 underscore 64 mellemrum GNU skråstreg
+Linux.
+
+\scene{\texttt{Linux novonordisk 3.14.2-amd64 \#1 smp Debian 3.14.15-2 (2014/08-09) x86\_64 GNU/Linux}}
+
+\says{I} Sagde du virkelig 'Debian mellemrum 3 punktum 14 punktum 15 streg 2
+mellemrum startparantes 2014 streg 08 streg 09 slutparantes mellemrum x 86'?
+
+\scene{\texttt{Linux novonordisk 3.14.2-amd64 \#1 smp Debian 3.14.15-2 (2014/08-09) x86}}
+
+\says{A} Nej, altså, 'Debian mellemrum 3 punktum 14 punktum 15 streg 2
+mellemrum startparantes 2014 streg 08 streg 09 slutparantes mellemrum x 86
+\textbf{underscore 64}'.
+
+\scene{\texttt{Linux novonordisk 3.14.2-amd64 \#1 smp Debian 3.14.15-2 (2014/08-09) x86\_64}}
+
+\says{I} Aha, ja, hmm.  Det forklarer noget.  Hvad siger din dmessage?
+
+\says{A} 'd m e s g'?
+
+\says{I} Ja.  Joo...  Prøv 'dmesg mellemrum lodret streg mellemrum tail
+mellemrum streg n 20'.
+
+\says{A} \act{taster} Okay.  Den siger: 'firkantet parantes start mellemrum
+3 6 4 8 punktum 5 0 1 7 1 1 firkantet parantes slut mellemrum wlan0 kolon
+mellemrum send mellemrum auth mellemrum to mellemrum 0 0 kolon 0 b kolon 0 e
+kolon b 3 kolon b 0 kolon c 3 mellemrum startparantes try mellemrum 3 skråstreg
+3 parantes slut'.
+
+\scene{\texttt{[ 3648.501711] wlan0: send auth to 00:0b:0e:b3:b0:c3 (try 3/3)}}
+
+\says{A} ... 'linjeskift, firkantet parantes start mellemrum 3 6 4 8 punktum 5 0
+5' --
+
+\scene{\texttt{linjeskift, [ 3648.505}}
+
+\says{I} \act{afbryder} Nå, jeg tror at der er noget galt med din kerne.  Har du
+din kernekode liggende?
+
+\says{A} Nej, den fulgte ikke med.
+
+\says{I} Kør 'apt streg get mellemrum source mellemrum linux streg source
+streg backtick uname mellemrum streg r mellemrum lodret streg mellemrum cut
+streg d streg mellemrum streg f 1 mellemrum lodret streg mellemrum cut mellemrum
+streg d punktum mellemrum streg f 1 streg 2 backtick'.
+
+\scene{\texttt{apt-get source linux-source-`uname -r | cut -d- -f1 | cut -d. -f1-2`}}
+
+\says{A} Okay, nu henter den noget.
+
+\says{I} Mens vi venter, skal vi lige sikre os at du er
+sikkerhedsgodkendt.  Kan du ikke lige bruge din private nøgle til at
+signere alle de bytes du har sendt mig og give mig signaturen?
+
+\says{A} Jo... \act{taster} Det blev... 8.
+
+\says{I} Fint!
+
+\says{A} Nu er den hentet, og jeg er inde i mappen.
+
+\says{I} Okay, lyt godt efter nu.  Du skal patche din kerne, så find
+lige det rigtige sted.  Kør 'grep streg stort e mellemrum apostrof
+backslash W ip underscore cmsg underscore send backslash åbenparantes
+firkantet åbenparantes firkantet åbenparantes kolon alnum kolon
+firkantet lukkeparantes firkantet lukkeparantes firkantet åbenparantes
+firkantet åbenparantes kolon alnum kolon firkantet lukkeparantes
+underscore firkantet lukkeparantes firkantet lukkeparantes stjerne
+åbenparantes komma mellemrum stjerne firkantet åbenparantes circumflex
+komma firkantet lukkeparantes plus lukkeparantes kryllet åbenparantes
+3 kryllet lukkeparantes semikolon apostrof'
+
+\scene{\texttt{grep -E '\textbackslash{}Wip\_cmsg\_send\textbackslash([[:alnum:]][[:alnum:]\_]*(, *[\^{},]+)\{3\};']}}
+
+\says{A} Hmm, det virker ikke.
+
+\says{I} Hvad skrev du?
+
+\says{A} Jeg skrev 'grep streg stort e mellemrum apostrof backslash W
+ip underscore cmsg underscore send backslash åbenparantes firkantet
+åbenparantes firkantet åbenparantes kolon alnum kolon firkantet
+lukkeparantes firkantet lukkeparantes firkantet åbenparantes firkantet
+åbenparantes komma alnum kolon firkantet lukkeparantes underscore
+firkantet lukkeparantes firkantet lukkeparantes stjerne åbenparantes
+komma mellemrum stjerne firkantet åbenparantes circumflex komma
+firkantet lukkeparantes plus lukkeparantes kryllet åbenparantes 3
+kryllet lukkeparantes semikolon apostrof'
+
+\scene{\texttt{grep -E '\textbackslash{}Wip\_cmsg\_send\textbackslash([[:alnum:]][[,alnum:]\_]*(, *[\^{},]+)\{3\};']}}
+
+\says{I} Nej, jeg sagde åbenparantes \textbf{kolon}.
+
+\says{A} NÅÅÅÅÅÅÅ, nu virker det.  Nu siger den 'err mellemrum lighedstegn
+mellemrum ip underscore cmsg underscore send startparantes sock underscore net
+startparantes s k slutparantes komma mellemrum m s g komma mellemrum ampersand i
+p c komma mellemrum s k - større end sk underscore family mellemrum lighedstegn
+lighedstegn mellemrum stort a stort f underscore stort i stort n stort e stort t
+6 slutparantes'.
+
+\says{I} Hmnnnm, så forstår jeg ikke...  vent, har du et dollartegn
+eller et hashtag i din terminallinje?
+
+\says{A} Øh, et dollartegn.
+
+\says{I} SÅ ER DET JO DET DER ER GALT!
+
+\scene{LYS NED.}
+
+\end{sketch}
+\end{document}
+
+% Vi skal lige tjekke om din entropi er i orden.  Kan du ikke lige læse din /dev/urandom?
