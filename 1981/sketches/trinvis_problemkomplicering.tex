@@ -1,0 +1,127 @@
+\documentclass[a4paper,11pt]{article}
+
+\usepackage{revy}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[danish]{babel}
+
+
+\revyname{DIKUrevy}
+\revyyear{1981}
+% HUSK AT OPDATERE VERSIONSNUMMER
+\version{0.1}
+\eta{$n$ minutter}
+\status{Ikke færdig}
+
+\title{Trinvis problemkomplicering}
+\author{?}
+
+\begin{document}
+\maketitle
+
+\begin{roles}
+  \role{M}[] Mand
+\end{roles}
+
+
+\begin{sketch}
+
+  \scene{En mand går rundt med hænderne på ryggen, han bemærker ikke
+    straks publikum.  Da han opdager dem udbryder han:}
+
+  \says{M} Åh, der er I! \act{Peger.  Pause.}
+
+  \says{M} Ja, jeg vil gerne sige tak for invitationen til dette
+  kollokvium, det er rart at se det store fremmøde.
+
+  \says{M}[med hævet stemme] Emnet er i dag som annonceret: Trinvis problemkomplicering.
+
+  \says{M} Det er en stor personlig tilfredsstillelse for mig at få
+  lov til at tale om dette interessante emne, der både interesserer
+  mig som forsker, men osse som privatperson, det har nemlig vist sig,
+  at jeg faktisk har kunnet anvende teorien indenfor privatsfæren.
+
+  \says{M} Det hele startede med, at jeg fik et kandidatstipendiat, og
+  da dette var udløbet, måtte jeg, for at få det forlænget lægge nogen
+  forskningsresultater på bordet.
+
+  \says{M} Vel, tænkte jeg.  Her gælder det om at gøre et godt
+  indtryk.  Jeg må så vælge et kendt problem, som alle føler sig
+  fortrolige med.
+
+  \says{M} Efter lang tids søgen i de førende matematiske tidsskrifter
+  fandt jeg endelig en forholdsvis simpel og overskuelig ligning, der
+  kunne bruges.
+
+  \scene{$1+1=2$ kommer op på lærredet.}
+
+  \says{M} Mit problem var: Det første skridt i problemstillingen er
+  altid det der får de mest vidtgående konsekvenser, derfor gjaldt det
+  som at finde nogen fleksible løsninger.
+
+  \scene{$\ln(e)=1 \& \sin^{2}(x)+\cos^{2}(x)+\cos^{2}(x)=1$ kommer på
+    lærredet.}
+
+  \says{M} Nu var der endelig lidt stil over ligningen og efterhånden
+  var den blevet rimeligt kompliceret.
+
+  \scene{$\ln(e)+\sin^{2}(x)+\cos^{2}(x)=2$ kommer på lærredet.}
+
+  \says{M} Men det var som om der manglede noget.  Måske kunne det
+  hjælpe at indføre lidt summation...
+
+  \scene{$\sum_{n=0}^{\infty}1/2^{n}=2$ kommer på lærredet.}
+
+  \says{M} ...så ville det også se mere videnskabeligt ud.
+
+  \scene{$\ln(e)+sin^{2}(x)+cos^{2}(x)=\sum_{n=0}^{\infty}1/2^{n}$ kommer op.}
+
+  \says{M} Efter disse komplicerede overvejelser havde jeg et godt
+  grundlag at arbejde videre på.  Men det gik lidt trægt.
+
+  \says{M} Først da en af mine venner fra højspændingslaboratoriet
+  fortalte mig, at højspændingsledninger hænger efter kædeligningen,
+  kom jeg i tanker om ligningen.
+
+  \scene{$\cosh(y)\cdot\sqrt{1-\tanh^{2}(y)}=1$ kommer op.}
+
+  \says{M} Uhm, lækre transcendente funktioner.  Og nu gik det slag i slag.
+
+  \says{M} Og det varede ikke længe før jeg kom i tanke om den gamle grænseovergang.
+
+  \scene{$\lim_{z\rightarrow\infty}(1+1/z)^{z}=e$ kommer op.}
+
+  \says{M} Dette førte frem til:
+
+  \scene{$\ln(\lim_{z\rightarrow\infty}(1+\frac{1}{z})^{z}+\sin^{2}(x)+\cos^{2}(x)=\sum_{m=0}^{\infty}\frac{\cosh(y)\sqrt{1-\tanh^{2}(y)}}{(\log_{2}(4))^{n}}$}
+
+  \says{M} Et virkeligt smukt udtryk - candy floss for nethinden... Og
+  aldeles ikke umiddelbart gennemskueligt.
+
+  \says{M} Nu mente jeg efterhånden at have fundet det helt rigtige
+  til min rapport, men for at være sikker på, at det havde det rette
+  kompleksitetsniveau, skrev jeg den på fransk.
+
+  \says{M} Men hvad nu hvis der var en franskmand i
+  bedømmelsesudvalget?
+
+  \says{M} Løsningen på dette problem fik jeg af nogle polakker som
+  havde været med på det polske gymnastiklandshold.  Disse polakker
+  (som ellers var ganske flinke og rare mennesker) var hoppet af under
+  en europaturne, de var blevet omvendt da de så vestens goder.
+
+  \says{M} Derfor blev de blandt venner kaldt: "`De omvendte polakker"'.
+
+  \says{M} Sådan tænkte jeg, omskriv ligningen til omvendt polsk
+  notation, så skulle jeg have dækket mig ind.
+
+  \scene{Ligningen kommer op.}
+
+  \says{M} Og så var den hjemme!  Jeg fik forlænget mit stipendiat:
+
+ \scene{\[1\ 1\ z\ /\ +\ z\ \uparrow\ \lim_{z\rightarrow\infty}\ln\ x\ \sin\ 2
+   \uparrow\ x\ \cos\ 2\ \uparrow\ +\ +\ y\ \cosh\ 1\ y\ \tanh\ 2\ \uparrow\ -
+   \sqrt{}\ \cdot\ 4\ \log_{2}\ n\ \uparrow\ \sum_{n=0}^{\infty}\]}
+
+\end{sketch}
+\end{document}
