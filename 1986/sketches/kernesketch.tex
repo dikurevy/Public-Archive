@@ -1,0 +1,203 @@
+\documentclass[a4paper,11pt]{article}
+
+\usepackage{revy}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[danish]{babel}
+\usepackage{alltt}
+\usepackage{underscore}
+
+
+\revyname{DIKUrevy}
+\revyyear{1986}
+% HUSK AT OPDATERE VERSIONSNUMMER
+\version{1.0}
+\eta{$n$ minutter}
+\status{Færdig}
+
+\title{Kernesketch}
+\author{JC, hvem det så end er}
+
+\begin{document}
+\maketitle
+
+\begin{roles}
+\role{L}[Vilmar] Lærer som leverer al talen
+\role{P1}[Mia] En CPU (som i senere versioner er en proces)
+\role{P2}[Lotte] En anden proces
+\role{SE}[Karen] Syngeenhed
+\role{NE}[Lise] Nummerproducerende enhed
+\role{Tom}[Karoline] Semafor
+\role{Fuld}[Inger] Anden semafor
+\end{roles}
+
+\begin{props}
+\prop{To store vækkeure}[]
+\prop{Et passende antal eksemplarer af ``lystige viser''}[]
+\prop{To bakker, hvoraf den ene skal ødelægges}[]
+\prop{Overhead eller flip-over}[]
+\prop{Sandsynligvis div. skilte og kasser}[]
+\end{props}
+
+
+\begin{sketch}
+
+\scene{En dat1forelæsning om kerner og multiprogrammering.}
+
+\scene{Syngeenhedens funktion: SE får en opslået ``lystige viser'' fra cpu,
+  synger et vers og dropper bogen på gulvet.}
+
+\scene{Nummerproducerende enheds funktion: Leverer cpu en lap pair med et nummer
+  på.}
+
+\scene{Semaforoperationer:
+\begin{description}
+\item[Vent] Vil have en ``lystige viser''. Hvis der ikke er nogen sover
+  processen, dvs. at semaforen ``grabber'' processen.
+\item[Signaler] Aflever en ``lystige viser''. Hvis der er en proces, der sover,
+  vækkes den (vha vækkeuret) og får overleveret bogen.
+\end{description}
+}
+
+\says{L}
+Ja, godaften og velkommen, jeg ser at dormitoriet er godt fyldt, men
+augusteksamen nærmer sig jo også. Jeg har i samråd med instruktorerne besluttet
+at anvende denne ekstraordinære lejlighed til at forelæse lidt om
+multiprogrammering. både rapportopgave-- og eksamensbesvarelserne viser også, at
+det er tiltrængt.
+
+Se, emnet for aftenens forelæsning er \textbf{samtidig afvikling af parallelle
+  processer.}  Hvordan kan det nu lade sig gøre ?  JO.  I moderne datamater kan
+de ydre enheder, f.eks. skrivere eller læsere arbejde uafhængigt af og samtidig
+med centralenheden -- den såkaldte ``cpu'' eller ``værket'' som det også kaldes
+i fagkredse. Hver ydre enhed indeholder en lille styreenhed, som styrer enheden,
+deraf navnet. Ser vi på en typisk ydre enhed -- en sangenhed -- udfører
+styreenheden en algoritme noget a la:
+\begin{alltt}
+fig.1:    \underline{Repeat}
+               Klar := \underline{TRUE};
+               \underline{Repeat} \underline{Until} Bog_Modtages;
+               Klar := \underline{FALSE};
+               Syng_Sang;
+          \underline{Forever};
+\end{alltt}
+
+\says{L}
+Lad mig demonstrere.
+
+\scene{SE ind, L demonstrerer.}
+
+\says{L}
+En anden typisk enhed -- en sidenummerproducerende enhed -- vil f.eks. udføre:
+\begin{alltt}
+fig.2:    \underline{Repeat}
+               Klar := \underline{TRUE};
+               \underline{Repeat} \underline{Until} Der_bedes_om_et_nummer;
+               Klar := \underline{FALSE};
+               Aflever_nummer;
+          \underline{Forever};
+\end{alltt}
+
+\says{L}
+Bemærk at enheden har uendelig mange numre til sin rådighed. Det vil jeg dog
+ikke demonstrere.
+
+Hvis centralenheden skal bruge f.eks. syngeenheden, må der finde en vis
+synkronisering sted, centralenheden må nemlig vente på, at syngeenheden er
+klar. Dette kan f.eks. foregå som:
+\begin{alltt}
+fig.3:    \underline{Repeat}
+               \underline{Repeat} \underline{Until} Klar;
+               Aflever_opslået_bog;
+          \underline{Forever};
+\end{alltt}
+
+\says{L}
+Vi ser her, at variablen klar anvendes af begge enheder; Centralenheden aflæser
+og venter, og styreenheden sætter klar når den er klar. Klart, ikke ?
+Tilsvarende bruges bogen til at indikere, at centralenheden er klar.
+
+Hvis vi kalder centralenhedens lille algoritme for ``syng'' og dens venten på en
+sidenummerproducerende enhed for ``hent_nummer'', har vi da følgende lille
+algoritme:
+
+\scene{NE og P1 ind}
+\begin{alltt}
+fig.4:    \underline{Repeat}
+               Hent_nummer;             (* fra NE til P1      *)
+               slå_op_i_bog;            (* P1 slår op              *)
+               Syng;                    (* SE får bog, synger *)
+          \underline{Until} ikke_flere_numre;
+\end{alltt}
+
+\says{L}
+Bemærk slutbetingelsen, vi har jo ikke hele dagen.
+
+\scene{Demonstration.  Først langsomt, så hurtigere}
+
+\says{L}
+Det kører jo helt fint og uproblematisk, men vi bemærker at centralenheden
+\textbf{venter} det meste af tiden, idet de ydre enheder er mange gange
+langsommere. Derfor har man fundet på, at centralenheden jo bare kan lave noget
+andet i den tid, den ellers skulle have ventet. Det fører os over til kernen i
+stoffet, nemlig parellelle processer. Vi reformulerer vores løsning fra før, men
+denne gang som to processer, som vi forestiller os kører samtidigt -- virtuelt
+parallelt naturligvis.
+\begin{alltt}
+fig.5:    \underline{Repeat}  (* P1 *)               \underline{Repeat}   (* P2 *)
+               Hent_nummer;                \underline{While} p1_har_bakke \underline{do};
+               \underline{While} p2_har_bakke \underline{do};      p2_har_bakke := \underline{TRUE}
+               p1_har_bakke := \underline{TRUE}        tag_bakke;
+               tag_bakke;                  tag_bogen_i_bakken;
+               slå_op_i_bog;               aflever_bakken;
+               læg_bog_i_bakken;           p2_har_bakke := \underline{FALSE}
+               aflever_bakken;             syng;
+               p1_har_bakken := \underline{FALSE}
+          \underline{Until} ikke_flere_numre;              \underline{Until} ikke flere numre;
+\end{alltt}
+
+\says{L}
+Vi ser her, at de to processer kommunikerer ved hjælp af en fælles variabel
+kaldet en bakke, som kun een af dem må have adgang til ad gangen.
+
+\act{prøver, det kører og cpu'en udnyttes meget bedre}
+
+\says{L}
+Glimrende, strålende.  Det er jo ganske tydeligt, at ikke alene udnyttes
+centralenheden bedre, de ydre enheder kører også meget bedre.
+
+Løsningen er imidlertid ikke uproblematisk. Betragter vi -- af
+overskuelighedsgrunde -- hver af processerne som selvstænigt kørende, \act{P2
+ind} vil vi få følgende situation, hvis de på et tidspunkt ``kommer i trit'':
+
+\act{kører lige hurtigt, slås om bakken, som går midt over}
+
+\says{L}
+Problemet er, ar den fælles variabel, bakken, ikke opdateres udeleligt, vi så
+lige hvordan bakken blev delt i 2.  For at skire udelelig adgang indfører vi en
+særlig type variable, kaldet semaforer \act{TOM og FULD ind} med de tilhørende
+operationer ``vent'' og ``signaler''.
+
+\act{demonstrerer i følge beskrivelsen af operationerne}
+
+\says{L}
+Kalder vi denne semafor ``tom'' og denne for ``fuld'', kan vi opskrive vores
+løsning således, at ``fuld'' har nul ``lystige viser'' og ``tom'' har een
+``lystige viser''.  Vi ser her, at semaforerne ikke alene styrer tilgangen til
+bakken, de overflødiggør den også.
+\begin{alltt}
+fig.6:    \underline{Repeat}                        \underline{Repeat}
+               Hent_nummer;               vent (fuld);
+               vent (tom);                syng;
+               slå_op_i_bog;              signaler (tom);
+               signaler (fuld);
+          \underline{Until} ikke_flere_numre;       Forever;
+\end{alltt}
+
+\says{L}
+Og mere når vi desværre ikke idag, men næste gang vil jeg komme ind på begrebet
+``kerner''. Tak for i dag.
+
+\end{sketch}
+
+\end{document}

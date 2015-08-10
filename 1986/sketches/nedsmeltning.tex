@@ -1,0 +1,330 @@
+\documentclass[a4paper,11pt]{article}
+
+\usepackage{revy}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[danish]{babel}
+
+
+\revyname{DIKUrevy}
+\revyyear{1986}
+% HUSK AT OPDATERE VERSIONSNUMMER
+\version{1.0}
+\eta{$n$ minutter}
+\status{Færdig}
+
+\title{Nedsmeltningssketch}
+\author{Flemming, Karen, Vilmar}
+
+\begin{document}
+\maketitle
+
+\begin{roles}
+\role{I}[Lise] Interviewer
+\role{E}[Vilmar] Ekspert
+\role{SB}[Ragnar] Studerende/russisk bonde
+\role{BI}[Lotte] Bestyreren/russisk kraftværksinspektør
+\role{L1}[Mia] Lystig svend/kosak
+\role{L2}[Lars] Lystig svend/kosak
+\role{L3}[Charlotte] Lystig svend/kosak
+\end{roles}
+
+\begin{props}
+\prop{5 kosaksæg}[]
+\prop{Overheadprojektor}[]
+\prop{Vodkaflaske, porcelænssovsekande, 4 kopper}[]
+\prop{4 blå nykøbing, 4 glas}[]
+\prop{Papkasser, illuderende VAX/kraftværk mm.}[]
+\prop{Et spil kort, en tromlerevolver med knaldperler}[]
+\prop{Et bord, 4 stole}[]
+\end{props}
+
+\begin{sketch}
+  \scene{Scene 1: Et interview, hvor en ekspert forklarer noget om nedsmelting,
+    udslip og halveringstider.}
+
+\says{I} Dete er DIKU-nyt med en ekstraudsendelse i anledningen af ulykken med
+kernekraften på Dat-1.  Hos mig i dormitoriet har jeg Kerne-eksperten K. Hansen,
+som vil fortælle nærmere om, hvad der egentlig er gået for sig.
+
+\says{E} Tak. Jeg bryder mig nu ikke om, at du kalder det ``en ulykke'', i
+fagkredse omtales den slags som ``hændelser'' i forbindelse med kerner. Ja, der
+findes ligefrem hændelsesstyrede kerner.
+
+\says{I} Nåh, jah -- men denne øhh hændelse, kan vi få et bud på, hvad der
+egentlig er sket ?
+
+\says{E} Det er meget svært at udtale sig om på nuværende tidspunkt, men alt
+tyder på, at der er tale om en såkaldt \textbf{kernenedsmelting}.
+
+\says{I} En \textbf{KERNENEDSMELTING !!!}
+
+\says{E} Ja, ja, ja -- slå nu koldt vand i blodet. Lad mig forklare. Som alle jo
+ved, indeholder de fleste datamater -- eller ``værker'', som vi kalder dem -- en
+kerne, som styrer processerne.  Normalt reguleres kernens aktivitet af
+forskellige operationer og mekanismer, f.eks. afbrydelser, så værket kører
+kontrolleret og stabilt. Jeg kunne forestille mig, at der må være sket en
+blokering af en af de regulerende mekanismer, så kernener kommet ud af kontrol.
+
+\says{I} ER det det, man kalder ``det værst tænkelige uheld'' ?
+
+\says{E} Nu er De der igen med Deres ``uheld''.  Her er tale om en
+\textbf{hændelse}.  Iøvrigt synes jeg, at det er en negativ måde at se det p.  I
+forbindelse med kerner plejer vi at tale om ``det bedst tænkelige held'' --
+især når den kommer til at virke.  Men for at vænde tilbage til den aktuelle
+hændelse, så yder alt på, at der må være sket en blokering af kølemekanismen,
+det såkaldte ``overløb''.
+
+\says{I} Overløb ?
+
+\says{E} Ja.  En stor del af kernens aktivitet vil være aritmetiske
+operationer.  Disse vil som regel gå som planlagt, men i visse tilfælde vil det
+gå galt, og resultatet vil være momentant uden for kontrol, idet det kræer flere
+bit, end den pågældende lagerenhed kan rumme.  Normalt klares dette ved at man
+leder de overskydende bit væk gennem overløbet, men hvis dette er defekt, sker
+der en ophobning af overløbsbit, som i ekstreme tilfælde kan medføre en
+kernenedsmeltning.
+
+\says{I} Jamen -- er det ikke farligt. Jeg tænker her på udslip.
+
+\says{E} Der vil naturligvis ske et vist udslip, det kan man ikke udelukke --
+men at gå så vidt, som at kalde det farligt, nej det vil jeg ikke. Det kommer an
+på halveringstiden, dvs. den tid det tager at halvere en bitmønster-værdi.
+
+\says{I} Bitmønsterværdi ??
+
+\says{E} Ja.  I værker af denne type vil bittene samles i bitmønstre. Normalt
+halveres et bitmønster relativt hurtigt, nemlig i løbet af den tid det tager at
+udføre en fortegnsbevarende højreskiftsoperation.
+
+\says{I} Åh, javel, ja. Ja det er klart, det forstår jeg fuldstændig.
+
+\says{E} Der er her tale om en såkaldt kontrolleret halvering, som ved
+gentagelser hurtigt medfører en neutralisering af bitmønsteret, hvis værdi højst
+vil være nul.  Der er imidlertid en særlig isotop -- den såkaldte MAKINT -- som
+kan være genstand for ukontrolleret halvering.  Her kan vi historisk beregne
+halveringstiden, men vi kan ikke styre den.
+
+\says{I} MAXINT?
+
+\says{E} MAXINT er det største positive repræsenterbare heltal.  Jeg har vist en
+planche over den anslåede halvering af MAXINT.
+
+\scene{Planche}
+
+\says{E} Vi ser her, at det først er omkring 1990 at MAXINT bliver nul, dette
+gælder dog kun for de såkaldte to-komplements-værker.  For de noget ældre og
+mere primitive et-komplement-værker, som vi ser det på f.eks. RECKU eller RECAU,
+sker der slet ingen halvering af MAXINT, som konstant holder sig på en meget høj
+værdi.  På RECKU er MAXINT-værdien målt til at være $2^{35} - 1$, og den har ike
+ændret sig siden midt i 70'erne.  En anden ulempe ved et-komplement-værker er
+deres noget mere komplicerede overløbssystem samt at de indeholder den meget
+ubehagelige isotop minus-nul, som kan volde frygteligste problemer.
+
+\says{I} Tror du, der er sluppet nogen MAXINT ud ?
+
+\says{E} Det er svært at sige, men jeg tvivler på det.  MAXINT er som sagt et
+meget stort tal, så hvis det var sluppet ud, ville man have set det.
+
+\says{I} Ja, mange tak, Hansen, hvis delige vil blive her et øjeblik. Jeg har
+netop fået at vide, at vi har en optagelse fra DIKU's maskinstue fra minutterne
+omkring ulykken.
+
+\says{E} \underline{Hændelsen!!}
+
+\says{I} Omkring hændelsen, naturligvis. Vi viser nu et klip med Jørn Bo Sørense
+og hans lystige svende.
+
+\scene{Scene 2: Intervieweren og eksperten trækker sig tilbage til et diskret
+  hjørne af scenen.  INd kommer de tre lystige svend (LS1, LS2, LS3) syngende:}
+\end{sketch}
+
+\begin{song}
+\sings{LS1-3}
+Hej ho, hej hå, er VAX'en gået i stå
+det ordner vi en anden dag, hej ho, hej hå, hej hej
+hej ho, hej hå, vi ta'r os et par blå
+tra la la la, la la la la , hej ho, hej hå
+\end{song}
+
+\begin{sketch}
+  \scene{LS1 går hen til VAX'en, lukker frontpanelet op og fremdrager 3 blå
+    nykøbing og 3 glas.  LS2 tager -- fra en kasse mærket ``bridge-net'' -- et
+    spil kort.  LS3 sætter ig ved et bord midt på scenen, smækker fødderne op,
+    filer negle.}
+
+\says{LS1} Pladerne ned, vi skal arbejde. Ha, ha. \act{sætter sig}
+
+\says{LS2} \act{sætter sig, deler kort ud}. Ho, ho, ho.
+
+\says{LS3} Skal vi ikke synge en lystig vise, hi hi hi ?
+\end{sketch}
+
+\begin{song}
+\sings{LS1-3}
+Katinka, katinka, luk vinduet op
+nu vil jeg spendere en vise
+Et forår har kærtegnet pigernes krop
+og nu er du lige til at spise
+men først skal vi ha' os en blå eller to
+og så skal Katinka og Søren til ro
+Katinka, katinka, luk vinduet op
+og hør min harmonika vise.
+Tra la la la ........
+\end{song}
+
+\begin{sketch}
+\scene{mens der synges, drikker de blå nykøbing, og spiller kort under megen
+  latter. ind kommer bestyreren (BI)}
+
+\says{BI} Sig mig lige -- hvad foregår der her ?
+
+\says{LS1} Øh -- vi gennemprøver det nye Bridge-net, specielt i forbindelse med
+flydende aritmetik, ha ha.
+
+\scene{LS2 henter en blå og et glas til BI, hælder op, spilder}
+
+\says{BI} Nå ja, jeg kan se at overløb fungerer til overflod.
+
+\says{LS3} Ha, ha, den var god.  Ellers risikerer vi jo en kernenedsmeltning.
+
+\scene{Alle fire er ved at komme om af grin over denne bemærkning}
+
+\says{BI} Jamen så skål da -- og lykke til med arbejdet. \act{bestyreren ud
+  igen}
+
+\says{LS1-3} Katinka, katinka ......
+
+\act{En studerende (SB) kommer løbende forpustet ind}
+
+\says{SB} Skynd jer, kom. Den er helt gal oppe i motorolarummet, vi kan ikke
+downloade.  Stemningen er på kogepunktet.
+
+\says{LS1} Kan I ikke downloade, ha ha.  Et øjeblik \act{går hen til bridge-net
+  boksen, trykker på en knap}. Sådan, ha ha.
+
+\says{SB} Kan vi downloade nu ?
+
+\says{LS1} Nej. Men nu har jeg down'et nettet sa I heller ikke kan køre på
+terminalerne til VAX'en, så gør det ikke så meget at I ikke kan downloade, ha
+ha.
+
+\says{SB} Altså det går galt det her, folk er enormt ophidsede, der er
+aflevering om tre dage -- og -- og -- måske koger dete hele over altså !
+
+\says{LS3} Ha ha, en nedsmeltining måske. Nej, du -- vi klarer det hele med lidt
+flydende overløb. \act{hælder lidt øl ned ad SB. Der må næsten ingenting være
+  tilbage i flasken}.
+
+\says{LS2} Nå, det var da kedeligt, ha ha, men det betyder nok ikke noget, vi
+ser på det onsdag i næste uge, smut du bare igen. \act{SB ud}
+
+\says{LS1-3} Frokost ! Hej ho, hej hå, .... \act{går syngende ud}.
+
+\scene{Lyset slukkes over det meste af scenen undtagen der hvor I og E befinder
+  sig. Mens de taler sørger flyttemændene for at ændre scenen, så en passer til
+  scene 3}
+
+\says{I} Ja, det bekræfter jo din hypotese om årsagen til u -- øh til
+\textbf{hændelsen}, ikke ?
+
+\says{E} I høj grad.  Vi så her klart at det centrale overløbssystem svigtede.
+Meget interessant, jeg kunne tænke mig at bruge dette som basis for en
+rekonstruktion af en anden hændelse for nylig.
+
+\says{I} En anden hændelse ?
+
+\says{E} En anden hændelse, ja.  Et \textbf{strålende} eksempel, hvis jeg selv
+må ha' lov.  Her kan vi med meget stor sikkerhed ...
+
+\says{I} \act{afbryder} Sikkerhed ?  Jeg troede sikkerhed nærmest var en by i
+Rusland ?
+
+\says{E} Ja, netop  Se nu selv.
+
+\scene{Scene 3: Som scene 2 bortset fra at
+\begin{enumerate}
+\item Alle taler russisk (eller noget der lyder som russisk) og er iført kosakskæg.
+\item ``VAX'en'' drejes 180 grader og bliver til kontrolpanelet på et atomkraftværk
+\item De øvrige rekvisitter er også ændret -- men det fremgår
+\end{enumerate}}
+
+\scene{Ind kommer de tre lystige svende syngende, melodien er pramdragerens sang.}
+\end{sketch}
+
+\begin{song}
+\sings{LS1-3}
+Hum hum hum -- hum. HO.
+Hum hum hum -- hum. HO.
+Atomski kaputski fexi Njetski
+Hum hum hum -- hum. HO.
+\end{song}
+
+\begin{sketch}
+\scene{LS1 går hen til kontrolpanelet, lukker det op, tager vodkaflaske og
+  sovsekande over til bordet, tømmer flasken omhyggeligt over i kanden.  Henter
+  så tre tekopper samme sted. Ser sig forsigtigt omkring, prøver så at tømme
+  flasken ned i sin hals.}
+
+\says{LS2}  Njet ! Glasski forbudtski ! \act{henter pistol i samme kasse, som
+  kortspillet var i.}
+
+\scene{LS3 sætter sig med fødderne på bordet.}
+
+\says{LS1} Arbejdski. HO!
+
+\says{LS2} \act{skyder med revolveren} Hik !
+
+\says{LS3} Bum bum. Muskiski !
+
+\says{LS1-LS3} \act{4 første linier af ``katinka'', melodi: ``kalinka''}
+
+\scene{Mens der synges hældes vodka fra kanden op i kopperne, der skåles, grines
+  og drikkes. Ind kommer inspektøren (BI)}
+
+\says{BI} Stjepin hva skerski ?
+
+\says{LS3} Donnerwetter ! Inspektørski.
+
+\says{LS1} Afprøvning rouletski, da da. HO !
+
+\scene{LS2 sætter pistolen til tindingen, trykker af.  Det skal være en
+  ``klikker''}
+
+\says{BI} Da da, alkoholski medicinski njet !
+
+\says{LS3} Hik ! Njet alkoholski, podlika. Smagski ? \act{henter den fjerde kop,
+  hælder en kop ``sovs'' op fra kanden, rækker til inspektøren, som drikker den
+  med stort velbehag. (``podlika'' er russisk og betyder faktisk sovs -- har jeg
+  ladet mig fortæle)}
+
+\says{BI} Ahhh. Splendida podlika sovsski imot radioaktiviski.
+
+\scene{Alle 4 er ved at komme om af grin over denne bemærkning}
+
+\says{BI} Nastarovja -- bye bye.
+
+\scene{En russisk bonde (SB) kommer forpustet ind}
+
+\says{SB} Kvikski, Tjernobyl bum bumski. Samovar kaput, ikke koke te.
+
+\says{LS1} Ikke koke te ? Momentski. \act{går hen til kontrolpanelet, trykker på
+  en knap} So, HO.
+
+\says{SB} Samovar funkski, koke te nu, da ??
+
+\says{LS1} Njet. Tjernobyl bum bumski, samovar bum bumski, tutti bum bumski,
+klask i numski \act{klasker SB bagi}. HO HO.
+
+\says{SB} Gospodin pu pu ! Literaturnaja Gaseta, kameratski.
+
+\says{LS1-3} Frokostski. \act{alle ud, syngende : Hum hum hum ....}
+
+\scene{Eksperten er gået ud tidligere, intervieweren bliver tilbage.}
+
+\says{I} Ja, for at kunne holde publikum orienteret om hændelsen, vil jeg bede
+de lystige svende om at klargøre lokalnettet, så vi løbende kan følge med.
+
+\scene{Interviewer ud, sketchski slutski}
+\end{sketch}
+\end{document}
