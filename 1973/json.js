@@ -1,281 +1,364 @@
 {
+   "name" : "DIKUrevy",
+   "year" : "1973",
    "acts" : [
       {
-         "length" : 0,
+         "title" : "Akt 1",
          "materials" : [
             {
-               "roles" : [
-                  {
-                     "abbr" : "S",
-                     "title" : "Sanger",
-                     "actor" : "Rolleindehaver"
-                  }
-               ],
+               "revueyear" : "1973",
+               "length" : 0,
+               "props" : [],
                "melody" : "``Kom, kom, kom til frelsermøde''",
-               "location" : "sange/Bibliotekssketch.tex",
-               "status" : "Færdig",
-               "version" : "1.0",
-               "author" : "?",
+               "location" : "sange/sangnr1.tex",
                "revuename" : "DIKUrevy",
-               "length" : 0,
-               "props" : [],
+               "author" : "?",
+               "title" : "Sang nr. 1 (?)",
                "order" : 1,
-               "title" : "Bibliotekssketch - sang",
+               "instructors" : [],
                "type" : "song",
-               "revueyear" : "1973"
-            },
-            {
+               "status" : "Færdig",
+               "version" : "0.1",
                "roles" : [
                   {
-                     "abbr" : "A",
-                     "title" : "Rolleforklaring",
-                     "actor" : "Skuespiller"
+                     "actor" : "",
+                     "abbr" : "S",
+                     "title" : "Sanger"
                   }
-               ],
-               "location" : "sketches/Bibliotekssketch.tex",
-               "status" : "Ikke færdig",
-               "version" : "1.0",
-               "author" : "?",
-               "revuename" : "DIKUrevy",
-               "length" : 0,
-               "props" : [],
+               ]
+            },
+            {
+               "type" : "sketch",
                "order" : 2,
+               "instructors" : [],
+               "roles" : [
+                  {
+                     "title" : "Lille, forlegen fyr",
+                     "abbr" : "A",
+                     "actor" : "Jan"
+                  },
+                  {
+                     "actor" : "Lissi",
+                     "title" : "Bibliotekar",
+                     "abbr" : "B"
+                  },
+                  {
+                     "actor" : "Arne",
+                     "title" : "Bibliotekar",
+                     "abbr" : "C"
+                  },
+                  {
+                     "title" : "Bibliotekar",
+                     "abbr" : "D",
+                     "actor" : "Mette"
+                  }
+               ],
+               "version" : "1.0",
+               "status" : "Færdig",
+               "props" : [],
+               "revueyear" : "1973",
+               "length" : 0,
+               "author" : "?",
+               "revuename" : "DIKUrevy",
                "title" : "Bibliotekssketch",
-               "type" : "sketch",
-               "revueyear" : "1973"
+               "location" : "sketches/Bibliotekssketch.tex"
             },
             {
-               "roles" : [
-                  {
-                     "abbr" : "S",
-                     "title" : "Sanger",
-                     "actor" : "Rolleindehaver"
-                  }
-               ],
-               "melody" : "``Vi er alle i samme båd''",
-               "location" : "sange/FlittigeLaerer.tex",
-               "status" : "Færdig",
-               "version" : "1.0",
+               "props" : [],
+               "revueyear" : "1973",
+               "length" : 0,
                "author" : "?",
                "revuename" : "DIKUrevy",
-               "length" : 0,
-               "props" : [],
+               "title" : "Bibliotekssketch - sang",
+               "melody" : "\"`Vi er alle i samme båd\"'",
+               "location" : "sange/Bibliotekssketch.tex",
+               "type" : "song",
                "order" : 3,
-               "title" : "Flittige lærer, travle studenter",
-               "type" : "song",
-               "revueyear" : "1973"
-            },
-            {
+               "instructors" : [],
                "roles" : [
                   {
-                     "abbr" : "A",
-                     "title" : "Rolleforklaring",
-                     "actor" : "Skuespiller"
+                     "actor" : "Rolleindehaver",
+                     "abbr" : "S",
+                     "title" : "Sanger"
                   }
                ],
+               "version" : "1.0",
+               "status" : "Færdig"
+            },
+            {
+               "length" : 0,
+               "revueyear" : "1973",
+               "props" : [],
                "location" : "sketches/Glisborg.tex",
-               "status" : "Ikke færdig",
-               "version" : "1.0",
-               "author" : "?",
-               "revuename" : "DIKUrevy",
-               "length" : 0,
-               "props" : [],
-               "order" : 4,
                "title" : "Glisborgs spørgeundersøgelse",
+               "revuename" : "DIKUrevy",
+               "author" : "?",
+               "instructors" : [],
+               "order" : 4,
                "type" : "sketch",
-               "revueyear" : "1973"
+               "status" : "Ikke færdig",
+               "version" : "1.0",
+               "roles" : [
+                  {
+                     "title" : "Fru Glisborg",
+                     "abbr" : "A",
+                     "actor" : "Mette"
+                  },
+                  {
+                     "actor" : "Lissi",
+                     "abbr" : "B",
+                     "title" : ""
+                  },
+                  {
+                     "actor" : "Lene",
+                     "abbr" : "C",
+                     "title" : ""
+                  },
+                  {
+                     "actor" : "Jesper",
+                     "abbr" : "D",
+                     "title" : ""
+                  }
+               ]
             },
             {
                "roles" : [
                   {
+                     "actor" : "Lene Weiss",
                      "abbr" : "S",
-                     "title" : "Sanger",
-                     "actor" : "Rolleindehaver"
+                     "title" : "Sanger"
                   }
                ],
-               "melody" : "``Frankie and Johnny were lovers''",
-               "location" : "sange/JensOgSofie.tex",
-               "status" : "Færdig",
                "version" : "1.0",
-               "author" : "?",
-               "revuename" : "DIKUrevy",
-               "length" : 0,
-               "props" : [],
+               "status" : "Færdig",
+               "type" : "song",
                "order" : 5,
+               "instructors" : [],
+               "author" : "Peter Johansen",
+               "revuename" : "DIKUrevy",
                "title" : "Jens og Sofie var kærester",
-               "type" : "song",
-               "revueyear" : "1973"
+               "location" : "sange/JensOgSofie.tex",
+               "melody" : "``Frankie and Johnny were lovers''",
+               "props" : [],
+               "revueyear" : "1973",
+               "length" : 0
             },
             {
-               "roles" : [
-                  {
-                     "abbr" : "A",
-                     "title" : "Rolleforklaring",
-                     "actor" : "Skuespiller"
-                  }
-               ],
-               "location" : "sketches/GudBesoegerEdda.tex",
-               "status" : "Ikke færdig",
-               "version" : "1.0",
-               "author" : "?",
-               "revuename" : "DIKUrevy",
-               "length" : 0,
-               "props" : [],
+               "type" : "sketch",
                "order" : 6,
+               "instructors" : [],
+               "roles" : [
+                  {
+                     "title" : "Gud",
+                     "abbr" : "G",
+                     "actor" : "Mette"
+                  },
+                  {
+                     "title" : "Edda",
+                     "abbr" : "E",
+                     "actor" : "Mark"
+                  },
+                  {
+                     "abbr" : "S1",
+                     "title" : "Student 1",
+                     "actor" : ""
+                  },
+                  {
+                     "actor" : "",
+                     "abbr" : "S2",
+                     "title" : "Student 1"
+                  }
+               ],
+               "status" : "Færdig",
+               "version" : "1.0",
+               "props" : [],
+               "revueyear" : "1973",
+               "length" : 0,
+               "revuename" : "DIKUrevy",
+               "author" : "?",
                "title" : "Gud Besøger Edda",
-               "type" : "sketch",
-               "revueyear" : "1973"
+               "location" : "sketches/GudBesoegerEdda.tex"
             },
             {
-               "roles" : [
-                  {
-                     "abbr" : "S",
-                     "title" : "Sanger",
-                     "actor" : "Rolleindehaver"
-                  }
-               ],
-               "melody" : "``Anni, get your gun''",
                "location" : "sange/EDB-sangen.tex",
-               "status" : "Færdig",
-               "version" : "1.0",
-               "author" : "?",
-               "revuename" : "DIKUrevy",
-               "length" : 0,
-               "props" : [],
-               "order" : 7,
+               "melody" : "``Anni, get your gun''",
                "title" : "EDB-sangen",
-               "type" : "song",
-               "revueyear" : "1973"
-            },
-            {
-               "roles" : [
-                  {
-                     "abbr" : "S",
-                     "title" : "Sanger",
-                     "actor" : "Rolleindehaver"
-                  }
-               ],
-               "melody" : "``25 minutter endnu''",
-               "location" : "sange/DAT0-vise.tex",
+               "revuename" : "DIKUrevy",
+               "author" : "?",
+               "length" : 0,
+               "revueyear" : "1973",
+               "props" : [],
                "status" : "Færdig",
                "version" : "1.0",
-               "author" : "?",
-               "revuename" : "DIKUrevy",
-               "length" : 0,
-               "props" : [],
+               "roles" : [
+                  {
+                     "actor" : "",
+                     "abbr" : "S",
+                     "title" : "Sanger"
+                  }
+               ],
+               "instructors" : [],
+               "order" : 7,
+               "type" : "song"
+            },
+            {
                "order" : 8,
-               "title" : "Dat0'erens hullevise",
+               "instructors" : [],
                "type" : "song",
-               "revueyear" : "1973"
-            },
-            {
-               "roles" : [
-                  {
-                     "abbr" : "A",
-                     "title" : "Rolleforklaring",
-                     "actor" : "Skuespiller"
-                  }
-               ],
-               "location" : "sketches/ForelaesningIMat4.tex",
-               "status" : "Ikke færdig",
                "version" : "1.0",
-               "author" : "?",
-               "revuename" : "DIKUrevy",
-               "length" : 0,
-               "props" : [],
-               "order" : 9,
-               "title" : "En forelæsning i Mat4=Dat0",
-               "type" : "sketch",
-               "revueyear" : "1973"
-            },
-            {
+               "status" : "Færdig",
                "roles" : [
                   {
                      "abbr" : "S",
                      "title" : "Sanger",
-                     "actor" : "Rolleindehaver"
+                     "actor" : ""
                   }
                ],
-               "melody" : "``Jens Vejmand''",
-               "location" : "sange/HvemSidderDerVedSkaermen.tex",
+               "revueyear" : "1973",
+               "length" : 0,
+               "props" : [],
+               "location" : "sange/DAT0-vise.tex",
+               "melody" : "``25 minutter endnu''",
+               "author" : "?",
+               "revuename" : "DIKUrevy",
+               "title" : "Dat0'erens hullevise"
+            },
+            {
+               "title" : "En forelæsning i Mat4=Dat0",
+               "author" : "?",
+               "revuename" : "DIKUrevy",
+               "location" : "sketches/ForelaesningIMat4.tex",
+               "props" : [],
+               "length" : 0,
+               "revueyear" : "1973",
+               "roles" : [
+                  {
+                     "actor" : "",
+                     "title" : "Forelæser",
+                     "abbr" : "F"
+                  },
+                  {
+                     "actor" : "",
+                     "abbr" : "E",
+                     "title" : "Elev"
+                  }
+               ],
                "status" : "Færdig",
                "version" : "1.0",
-               "author" : "?",
-               "revuename" : "DIKUrevy",
-               "length" : 0,
-               "props" : [],
-               "order" : 10,
-               "title" : "Hvem Sidder Der Ved Skaermen",
-               "type" : "song",
-               "revueyear" : "1973"
+               "type" : "sketch",
+               "instructors" : [],
+               "order" : 9
             },
             {
                "roles" : [
                   {
+                     "actor" : "",
                      "abbr" : "S",
-                     "title" : "Sanger",
-                     "actor" : "Rolleindehaver"
+                     "title" : "Sanger"
                   }
                ],
+               "version" : "1.0",
+               "status" : "Færdig",
+               "type" : "song",
+               "order" : 10,
+               "instructors" : [],
+               "revuename" : "DIKUrevy",
+               "author" : "?",
+               "title" : "Hvem Sidder Der Ved Skaermen",
+               "location" : "sange/HvemSidderDerVedSkaermen.tex",
+               "melody" : "``Jens Vejmand''",
+               "props" : [],
+               "revueyear" : "1973",
+               "length" : 0
+            },
+            {
                "melody" : "``Kalle från Spånga''",
                "location" : "sange/SangenOmPeter.tex",
+               "title" : "Sangen Om Peter",
+               "revuename" : "DIKUrevy",
+               "author" : "?",
+               "length" : 0,
+               "revueyear" : "1973",
+               "props" : [],
                "status" : "Færdig",
                "version" : "1.0",
-               "author" : "?",
-               "revuename" : "DIKUrevy",
-               "length" : 0,
-               "props" : [],
-               "order" : 11,
-               "title" : "Sangen Om Peter",
-               "type" : "song",
-               "revueyear" : "1973"
-            },
-            {
                "roles" : [
                   {
-                     "abbr" : "A",
-                     "title" : "Rolleforklaring",
-                     "actor" : "Skuespiller"
+                     "actor" : "",
+                     "title" : "Sanger",
+                     "abbr" : "A"
+                  },
+                  {
+                     "actor" : "",
+                     "abbr" : "B",
+                     "title" : "Sanger"
                   }
                ],
-               "location" : "sketches/StatusSketch.tex",
-               "status" : "Ikke færdig",
-               "version" : "1.0",
-               "author" : "?",
-               "revuename" : "DIKUrevy",
-               "length" : 0,
-               "props" : [],
-               "order" : 12,
-               "title" : "StatusSketch",
-               "type" : "sketch",
-               "revueyear" : "1973"
+               "instructors" : [],
+               "order" : 11,
+               "type" : "song"
             },
             {
+               "status" : "Ikke færdig",
+               "version" : "1.0",
                "roles" : [
                   {
                      "abbr" : "S",
-                     "title" : "Sanger",
-                     "actor" : "Rolleindehaver"
+                     "title" : "Speaker",
+                     "actor" : "Ulæselig krusedulle"
+                  },
+                  {
+                     "title" : "Interviewer",
+                     "abbr" : "I",
+                     "actor" : "Ulæselig krusedulle"
+                  },
+                  {
+                     "title" : "Arne Komet",
+                     "abbr" : "A",
+                     "actor" : "Ulæselig krusedulle"
+                  },
+                  {
+                     "abbr" : "K",
+                     "title" : "Kameramand",
+                     "actor" : "Jesper"
                   }
                ],
-               "melody" : "``Peter tog til USA''",
-               "location" : "sange/UhaUhaSangen.tex",
-               "status" : "Færdig",
-               "version" : "1.0",
+               "order" : 12,
+               "instructors" : [],
+               "type" : "sketch",
+               "location" : "sketches/StatusSketch.tex",
                "author" : "?",
                "revuename" : "DIKUrevy",
+               "title" : "StatusSketch",
+               "revueyear" : "1973",
                "length" : 0,
-               "props" : [],
+               "props" : []
+            },
+            {
+               "instructors" : [],
                "order" : 13,
-               "title" : "Uha-Uha-sangen",
                "type" : "song",
-               "revueyear" : "1973"
+               "status" : "Færdig",
+               "version" : "1.0",
+               "roles" : [
+                  {
+                     "actor" : "",
+                     "title" : "Sanger",
+                     "abbr" : "S"
+                  }
+               ],
+               "length" : 0,
+               "revueyear" : "1973",
+               "props" : [],
+               "location" : "sange/UhaUhaSangen.tex",
+               "melody" : "``Peter tog til USA''",
+               "title" : "Uha-Uha-sangen",
+               "author" : "?",
+               "revuename" : "DIKUrevy"
             }
          ],
-         "order" : 1,
-         "title" : "Akt 1"
+         "length" : 0,
+         "order" : 1
       }
-   ],
-   "name" : "DIKUrevy",
-   "year" : "1973"
+   ]
 }
