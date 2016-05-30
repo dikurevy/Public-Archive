@@ -1,0 +1,88 @@
+\documentclass[a4paper,11pt]{article}
+
+\usepackage{revy}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[danish]{babel}
+
+
+\revyname{DIKUrevy}
+\revyyear{2016}
+\version{1.0}
+\eta{$3.35$ minutter}
+\status{Derefereret}
+
+\title{Skæg med pegere}
+\author{Sebastian Paaske Tørholm}
+\melody{Hr. Skæg: ``Skæg med bogstaver''}
+% http://open.spotify.com/track/0zQ3QyoHe17yzic2mtsWjd
+
+\begin{document}
+\maketitle
+
+\begin{roles}
+\role{S}[Niels] Hr. Skæg
+\role{K0}[Bette-Mikkel] Kor
+\role{K1}[Nicklas] Kor
+\role{K2}[Theis] Kor
+\role{X}[Nathalia] Instruktør
+\end{roles}
+
+\begin{song}
+\sings{S}%
+Kom med, min ven, vi skal lege med C
+Her er en peger, den kalder vi p
+Men lige nu er der garbage i den
+Hvor skal den dog pege hen?
+
+Vi sætter den, så den nu peger på 'k'
+Den peger gern' på både store og små
+Vi kan jo også pege den på din mor
+Hun er på hoben -- hun er jo ret stor
+
+Vi ska' ha' skæg med pegere
+Vi peger fingre og så følger vi dem
+Peger' er ikke så slemm'
+
+Vi ska' ha' skæg med pegere
+Vi hilser gerne, ja på må og på få
+C gør det let at forstå:
+
+char stjerne p (tekst: '\texttt{char *p}')
+lig malloc tre (tekst: '\texttt{= malloc(3)}') \act{p bliver allokeret 3 pladser før "din mor"}
+stri'n-copy p (tekst: '\texttt{strncpy(p}')
+kom-ma streng hej og tre (tekst: '\texttt{, "hej", 3)}') \act{ups, ingen plads til strengterminator}
+put-s af p (tekst: '\texttt{puts(p)}') \act{der udskrives "hejdin mor"}
+Hvor er det dejligt!
+Din mor er -- jo på besøg igen!
+
+Lad os sig' farvel
+stri'n-copy p (tekst: '\texttt{strncpy(p}')
+komma farvel, og den er længde seks (tekst: '\texttt{, "farvel", 6)}')
+put-s af p (tekst: '\texttt{puts(p)}') \act{der udskrives "farvel mor"}
+Nu skal vi huske
+Vi skal altid rydde op igen
+Vi kalder free på p (tekst: '\texttt{free(p)}')
+
+\sings{S}%
+Ja, det' skægt med pegere
+Vi peger fingre og så følger vi dem
+Peger' er ikke så slemm'
+
+Vi ska' ha' skæg med pegere
+Derefererer, siger hej til din mor
+Pegeren ved hvor hun bor
+
+\sings{S}%
+Vi ska' ha' skæg med pegere
+Og når vi' færdig rydder vi op igen
+Peger' er ikke så slemm'
+
+Vi ska' ha' skæg med pegere
+Vi peger fingre og så følger vi dem
+Peger' er ikke så slemm'
+
+\scene{Lys ned.}
+\end{song}
+
+\end{document}

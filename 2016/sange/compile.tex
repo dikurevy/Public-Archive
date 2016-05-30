@@ -1,0 +1,131 @@
+\documentclass[a4paper,11pt]{article}
+
+\usepackage{revy}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[danish]{babel}
+
+
+\revyname{DIKUrevy}
+\revyyear{2016}
+\version{1.0.1}
+\eta{$2.5$ minutter}
+\status{Færdig}
+
+\title{Compile}
+\author{Sebastian Paaske Tørholm}
+\melody{Blues Brothers: ``Rawhide''}
+% http://www.youtube.com/watch?v=qCRae5mRoRE
+
+\begin{document}
+\maketitle
+
+\begin{roles}
+\role{P}[Arinbjörn] Parser
+\role{L}[Nicklas] Lexer
+\role{D0}[Mia] Danser
+\role{D1}[Signe] Danser
+\role{X}[Jenny] Instruktør
+\end{roles}
+
+\begin{song}
+    \sings{L} {
+        Lexer lexer lexer
+        Lexer lexer lexer
+    }
+    \sings{P} {
+        Parser parser parser
+        Parser parser parser
+    }
+    \sings{L+P} {
+        Compile
+    }
+
+    \sings{L} {
+        Lexer lexer lexer
+        Mange kildetekster
+        Opdeler i tokens
+        Compile
+    }
+
+    \sings{L} {
+        Jeg læser dine konstanter
+        Hvor mange fejl de venter
+        Hvis du glemmer at lukke din streng
+    }
+
+    \sings{L} {
+        Når koden er i bidder
+        Så sender jeg den videre
+        Til parseren ved siden af mig
+    }
+
+    \sings{L} {
+        Del det op \act{P: byg et træ}
+        Byg et træ \act{P: del det op}
+        Del det op \act{P: byg et træ}
+        Compile
+        LR(1) \act{P: shift-reduce}
+        Shift-reduce \act{P: LR(1)}
+        LR(1)
+        Når jeg skal compile
+    }
+    
+    \sings{P} {
+        Parser, parser, parser
+        Altimens du raser
+        For din syntax sejler
+        Gi’r fejl
+    }
+
+    \sings{P} {
+        Der hvor jeg præcederer
+        Bli’r præcedens dikteret
+        Fortolkningen er entydig hos mig
+    }
+
+    \sings{P} {
+        Jeg ved ikke hvad du mener
+        Når typerne ikke forener
+        Det her jeg giver dig typefejl
+    }
+
+    \sings{P} {
+        Del det op \act{L: byg et træ}
+        Byg et træ \act{L: del det op}
+        Del det op \act{L: byg et træ}
+        Compile
+        LR(1) \act{L: shift-reduce}
+        Shift-reduce \act{L: LR(1)}
+        LR(1)
+        Når jeg skal compile
+    }
+
+    \sings{P} {
+        Del det op \act{L: byg et træ}
+        Byg et træ \act{L: del det op}
+        Del det op \act{L: byg et træ}
+        Compile
+        LR(1) \act{L: shift-reduce}
+        Shift-reduce \act{L: LR(1)}
+        LR(1)
+        Når jeg skal compile
+    }
+
+    \sings{L} {
+        Lexer lexer lexer
+        Lexer lexer lexer
+    }
+    \sings{P} {
+        Parser parser parser
+        Parser parser parser
+    }
+    \sings{L+P} Compile
+
+    \sings{L+P} {
+        Compile!
+    }
+\end{song}
+
+\end{document}
+
