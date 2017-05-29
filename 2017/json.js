@@ -1,107 +1,127 @@
 {
-   "year" : "2017",
    "acts" : [
       {
          "materials" : [
             {
-               "order" : 1,
-               "instructors" : [],
-               "version" : "0.1",
-               "props" : [
-                  {
-                     "description" : "",
-                     "name" : "Evt. trækfløjte",
-                     "responsible" : ""
-                  }
-               ],
-               "revueyear" : "2017",
-               "location" : "sketches/klovn.tex",
-               "title" : "Dum fysik intro sketch",
-               "author" : "Simon, Andreas",
-               "revuename" : "DIKUrevy",
-               "status" : "Mangler Donald Trump",
-               "length" : "1",
-               "type" : "sketch",
                "roles" : [
                   {
-                     "actor" : "Simon",
                      "abbr" : "K",
+                     "actor" : "Simon",
                      "title" : "En fysiker-klovn, iført fez og kittel, rød næse"
                   },
                   {
+                     "abbr" : "B",
                      "actor" : "Kasper",
-                     "title" : "Revyboss, fuldt påklædt",
-                     "abbr" : "B"
+                     "title" : "Revyboss, fuldt påklædt"
                   },
                   {
                      "actor" : "Mikkel Storgaard",
-                     "abbr" : "X",
-                     "title" : "Instruktør"
+                     "title" : "Instruktør",
+                     "abbr" : "X"
                   }
-               ]
+               ],
+               "order" : 1,
+               "location" : "sketches/klovn.tex",
+               "length" : "1",
+               "type" : "sketch",
+               "status" : "Mangler Donald Trump",
+               "version" : "0.1",
+               "title" : "Dum fysik intro sketch",
+               "props" : [
+                  {
+                     "name" : "Evt. trækfløjte",
+                     "responsible" : "",
+                     "description" : ""
+                  }
+               ],
+               "revuename" : "DIKUrevy",
+               "instructors" : [],
+               "revueyear" : "2017",
+               "author" : "Simon, Andreas"
             },
             {
-               "revueyear" : "2017",
+               "revuename" : "DIKUrevy",
+               "melody" : "Puttin' on the Ritz",
                "props" : [
                   {
                      "name" : "Uoverbevisende palme",
+                     "responsible" : "",
+                     "description" : ""
+                  },
+                  {
+                     "name" : "Glitter-konfetti",
                      "description" : "",
                      "responsible" : ""
+                  }
+               ],
+               "version" : "1.0",
+               "title" : "Velkommen til vor revy",
+               "status" : "Første udkast",
+               "type" : "song",
+               "author" : "Sebastian Paaske Tørholm",
+               "revueyear" : "2017",
+               "instructors" : [],
+               "order" : 2,
+               "location" : "sange/velkommen_til_vor_revy.tex",
+               "roles" : [
+                  {
+                     "actor" : "Ronni",
+                     "abbr" : "S",
+                     "title" : "Sanger - stylish, velklædt, skal emme af stil og vise hvor sofistikeret et show DIKUrevyen er"
+                  },
+                  {
+                     "actor" : "Simon",
+                     "title" : "Samme rolle som i forrige sketch - skal være kejtet, akavet, ikke kunne synge, danse, \\ldots Kan evt. dresse i løbet af overgangen",
+                     "abbr" : "D"
+                  },
+                  {
+                     "actor" : "Charlie",
+                     "title" : "Kvinde",
+                     "abbr" : "P"
+                  },
+                  {
+                     "actor" : "Caroline",
+                     "title" : "Instruktør",
+                     "abbr" : "X"
+                  },
+                  {
+                     "abbr" : "XX",
+                     "actor" : "Jeppe",
+                     "title" : "Sanginstruktør"
+                  }
+               ],
+               "composer" : "Young Frankenstein",
+               "length" : "1.5"
+            },
+            {
+               "revueyear" : "2017",
+               "author" : "Niels, Simon, Sebastian",
+               "instructors" : [],
+               "version" : "0.1",
+               "title" : "Lektiecafé",
+               "props" : [
+                  {
+                     "name" : "3 caféborde/borde",
+                     "responsible" : "",
+                     "description" : ""
                   },
                   {
                      "description" : "",
                      "responsible" : "",
-                     "name" : "Glitter-konfetti"
+                     "name" : "Desinficeringsmaskinen KEN"
+                  },
+                  {
+                     "description" : "",
+                     "responsible" : "",
+                     "name" : "3D-printet figur (\"opgave\")"
                   }
                ],
-               "version" : "1.0",
-               "composer" : "Young Frankenstein",
-               "order" : 2,
-               "instructors" : [],
-               "melody" : "Puttin' on the Ritz",
-               "roles" : [
-                  {
-                     "title" : "Sanger - stylish, velklædt, skal emme af stil og vise hvor sofistikeret et show DIKUrevyen er",
-                     "abbr" : "S",
-                     "actor" : "Ronni"
-                  },
-                  {
-                     "title" : "Samme rolle som i forrige sketch - skal være kejtet, akavet, ikke kunne synge, danse, \\ldots Kan evt. dresse i løbet af overgangen",
-                     "abbr" : "D",
-                     "actor" : "Simon"
-                  },
-                  {
-                     "abbr" : "P",
-                     "title" : "Kvinde",
-                     "actor" : "Charlie"
-                  },
-                  {
-                     "abbr" : "X",
-                     "title" : "Instruktør",
-                     "actor" : "Caroline"
-                  },
-                  {
-                     "actor" : "Jeppe",
-                     "title" : "Sanginstruktør",
-                     "abbr" : "XX"
-                  }
-               ],
-               "type" : "song",
-               "revuename" : "DIKUrevy",
-               "status" : "Første udkast",
-               "length" : "1.5",
-               "title" : "Velkommen til vor revy",
-               "author" : "Sebastian Paaske Tørholm",
-               "location" : "sange/velkommen_til_vor_revy.tex"
-            },
-            {
-               "location" : "sketches/lektiecafe.tex",
-               "author" : "Niels, Simon, Sebastian",
-               "title" : "Lektiecafé",
-               "status" : "Ikke færdig",
-               "length" : "4.25",
                "revuename" : "DIKUrevy",
                "type" : "sketch",
+               "status" : "Ikke færdig",
+               "length" : "4.25",
+               "location" : "sketches/lektiecafe.tex",
+               "order" : 3,
                "roles" : [
                   {
                      "actor" : "Kasper",
@@ -109,156 +129,134 @@
                      "abbr" : "I"
                   },
                   {
-                     "actor" : "Mads",
                      "abbr" : "I'",
+                     "actor" : "Mads",
                      "title" : "Instruktor (tjener), står i køkkenet"
                   },
                   {
                      "actor" : "Romeo",
-                     "abbr" : "DM",
-                     "title" : "Mandelig datalog, fornem person"
+                     "title" : "Mandelig datalog, fornem person",
+                     "abbr" : "DM"
                   },
                   {
-                     "title" : "Kvindelig datalog, fornem person",
                      "abbr" : "DK",
-                     "actor" : "Vivien"
+                     "actor" : "Vivien",
+                     "title" : "Kvindelig datalog, fornem person"
                   },
                   {
                      "abbr" : "S1",
+                     "actor" : "Kim",
+                     "title" : "Statist på restauranten"
+                  },
+                  {
+                     "actor" : "Brandt",
                      "title" : "Statist på restauranten",
-                     "actor" : "Kim"
+                     "abbr" : "S2"
                   },
                   {
                      "title" : "Statist på restauranten",
-                     "abbr" : "S2",
-                     "actor" : "Brandt"
-                  },
-                  {
-                     "title" : "Statist på restauranten",
-                     "abbr" : "S3",
-                     "actor" : "Caroline"
+                     "actor" : "Caroline",
+                     "abbr" : "S3"
                   },
                   {
                      "actor" : "Arinbjörn",
-                     "title" : "Statist på restauranten",
-                     "abbr" : "S4"
+                     "abbr" : "S4",
+                     "title" : "Statist på restauranten"
                   },
                   {
+                     "title" : "Instruktør",
                      "actor" : "Freja",
-                     "abbr" : "X",
-                     "title" : "Instruktør"
+                     "abbr" : "X"
                   }
-               ],
-               "order" : 3,
-               "instructors" : [],
-               "props" : [
-                  {
-                     "description" : "",
-                     "responsible" : "",
-                     "name" : "3 caféborde/borde"
-                  },
-                  {
-                     "responsible" : "",
-                     "description" : "",
-                     "name" : "Desinficeringsmaskinen KEN"
-                  },
-                  {
-                     "name" : "3D-printet figur (\"opgave\")",
-                     "description" : "",
-                     "responsible" : ""
-                  }
-               ],
-               "version" : "0.1",
-               "revueyear" : "2017"
+               ]
             },
             {
-               "props" : [
-                  {
-                     "responsible" : "",
-                     "description" : "",
-                     "name" : "AV: I starten af nummeret skal der stå: Baseret på virkelig hændelser"
-                  },
-                  {
-                     "description" : "",
-                     "name" : "Et bord",
-                     "responsible" : ""
-                  },
-                  {
-                     "name" : "Fire stole",
-                     "description" : "",
-                     "responsible" : ""
-                  },
-                  {
-                     "description" : "",
-                     "name" : "Fire tallerkener",
-                     "responsible" : ""
-                  }
-               ],
-               "version" : "0.1",
-               "revueyear" : "2017",
-               "instructors" : [],
-               "composer" : "The Beatles",
-               "order" : 4,
-               "revuename" : "DIKUrevy",
-               "status" : "Sørgelig :'(",
                "length" : "2",
-               "type" : "song",
-               "melody" : "Yesterday",
                "roles" : [
                   {
-                     "actor" : "Mathias",
                      "title" : "Sanger",
+                     "actor" : "Mathias",
                      "abbr" : "S"
                   },
                   {
+                     "actor" : "Niels",
                      "title" : "Statist",
-                     "abbr" : "St",
-                     "actor" : "Niels"
+                     "abbr" : "St"
                   },
                   {
-                     "title" : "Kor",
                      "abbr" : "K1",
-                     "actor" : "Cecilie"
+                     "actor" : "Cecilie",
+                     "title" : "Kor"
                   },
                   {
-                     "abbr" : "K2",
+                     "actor" : "Vivien",
                      "title" : "Kor",
-                     "actor" : "Vivien"
+                     "abbr" : "K2"
                   },
                   {
                      "abbr" : "K3",
-                     "title" : "Kor",
-                     "actor" : "Rasmus"
+                     "actor" : "Rasmus",
+                     "title" : "Kor"
                   },
                   {
-                     "abbr" : "X",
                      "title" : "Instruktør",
-                     "actor" : "Freja"
+                     "actor" : "Freja",
+                     "abbr" : "X"
                   },
                   {
                      "abbr" : "XX",
-                     "title" : "Sanginstruktør",
-                     "actor" : "Nicklas"
+                     "actor" : "Nicklas",
+                     "title" : "Sanginstruktør"
                   }
                ],
+               "composer" : "The Beatles",
+               "order" : 4,
                "location" : "sange/frokosten.tex",
-               "title" : "Frokosten",
-               "author" : "Niels"
+               "instructors" : [],
+               "revueyear" : "2017",
+               "author" : "Niels",
+               "status" : "Sørgelig :'(",
+               "type" : "song",
+               "melody" : "Yesterday",
+               "props" : [
+                  {
+                     "name" : "AV: I starten af nummeret skal der stå: Baseret på virkelig hændelser",
+                     "description" : "",
+                     "responsible" : ""
+                  },
+                  {
+                     "description" : "",
+                     "responsible" : "",
+                     "name" : "Et bord"
+                  },
+                  {
+                     "name" : "Fire stole",
+                     "responsible" : "",
+                     "description" : ""
+                  },
+                  {
+                     "description" : "",
+                     "responsible" : "",
+                     "name" : "Fire tallerkener"
+                  }
+               ],
+               "revuename" : "DIKUrevy",
+               "version" : "0.1",
+               "title" : "Frokosten"
             },
             {
-               "author" : "Simon, Niels, Andreas",
-               "title" : "Når troen forsvinder",
                "location" : "sketches/naar-troen-forsvinder.tex",
+               "order" : 5,
                "roles" : [
                   {
-                     "actor" : "Sebbe",
                      "abbr" : "P",
+                     "actor" : "Sebbe",
                      "title" : "Studenterpræst ved KU"
                   },
                   {
-                     "title" : "Studerende",
+                     "actor" : "Kasper",
                      "abbr" : "S",
-                     "actor" : "Kasper"
+                     "title" : "Studerende"
                   },
                   {
                      "actor" : "Ejnar",
@@ -266,41 +264,44 @@
                      "abbr" : "E"
                   },
                   {
-                     "title" : "Torben Mogensen (Gud)",
                      "abbr" : "TM",
-                     "actor" : "Torben"
+                     "actor" : "Torben",
+                     "title" : "Torben Mogensen (Gud)"
                   },
                   {
-                     "actor" : "Mikkel Storgaard",
                      "abbr" : "X",
+                     "actor" : "Mikkel Storgaard",
                      "title" : "Instruktør"
                   }
                ],
-               "type" : "sketch",
-               "status" : "Jeg tror ikke på det",
                "length" : "2.5",
-               "revuename" : "DIKUrevy",
-               "order" : 5,
-               "instructors" : [],
-               "revueyear" : "2017",
-               "version" : "0.1",
                "props" : [
                   {
+                     "responsible" : "",
                      "description" : "",
-                     "name" : "Rekvisit",
-                     "responsible" : ""
+                     "name" : "Rekvisit"
                   }
-               ]
+               ],
+               "revuename" : "DIKUrevy",
+               "version" : "0.1",
+               "title" : "Når troen forsvinder",
+               "type" : "sketch",
+               "status" : "Jeg tror ikke på det",
+               "author" : "Simon, Niels, Andreas",
+               "revueyear" : "2017",
+               "instructors" : []
             },
             {
+               "type" : "song",
+               "status" : "Færdig",
+               "title" : "Den Syge Fil",
                "version" : "1.0",
                "props" : [],
-               "revueyear" : "2017",
-               "instructors" : [],
-               "order" : 6,
-               "status" : "Færdig",
-               "length" : "4",
+               "melody" : "Marilyn Manson: ``Tainted Love'' remixed by the Band",
                "revuename" : "DIKUrevy",
+               "instructors" : [],
+               "author" : "Spectrum",
+               "revueyear" : "2017",
                "roles" : [
                   {
                      "actor" : "Jenny",
@@ -308,89 +309,60 @@
                      "abbr" : "S"
                   },
                   {
+                     "actor" : "Ronni",
                      "title" : "Danser",
-                     "abbr" : "D1",
-                     "actor" : "Ronni"
+                     "abbr" : "D1"
                   },
                   {
                      "actor" : "Mia",
-                     "title" : "Danser",
-                     "abbr" : "D2"
+                     "abbr" : "D2",
+                     "title" : "Danser"
                   },
                   {
-                     "actor" : "Freja",
                      "title" : "Instruktør",
+                     "actor" : "Freja",
                      "abbr" : "X"
                   },
                   {
-                     "actor" : "Jeppe",
                      "title" : "Sanginstruktør",
+                     "actor" : "Jeppe",
                      "abbr" : "XX"
                   }
                ],
-               "melody" : "Marilyn Manson: ``Tainted Love'' remixed by the Band",
-               "type" : "song",
                "location" : "sange/DenSygeFil.tex",
-               "title" : "Den Syge Fil",
-               "author" : "Spectrum"
+               "order" : 6,
+               "length" : "4"
             },
             {
-               "author" : "Harlem Klub",
-               "title" : "VIDEO: MATRICEN",
-               "location" : "video/intro.tex",
-               "roles" : [],
-               "type" : "video",
-               "status" : "Emil har styr på det",
-               "length" : "8",
                "revuename" : "DIKUrevy",
+               "props" : [],
+               "version" : "0.1",
+               "title" : "VIDEO: MATRICEN",
+               "status" : "Emil har styr på det",
+               "type" : "video",
+               "revueyear" : "2017",
+               "author" : "Harlem Klub",
                "instructors" : [],
                "order" : 7,
-               "revueyear" : "2017",
-               "version" : "0.1",
-               "props" : []
+               "location" : "video/intro.tex",
+               "roles" : [],
+               "length" : "8"
             },
             {
-               "location" : "sketches/computer-city.tex",
-               "author" : "Niels Gustav, Simon Skjerning",
-               "title" : "Computer City",
-               "revuename" : "DIKUrevy",
-               "status" : "Satire?",
-               "length" : "2.7",
-               "roles" : [
-                  {
-                     "abbr" : "E",
-                     "title" : "Ekspedient",
-                     "actor" : "Kasper"
-                  },
-                  {
-                     "abbr" : "P",
-                     "title" : "Politiker",
-                     "actor" : "Bitre Mikkel"
-                  },
-                  {
-                     "actor" : "Mads",
-                     "abbr" : "K",
-                     "title" : "Kunde"
-                  },
-                  {
-                     "abbr" : "X",
-                     "title" : "Instruktør",
-                     "actor" : "Mikkel Storgaard"
-                  }
-               ],
                "type" : "sketch",
-               "instructors" : [],
-               "order" : 8,
+               "status" : "Satire?",
+               "version" : "0.1",
+               "title" : "Computer City",
                "props" : [
                   {
-                     "description" : "Skal være stort.",
                      "responsible" : "",
+                     "description" : "Skal være stort.",
                      "name" : "Computer City-banner"
                   },
                   {
+                     "responsible" : "",
                      "description" : "",
-                     "name" : "Mus",
-                     "responsible" : ""
+                     "name" : "Mus"
                   },
                   {
                      "name" : "Musemåtte",
@@ -398,85 +370,154 @@
                      "responsible" : ""
                   },
                   {
-                     "name" : "Mere",
                      "description" : "",
-                     "responsible" : ""
+                     "responsible" : "",
+                     "name" : "Mere"
                   }
                ],
-               "version" : "0.1",
-               "revueyear" : "2017"
-            },
-            {
-               "status" : "Færdig",
-               "length" : "2",
                "revuename" : "DIKUrevy",
-               "melody" : "Knalde Kalle",
-               "type" : "song",
+               "instructors" : [],
+               "revueyear" : "2017",
+               "author" : "Niels Gustav, Simon Skjerning",
                "roles" : [
                   {
-                     "actor" : "Ronni",
+                     "actor" : "Kasper",
+                     "abbr" : "E",
+                     "title" : "Ekspedient"
+                  },
+                  {
+                     "abbr" : "P",
+                     "actor" : "Bitre Mikkel",
+                     "title" : "Politiker"
+                  },
+                  {
+                     "actor" : "Mads",
+                     "abbr" : "K",
+                     "title" : "Kunde"
+                  },
+                  {
+                     "actor" : "Mikkel Storgaard",
+                     "abbr" : "X",
+                     "title" : "Instruktør"
+                  }
+               ],
+               "order" : 8,
+               "location" : "sketches/computer-city.tex",
+               "length" : "2.7"
+            },
+            {
+               "instructors" : [],
+               "revueyear" : "2017",
+               "author" : "Sebastian, Simon, Andreas",
+               "status" : "Færdig",
+               "type" : "song",
+               "title" : "Udflytningen-erne",
+               "version" : "1.0",
+               "revuename" : "DIKUrevy",
+               "melody" : "Knalde Kalle",
+               "props" : [
+                  {
+                     "name" : "Møbler. Masser af møbler. (http://youtu.be/Y70vcs3oV14) ",
+                     "description" : "",
+                     "responsible" : ""
+                  },
+                  {
+                     "name" : "Flyttekasser. Masser af flyttekasser. (http://youtu.be/Y70vcs3oV14)",
+                     "responsible" : "",
+                     "description" : ""
+                  },
+                  {
+                     "name" : "Potteplante \\- stor potteplante \\- så stor at man kan poledanse om den.",
+                     "responsible" : "",
+                     "description" : ""
+                  },
+                  {
+                     "name" : "Trillebør med hø og netkabler",
+                     "description" : "",
+                     "responsible" : ""
+                  },
+                  {
+                     "description" : "",
+                     "responsible" : "",
+                     "name" : "Niels Bord \\- et bord med Niels Bohrs ansigt på."
+                  },
+                  {
+                     "name" : "Kontorindretning (bord, datamat, bøger, $\\ldots$)",
+                     "description" : "",
+                     "responsible" : ""
+                  },
+                  {
+                     "description" : "",
+                     "responsible" : "",
+                     "name" : "Portræt af Torben Mogensen \\- i en billedramme \\- fint skal det være."
+                  }
+               ],
+               "length" : "2",
+               "roles" : [
+                  {
                      "abbr" : "A0",
+                     "actor" : "Ronni",
                      "title" : "Arne False"
                   },
                   {
+                     "actor" : "Simba",
                      "abbr" : "A1",
-                     "title" : "Arne True",
-                     "actor" : "Simba"
+                     "title" : "Arne True"
                   },
                   {
-                     "title" : "Dekan Ikke-nu-jeg-har-hovedpine",
                      "abbr" : "D",
-                     "actor" : "René"
+                     "actor" : "René",
+                     "title" : "Dekan Ikke-nu-jeg-har-hovedpine"
                   },
                   {
-                     "title" : "Statist 0",
+                     "actor" : "Andreas",
                      "abbr" : "S0",
-                     "actor" : "Andreas"
+                     "title" : "Statist 0"
                   },
                   {
-                     "actor" : "Arinbjörn",
                      "title" : "Statist 1",
+                     "actor" : "Arinbjörn",
                      "abbr" : "S1"
                   },
                   {
+                     "actor" : "Brandt",
                      "abbr" : "S2",
-                     "title" : "Statist 2",
-                     "actor" : "Brandt"
+                     "title" : "Statist 2"
                   },
                   {
                      "title" : "Statist 3",
-                     "abbr" : "S3",
-                     "actor" : "Charlie"
+                     "actor" : "Charlie",
+                     "abbr" : "S3"
                   },
                   {
-                     "title" : "Statist 4",
                      "abbr" : "S4",
-                     "actor" : "Ejnar"
+                     "actor" : "Ejnar",
+                     "title" : "Statist 4"
                   },
                   {
-                     "title" : "Statist 5",
+                     "actor" : "Mads",
                      "abbr" : "S5",
-                     "actor" : "Mads"
+                     "title" : "Statist 5"
                   },
                   {
+                     "title" : "Statist 6",
                      "actor" : "Niels",
-                     "abbr" : "S6",
-                     "title" : "Statist 6"
+                     "abbr" : "S6"
                   },
                   {
-                     "title" : "Resten af revyen",
                      "abbr" : "R1",
-                     "actor" : "Jenny"
+                     "actor" : "Jenny",
+                     "title" : "Resten af revyen"
                   },
                   {
+                     "actor" : "Torben",
                      "title" : "Resten af revyen",
-                     "abbr" : "R2",
-                     "actor" : "Torben"
+                     "abbr" : "R2"
                   },
                   {
                      "actor" : "Kim",
-                     "title" : "Resten af revyen",
-                     "abbr" : "R3"
+                     "abbr" : "R3",
+                     "title" : "Resten af revyen"
                   },
                   {
                      "actor" : "Mathias",
@@ -485,134 +526,119 @@
                   },
                   {
                      "actor" : "Mia",
-                     "title" : "Resten af revyen",
-                     "abbr" : "R5"
-                  },
-                  {
-                     "title" : "Resten af revyen",
-                     "abbr" : "R6",
-                     "actor" : "Rasmus"
-                  },
-                  {
-                     "title" : "Resten af revyen",
-                     "abbr" : "R7",
-                     "actor" : "Romeo"
-                  },
-                  {
-                     "actor" : "Sebbe",
-                     "abbr" : "R8",
+                     "abbr" : "R5",
                      "title" : "Resten af revyen"
                   },
                   {
+                     "title" : "Resten af revyen",
+                     "actor" : "Rasmus",
+                     "abbr" : "R6"
+                  },
+                  {
+                     "title" : "Resten af revyen",
+                     "actor" : "Romeo",
+                     "abbr" : "R7"
+                  },
+                  {
+                     "abbr" : "R8",
+                     "actor" : "Sebbe",
+                     "title" : "Resten af revyen"
+                  },
+                  {
+                     "abbr" : "R9",
                      "actor" : "Simon",
-                     "title" : "Resten af revyen",
-                     "abbr" : "R9"
+                     "title" : "Resten af revyen"
                   },
                   {
+                     "actor" : "Vivien",
                      "title" : "Resten af revyen",
-                     "abbr" : "R10",
-                     "actor" : "Vivien"
+                     "abbr" : "R10"
                   },
                   {
-                     "abbr" : "X",
                      "title" : "Instruktør",
-                     "actor" : "Caroline"
+                     "actor" : "Caroline",
+                     "abbr" : "X"
                   },
                   {
                      "actor" : "Nicklas",
-                     "title" : "Sanginstruktør",
-                     "abbr" : "XX"
+                     "abbr" : "XX",
+                     "title" : "Sanginstruktør"
                   }
                ],
-               "location" : "sange/udflytningen-erne.tex",
-               "title" : "Udflytningen-erne",
-               "author" : "Sebastian, Simon, Andreas",
-               "props" : [
-                  {
-                     "name" : "Møbler. Masser af møbler. (http://youtu.be/Y70vcs3oV14) ",
-                     "description" : "",
-                     "responsible" : ""
-                  },
-                  {
-                     "responsible" : "",
-                     "description" : "",
-                     "name" : "Flyttekasser. Masser af flyttekasser. (http://youtu.be/Y70vcs3oV14)"
-                  },
-                  {
-                     "description" : "",
-                     "name" : "Potteplante \\- stor potteplante \\- så stor at man kan poledanse om den.",
-                     "responsible" : ""
-                  },
-                  {
-                     "description" : "",
-                     "responsible" : "",
-                     "name" : "Trillebør med hø og netkabler"
-                  },
-                  {
-                     "responsible" : "",
-                     "description" : "",
-                     "name" : "Niels Bord \\- et bord med Niels Bohrs ansigt på."
-                  },
-                  {
-                     "responsible" : "",
-                     "description" : "",
-                     "name" : "Kontorindretning (bord, datamat, bøger, $\\ldots$)"
-                  },
-                  {
-                     "responsible" : "",
-                     "description" : "",
-                     "name" : "Portræt af Torben Mogensen \\- i en billedramme \\- fint skal det være."
-                  }
-               ],
-               "version" : "1.0",
-               "revueyear" : "2017",
                "composer" : "Lille Palle",
-               "instructors" : [],
-               "order" : 9
+               "order" : 9,
+               "location" : "sange/udflytningen-erne.tex"
             },
             {
-               "order" : 10,
                "instructors" : [],
+               "author" : "Simon S. L.",
+               "revueyear" : "2017",
+               "type" : "sketch",
+               "status" : "Ikke færdig",
                "props" : [
                   {
+                     "name" : "En flaske Fernet Branca",
                      "description" : "",
-                     "responsible" : "",
-                     "name" : "En flaske Fernet Branca"
+                     "responsible" : ""
                   }
                ],
-               "version" : "0.1",
-               "revueyear" : "2017",
-               "location" : "sketches/onsdag.tex",
-               "title" : "Onsdag",
-               "author" : "Simon S. L.",
-               "length" : "2",
-               "status" : "Ikke færdig",
                "revuename" : "DIKUrevy",
-               "type" : "sketch",
+               "version" : "0.1",
+               "title" : "Onsdag",
+               "length" : "2",
                "roles" : [
                   {
                      "abbr" : "P",
-                     "title" : "Preben     - mørkt tøj, uglet hår, røde øjne",
-                     "actor" : "Bitre Mikkel"
+                     "actor" : "Bitre Mikkel",
+                     "title" : "Preben     - mørkt tøj, uglet hår, røde øjne"
                   },
                   {
                      "actor" : "Jenny",
-                     "title" : "Sigurdine  - hvidt tøj/kjole",
-                     "abbr" : "S"
+                     "abbr" : "S",
+                     "title" : "Sigurdine  - hvidt tøj/kjole"
                   },
                   {
                      "abbr" : "X",
-                     "title" : "Instruktør",
-                     "actor" : "Freja"
+                     "actor" : "Freja",
+                     "title" : "Instruktør"
                   }
-               ]
+               ],
+               "order" : 10,
+               "location" : "sketches/onsdag.tex"
             },
             {
-               "revueyear" : "2017",
+               "roles" : [
+                  {
+                     "actor" : "Niels",
+                     "abbr" : "M",
+                     "title" : "Ministeren - nydelig mand, dog ikke synderligt klog"
+                  },
+                  {
+                     "abbr" : "L",
+                     "actor" : "Sebbe",
+                     "title" : "E-bogs-lobbyist - con-artist-agtig type"
+                  },
+                  {
+                     "actor" : "Simon",
+                     "abbr" : "I",
+                     "title" : "Intercom - sketchens største rolle"
+                  },
+                  {
+                     "title" : "Instruktør",
+                     "actor" : "Simba",
+                     "abbr" : "X"
+                  }
+               ],
+               "location" : "sketches/ebogslobbyen.tex",
+               "order" : 11,
+               "length" : "4.25",
+               "type" : "sketch",
+               "status" : "Færdig",
+               "revuename" : "DIKUrevy",
                "props" : [
                   {
-                     "description" : "",
                      "responsible" : "",
+                     "description" : "",
                      "name" : "Et bord til ministeren"
                   },
                   {
@@ -621,24 +647,24 @@
                      "name" : "En stol til ministeren"
                   },
                   {
+                     "name" : "En buzzer som M kan trykke på for at kommunikere med intercom",
                      "responsible" : "",
-                     "description" : "",
-                     "name" : "En buzzer som M kan trykke på for at kommunikere med intercom"
+                     "description" : ""
                   },
                   {
-                     "description" : "",
+                     "name" : "Folkeskolelærer-agtigt kontorartikler",
                      "responsible" : "",
-                     "name" : "Folkeskolelærer-agtigt kontorartikler"
+                     "description" : ""
                   },
                   {
-                     "responsible" : "",
+                     "name" : "Reengineering a university department",
                      "description" : "",
-                     "name" : "Reengineering a university department"
-                  },
-                  {
-                     "description" : "",
-                     "name" : "Pixiebog -- den gode",
                      "responsible" : ""
+                  },
+                  {
+                     "responsible" : "",
+                     "description" : "",
+                     "name" : "Pixiebog -- den gode"
                   },
                   {
                      "name" : "En tyk bog der kan slås med",
@@ -661,105 +687,78 @@
                      "name" : "Skærm"
                   },
                   {
-                     "responsible" : "",
+                     "name" : "Kindle",
                      "description" : "",
-                     "name" : "Kindle"
+                     "responsible" : ""
                   },
                   {
+                     "name" : "Kontrakt",
                      "description" : "",
-                     "responsible" : "",
-                     "name" : "Kontrakt"
+                     "responsible" : ""
                   },
                   {
+                     "name" : "Fyldepen",
                      "responsible" : "",
-                     "description" : "",
-                     "name" : "Fyldepen"
+                     "description" : ""
                   }
                ],
                "version" : "1.1",
-               "instructors" : [],
-               "order" : 11,
-               "roles" : [
-                  {
-                     "actor" : "Niels",
-                     "abbr" : "M",
-                     "title" : "Ministeren - nydelig mand, dog ikke synderligt klog"
-                  },
-                  {
-                     "abbr" : "L",
-                     "title" : "E-bogs-lobbyist - con-artist-agtig type",
-                     "actor" : "Sebbe"
-                  },
-                  {
-                     "abbr" : "I",
-                     "title" : "Intercom - sketchens største rolle",
-                     "actor" : "Simon"
-                  },
-                  {
-                     "title" : "Instruktør",
-                     "abbr" : "X",
-                     "actor" : "Simba"
-                  }
-               ],
-               "type" : "sketch",
-               "status" : "Færdig",
-               "length" : "4.25",
-               "revuename" : "DIKUrevy",
                "title" : "e-bogs-lobbyen",
+               "instructors" : [],
                "author" : "Niels, Simon, Sebastian",
-               "location" : "sketches/ebogslobbyen.tex"
+               "revueyear" : "2017"
             },
             {
-               "melody" : "Vi maler byen rød",
-               "type" : "song",
+               "order" : 12,
+               "location" : "sange/vi-skriver-bachelor.tex",
+               "composer" : "Birthe Kjær",
                "roles" : [
                   {
-                     "title" : "Sanger",
+                     "actor" : "René",
                      "abbr" : "S",
-                     "actor" : "René"
+                     "title" : "Sanger"
                   },
                   {
                      "abbr" : "T",
-                     "title" : "Tanger",
-                     "actor" : "Mikkel Storgaard"
+                     "actor" : "Mikkel Storgaard",
+                     "title" : "Tanger"
                   },
                   {
                      "actor" : "Romeo",
-                     "abbr" : "SS",
-                     "title" : "Sceneshow"
+                     "title" : "Sceneshow",
+                     "abbr" : "SS"
+                  },
+                  {
+                     "actor" : "Brandt",
+                     "title" : "Sceneshow",
+                     "abbr" : "SS"
                   },
                   {
                      "title" : "Sceneshow",
-                     "abbr" : "SS",
-                     "actor" : "Brandt"
+                     "actor" : "Mads",
+                     "abbr" : "SS"
                   },
                   {
-                     "title" : "Sceneshow",
-                     "abbr" : "SS",
-                     "actor" : "Mads"
-                  },
-                  {
-                     "actor" : "Simba",
                      "title" : "Instruktør",
+                     "actor" : "Simba",
                      "abbr" : "X"
                   },
                   {
                      "title" : "Sanginstruktør",
-                     "abbr" : "XX",
-                     "actor" : "Cecilie"
+                     "actor" : "Cecilie",
+                     "abbr" : "XX"
                   }
                ],
-               "status" : "Skal nazificeres",
                "length" : "3",
-               "revuename" : "DIKUrevy",
-               "title" : "Vi skriver bachelor",
-               "author" : "René, Simon, Erik, Sebbe, Mikkel",
-               "location" : "sange/vi-skriver-bachelor.tex",
-               "revueyear" : "2017",
                "version" : "1.0.1",
+               "title" : "Vi skriver bachelor",
                "props" : [],
-               "composer" : "Birthe Kjær",
-               "order" : 12,
+               "melody" : "Vi maler byen rød",
+               "revuename" : "DIKUrevy",
+               "type" : "song",
+               "status" : "Skal nazificeres",
+               "author" : "René, Simon, Erik, Sebbe, Mikkel",
+               "revueyear" : "2017",
                "instructors" : []
             }
          ],
@@ -768,163 +767,186 @@
          "title" : "Akt 1"
       },
       {
+         "order" : 2,
+         "title" : "Akt 2",
          "materials" : [
             {
-               "status" : "Færdig?",
-               "length" : "2",
-               "revuename" : "DIKUrevy",
-               "melody" : "Sandi Thom - I Wish I Was a Punk Rocker",
-               "roles" : [
-                  {
-                     "title" : "Sanger",
-                     "abbr" : "A",
-                     "actor" : "Rasmus"
-                  },
-                  {
-                     "title" : "Stomp band!!",
-                     "abbr" : "B",
-                     "actor" : "Bandet"
-                  },
-                  {
-                     "title" : "Stomp hjælper",
-                     "abbr" : "S1",
-                     "actor" : "Caroline"
-                  },
-                  {
-                     "actor" : "Kim",
-                     "abbr" : "S2",
-                     "title" : "Stomp hjælper"
-                  },
-                  {
-                     "title" : "Stomp hjælper",
-                     "abbr" : "S3",
-                     "actor" : "Jenny"
-                  },
-                  {
-                     "actor" : "Arinbjörn",
-                     "abbr" : "S4",
-                     "title" : "Stomp hjælper"
-                  },
-                  {
-                     "abbr" : "X",
-                     "title" : "Instruktør",
-                     "actor" : "Freja"
-                  },
-                  {
-                     "title" : "Sanginstruktør",
-                     "abbr" : "XX",
-                     "actor" : "Jeppe"
-                  }
-               ],
-               "type" : "song",
                "location" : "sange/OdeTilDIKU.tex",
-               "author" : "Jenny-Margrethe Vej, Munter, Phillip Ruskumsnuski",
-               "title" : "Ode til DIKU",
-               "props" : [],
-               "version" : "1.0",
-               "revueyear" : "2017",
-               "instructors" : [],
-               "order" : 13
-            },
-            {
-               "instructors" : [],
-               "order" : 14,
-               "version" : "3.5",
-               "props" : [],
-               "revueyear" : "2017",
-               "location" : "sketches/niels_brohr_lite.tex",
-               "author" : "Sebastian, Spectrum, Søren Pilgård, Johan, Ejnar, Thomas",
-               "title" : "Niels Brohr-monologen",
-               "status" : "Lidt mindre tight end minilogen",
-               "length" : "3",
-               "revuename" : "DIKUrevy",
-               "type" : "sketch",
+               "order" : 13,
                "roles" : [
                   {
-                     "title" : "Interviewer; TV-vært",
-                     "abbr" : "I",
-                     "actor" : "Andreas"
+                     "actor" : "Rasmus",
+                     "title" : "Sanger",
+                     "abbr" : "A"
                   },
                   {
-                     "title" : "Niels Brohr",
-                     "abbr" : "NB",
-                     "actor" : "Ronni"
+                     "actor" : "Bandet",
+                     "title" : "Stomp band!!",
+                     "abbr" : "B"
                   },
                   {
                      "actor" : "Caroline",
-                     "abbr" : "X",
-                     "title" : "Instruktør"
-                  }
-               ]
-            },
-            {
-               "status" : "Skal nazificeres",
-               "length" : "4",
-               "revuename" : "DIKUrevy",
-               "melody" : "Woodoo",
-               "roles" : [
-                  {
-                     "title" : "Sanger(inde)",
-                     "abbr" : "S",
-                     "actor" : "Mia"
+                     "title" : "Stomp hjælper",
+                     "abbr" : "S1"
                   },
                   {
-                     "abbr" : "K1",
-                     "title" : "Kor",
-                     "actor" : "Cecilie"
-                  },
-                  {
-                     "actor" : "Mathias",
-                     "title" : "Kor",
-                     "abbr" : "K2"
+                     "abbr" : "S2",
+                     "actor" : "Kim",
+                     "title" : "Stomp hjælper"
                   },
                   {
                      "actor" : "Jenny",
-                     "abbr" : "D0",
-                     "title" : "Danser"
+                     "abbr" : "S3",
+                     "title" : "Stomp hjælper"
                   },
                   {
-                     "abbr" : "D1",
-                     "title" : "Danser",
-                     "actor" : "Simba"
+                     "title" : "Stomp hjælper",
+                     "actor" : "Arinbjörn",
+                     "abbr" : "S4"
                   },
                   {
-                     "actor" : "Mikkel Storgaard",
+                     "actor" : "Freja",
                      "abbr" : "X",
                      "title" : "Instruktør"
                   },
                   {
-                     "actor" : "Nicklas",
-                     "title" : "Sanginstruktør",
-                     "abbr" : "XX"
+                     "abbr" : "XX",
+                     "actor" : "Jeppe",
+                     "title" : "Sanginstruktør"
                   }
                ],
-               "type" : "song",
-               "location" : "sange/haskell-om-natten.tex",
-               "title" : "Haskell om natten",
-               "author" : "Christian Kjær",
-               "version" : "0.1",
+               "length" : "2",
+               "melody" : "Sandi Thom - I Wish I Was a Punk Rocker",
                "props" : [],
+               "revuename" : "DIKUrevy",
+               "version" : "1.0",
+               "title" : "Ode til DIKU",
+               "status" : "Færdig?",
+               "type" : "song",
+               "author" : "Jenny-Margrethe Vej, Munter, Phillip Ruskumsnuski",
                "revueyear" : "2017",
-               "order" : 15,
-               "composer" : "Sneakers",
                "instructors" : []
             },
             {
+               "instructors" : [],
+               "revueyear" : "2017",
+               "author" : "Sebastian, Spectrum, Søren Pilgård, Johan, Ejnar, Thomas",
+               "status" : "Som den blev opført",
+               "type" : "sketch",
+               "title" : "Niels Brohr-monologen",
+               "version" : "4.0",
+               "revuename" : "DIKUrevy",
+               "props" : [],
+               "length" : "3",
                "roles" : [
                   {
+                     "actor" : "Andreas",
+                     "abbr" : "I",
+                     "title" : "Interviewer; TV-vært"
+                  },
+                  {
+                     "abbr" : "NB",
+                     "actor" : "Ronni",
+                     "title" : "Niels Brohr"
+                  },
+                  {
+                     "abbr" : "X",
+                     "actor" : "Caroline",
+                     "title" : "Instruktør"
+                  }
+               ],
+               "order" : 14,
+               "location" : "sketches/niels_brohr.tex"
+            },
+            {
+               "length" : "4",
+               "order" : 15,
+               "location" : "sange/haskell-om-natten.tex",
+               "roles" : [
+                  {
+                     "actor" : "Mia",
+                     "abbr" : "S",
+                     "title" : "Sanger(inde)"
+                  },
+                  {
+                     "actor" : "Cecilie",
+                     "abbr" : "K1",
+                     "title" : "Kor"
+                  },
+                  {
+                     "title" : "Kor",
+                     "actor" : "Mathias",
+                     "abbr" : "K2"
+                  },
+                  {
+                     "abbr" : "D0",
+                     "actor" : "Jenny",
+                     "title" : "Danser"
+                  },
+                  {
+                     "actor" : "Simba",
+                     "abbr" : "D1",
+                     "title" : "Danser"
+                  },
+                  {
+                     "actor" : "Mikkel Storgaard",
+                     "title" : "Instruktør",
+                     "abbr" : "X"
+                  },
+                  {
+                     "abbr" : "XX",
+                     "actor" : "Nicklas",
+                     "title" : "Sanginstruktør"
+                  }
+               ],
+               "composer" : "Sneakers",
+               "author" : "Christian Kjær",
+               "revueyear" : "2017",
+               "instructors" : [],
+               "version" : "0.1",
+               "title" : "Haskell om natten",
+               "melody" : "Woodoo",
+               "revuename" : "DIKUrevy",
+               "props" : [],
+               "type" : "song",
+               "status" : "Skal nazificeres"
+            },
+            {
+               "instructors" : [],
+               "author" : "Simon, Sebbe, Niels",
+               "revueyear" : "2017",
+               "type" : "sketch",
+               "status" : "Uha!",
+               "version" : "0.2",
+               "title" : "Good instruktor, bad instruktor",
+               "revuename" : "DIKUrevy",
+               "props" : [
+                  {
+                     "name" : "Stol",
+                     "description" : "",
+                     "responsible" : ""
+                  },
+                  {
+                     "name" : "En kop kaffe",
+                     "description" : "",
+                     "responsible" : ""
+                  }
+               ],
+               "length" : "1",
+               "roles" : [
+                  {
+                     "abbr" : "IG",
                      "actor" : "Ejnar",
-                     "title" : "Instruktor (good)",
-                     "abbr" : "IG"
+                     "title" : "Instruktor (good)"
                   },
                   {
                      "title" : "Instruktor (bad)",
-                     "abbr" : "IB",
-                     "actor" : "Bitre Mikkel"
+                     "actor" : "Bitre Mikkel",
+                     "abbr" : "IB"
                   },
                   {
-                     "actor" : "Simon",
                      "title" : "Person der bliver forhørt",
+                     "actor" : "Simon",
                      "abbr" : "F"
                   },
                   {
@@ -933,98 +955,84 @@
                      "title" : "Instruktør"
                   }
                ],
-               "type" : "sketch",
-               "length" : "1",
-               "status" : "Uha!",
+               "order" : 16,
+               "location" : "sketches/good_instruktor_bad_instruktor.tex"
+            },
+            {
+               "roles" : [
+                  {
+                     "actor" : "",
+                     "title" : "Rolleforklaring",
+                     "abbr" : "A"
+                  }
+               ],
+               "order" : 17,
+               "location" : "video/how_its_made.tex",
+               "length" : "1.5",
+               "type" : "video",
+               "status" : "Klar",
                "revuename" : "DIKUrevy",
-               "author" : "Simon, Sebbe, Niels",
-               "title" : "Good instruktor, bad instruktor",
-               "location" : "sketches/good_instruktor_bad_instruktor.tex",
-               "revueyear" : "2017",
                "props" : [
                   {
                      "description" : "",
                      "responsible" : "",
-                     "name" : "Stol"
-                  },
-                  {
-                     "description" : "",
-                     "name" : "En kop kaffe",
-                     "responsible" : ""
+                     "name" : "Rekvisit"
                   }
                ],
-               "version" : "0.2",
-               "order" : 16,
-               "instructors" : []
-            },
-            {
-               "status" : "Klar",
-               "length" : "1.5",
-               "revuename" : "DIKUrevy",
-               "type" : "video",
-               "roles" : [
-                  {
-                     "title" : "Rolleforklaring",
-                     "abbr" : "A",
-                     "actor" : ""
-                  }
-               ],
-               "location" : "video/how_its_made.tex",
-               "title" : "VIDEO: How It's Made: Compilere",
-               "author" : "Sebastian Paaske Tørholm",
                "version" : "1.0",
-               "props" : [
-                  {
-                     "name" : "Rekvisit",
-                     "description" : "",
-                     "responsible" : ""
-                  }
-               ],
+               "title" : "VIDEO: How It's Made: Compilere",
+               "instructors" : [],
                "revueyear" : "2017",
-               "order" : 17,
-               "instructors" : []
+               "author" : "Sebastian Paaske Tørholm"
             },
             {
-               "status" : "Det bliver bedre næste år.",
-               "revuename" : "DIKUrevy",
-               "length" : "3.5",
+               "props" : [],
                "melody" : "De første kærester på månen",
+               "revuename" : "DIKUrevy",
+               "version" : "0.1",
+               "title" : "Det bedste kursus på DIKU",
                "type" : "song",
+               "status" : "Det bliver bedre næste år.",
+               "revueyear" : "2017",
+               "author" : "Christian Kjær",
+               "instructors" : [],
+               "order" : 18,
+               "location" : "sange/det-bedste-kursus-paa-diku.tex",
                "roles" : [
                   {
-                     "abbr" : "S1",
+                     "actor" : "Mathias",
                      "title" : "Sanger",
-                     "actor" : "Mathias"
+                     "abbr" : "S1"
                   },
                   {
                      "actor" : "Andreas",
-                     "abbr" : "S2",
-                     "title" : "Sanger"
+                     "title" : "Sanger",
+                     "abbr" : "S2"
                   },
                   {
                      "actor" : "Rasmus",
-                     "abbr" : "K1",
+                     "title" : "Kor",
+                     "abbr" : "K1"
+                  },
+                  {
+                     "actor" : "Cecilie",
+                     "abbr" : "K2",
                      "title" : "Kor"
                   },
                   {
-                     "abbr" : "K2",
-                     "title" : "Kor",
-                     "actor" : "Cecilie"
+                     "actor" : "Ronni",
+                     "title" : "Sceneshow",
+                     "abbr" : "SS1"
                   },
                   {
-                     "abbr" : "SS1",
+                     "actor" : "Mads",
                      "title" : "Sceneshow",
-                     "actor" : "Ronni"
-                  },
-                  {
-                     "title" : "Sceneshow",
-                     "abbr" : "SS2",
-                     "actor" : "Mads"
+                     "abbr" : "SS2"
                   },
                   {
                      "actor" : "Freja",
-                     "abbr" : "X",
-                     "title" : "Instruktør"
+                     "title" : "Instruktør",
+                     "abbr" : "X"
                   },
                   {
                      "actor" : "Nicklas",
@@ -1032,20 +1040,16 @@
                      "title" : "Sanginstruktør"
                   }
                ],
-               "location" : "sange/det-bedste-kursus-paa-diku.tex",
-               "title" : "Det bedste kursus på DIKU",
-               "author" : "Christian Kjær",
-               "props" : [],
-               "version" : "0.1",
-               "revueyear" : "2017",
-               "instructors" : [],
                "composer" : "TV-2",
-               "order" : 18
+               "length" : "3.5"
             },
             {
-               "order" : 19,
+               "author" : "",
+               "revueyear" : "2017",
                "instructors" : [],
                "version" : "1.01",
+               "title" : "Dataministeren",
+               "revuename" : "DIKUrevy",
                "props" : [
                   {
                      "responsible" : "",
@@ -1053,68 +1057,61 @@
                      "name" : "Et bord"
                   },
                   {
-                     "name" : "En kasse med plads til to mapper",
+                     "responsible" : "",
                      "description" : "",
-                     "responsible" : ""
+                     "name" : "En kasse med plads til to mapper"
                   },
                   {
-                     "description" : "",
                      "name" : "En fysisk mappe med navnet ``Dataminister''",
+                     "description" : "",
                      "responsible" : ""
                   },
                   {
                      "name" : "En fysisk mappe med navnet ``Sigurd''",
-                     "description" : "",
-                     "responsible" : ""
+                     "responsible" : "",
+                     "description" : ""
                   },
                   {
+                     "name" : "En dildo",
                      "responsible" : "",
-                     "description" : "",
-                     "name" : "En dildo"
+                     "description" : ""
                   }
                ],
-               "revueyear" : "2017",
-               "location" : "sketches/dataministeren.tex",
-               "author" : "",
-               "title" : "Dataministeren",
+               "type" : "sketch",
                "status" : "Ikke medister",
                "length" : "4",
-               "revuename" : "DIKUrevy",
+               "order" : 19,
+               "location" : "sketches/dataministeren.tex",
                "roles" : [
                   {
                      "actor" : "René",
-                     "title" : "Voice over",
-                     "abbr" : "VO"
+                     "abbr" : "VO",
+                     "title" : "Voice over"
                   },
                   {
-                     "abbr" : "DM",
                      "title" : "Dataminister",
-                     "actor" : "Romeo"
+                     "actor" : "Romeo",
+                     "abbr" : "DM"
                   },
                   {
+                     "abbr" : "J",
                      "actor" : "Brandt",
-                     "title" : "Journalist",
-                     "abbr" : "J"
+                     "title" : "Journalist"
                   },
                   {
-                     "abbr" : "D",
+                     "actor" : "Kim",
                      "title" : "Datalog",
-                     "actor" : "Kim"
+                     "abbr" : "D"
                   },
                   {
                      "actor" : "Simba",
-                     "title" : "Instruktør",
-                     "abbr" : "X"
+                     "abbr" : "X",
+                     "title" : "Instruktør"
                   }
-               ],
-               "type" : "sketch"
+               ]
             },
             {
-               "author" : "Christian Kjær Larsen",
-               "title" : "Kun mig i Kantinen",
-               "location" : "sange/kun-mig-i-kantinen.tex",
-               "melody" : "No Peace Like in Heaven",
-               "type" : "song",
+               "length" : "4",
                "roles" : [
                   {
                      "actor" : "Arinbjörn",
@@ -1122,8 +1119,8 @@
                      "abbr" : "S"
                   },
                   {
-                     "actor" : "Niels",
                      "abbr" : "N",
+                     "actor" : "Niels",
                      "title" : "Niels"
                   },
                   {
@@ -1132,9 +1129,9 @@
                      "abbr" : "BK0"
                   },
                   {
+                     "actor" : "Cecilie",
                      "title" : "Bagtæppekor",
-                     "abbr" : "BK1",
-                     "actor" : "Cecilie"
+                     "abbr" : "BK1"
                   },
                   {
                      "actor" : "Mia",
@@ -1142,78 +1139,48 @@
                      "title" : "Bagtæppekor"
                   },
                   {
-                     "abbr" : "X",
                      "title" : "Instruktør",
-                     "actor" : "Caroline"
+                     "actor" : "Caroline",
+                     "abbr" : "X"
                   },
                   {
-                     "actor" : "Nicklas",
                      "title" : "Sanginstruktør",
+                     "actor" : "Nicklas",
                      "abbr" : "XX"
                   }
                ],
-               "length" : "4",
-               "status" : "Dårlig",
-               "revuename" : "DIKUrevy",
                "composer" : "Big Fat Snake",
+               "location" : "sange/kun-mig-i-kantinen.tex",
                "order" : 20,
                "instructors" : [],
+               "author" : "Christian Kjær Larsen",
                "revueyear" : "2017",
-               "version" : "0.1",
-               "props" : []
-            },
-            {
-               "instructors" : [],
-               "order" : 21,
-               "version" : "0.1",
+               "status" : "Dårlig",
+               "type" : "song",
                "props" : [],
-               "revueyear" : "2017",
-               "location" : "video/cola-claus.tex",
-               "author" : "Harlem Klub",
-               "title" : "VIDEO: Cola Claus",
-               "status" : "René kører showet",
-               "length" : "1.5",
+               "melody" : "No Peace Like in Heaven",
                "revuename" : "DIKUrevy",
-               "type" : "video",
-               "roles" : []
+               "version" : "0.1",
+               "title" : "Kun mig i Kantinen"
             },
             {
-               "location" : "sketches/noerre-nebel-prisen.tex",
-               "author" : "Simon, René, Sebastian, Erik, Andreas, Nana",
-               "title" : "A Nørr' Newel Pris",
-               "status" : "Skal nazificeres",
-               "length" : "6",
+               "roles" : [],
+               "order" : 21,
+               "location" : "video/cola-claus.tex",
+               "length" : "1.5",
+               "status" : "René kører showet",
+               "type" : "video",
+               "version" : "0.1",
+               "title" : "VIDEO: Cola Claus",
                "revuename" : "DIKUrevy",
-               "type" : "sketch",
-               "roles" : [
-                  {
-                     "title" : "Datalog, Mogens Torbensen",
-                     "abbr" : "P",
-                     "actor" : "Torben"
-                  },
-                  {
-                     "actor" : "Fritz",
-                     "title" : "Datalog, Henk Fritzlein",
-                     "abbr" : "S"
-                  },
-                  {
-                     "actor" : "René",
-                     "title" : "Bondemand; Mark Høgh-Balle - Jysk med tyk accent",
-                     "abbr" : "B"
-                  },
-                  {
-                     "title" : "Jyrki (taler som Swedish Chef)",
-                     "abbr" : "J",
-                     "actor" : "Sebbe"
-                  },
-                  {
-                     "actor" : "Mikkel Storgaard",
-                     "title" : "Instruktør",
-                     "abbr" : "X"
-                  }
-               ],
+               "props" : [],
                "instructors" : [],
-               "order" : 22,
+               "author" : "Harlem Klub",
+               "revueyear" : "2017"
+            },
+            {
+               "type" : "sketch",
+               "status" : "Skal nazificeres",
                "props" : [
                   {
                      "responsible" : "",
@@ -1221,13 +1188,13 @@
                      "name" : "Hytte-facade med sauna-dør som en person kan gå igennem."
                   },
                   {
-                     "responsible" : "",
                      "description" : "",
+                     "responsible" : "",
                      "name" : "Træ, som er stort nok til at B kan gemme sig bag det."
                   },
                   {
-                     "responsible" : "",
                      "description" : "",
+                     "responsible" : "",
                      "name" : "Lydeffekt: Gris der stikker af - \\texttt{https://www.youtube.com/watch?v=wJ9fdOyvPak} "
                   },
                   {
@@ -1236,24 +1203,24 @@
                      "name" : "AV: Uddrag fra Nørre Nebels infobox fra Wikipedia: \\texttt{https://i.imgur.com/Sq1XdO2.png}"
                   },
                   {
-                     "name" : "AV: Billeder af traktorer, mejetærskere, alskens landbrugsmaskiner\\ldots",
+                     "description" : "",
+                     "responsible" : "",
+                     "name" : "AV: Billeder af traktorer, mejetærskere, alskens landbrugsmaskiner\\ldots"
+                  },
+                  {
+                     "name" : "AV: Billede af budget der går i rødt. Se beskrivelse i sketchen.",
                      "description" : "",
                      "responsible" : ""
                   },
                   {
                      "description" : "",
                      "responsible" : "",
-                     "name" : "AV: Billede af budget der går i rødt. Se beskrivelse i sketchen."
+                     "name" : "AV: Billede af en punch bowle med nogle flasker med Linje Akvavit ved siden af."
                   },
                   {
-                     "name" : "AV: Billede af en punch bowle med nogle flasker med Linje Akvavit ved siden af.",
-                     "description" : "",
-                     "responsible" : ""
-                  },
-                  {
-                     "description" : "",
+                     "name" : "AV: Billede af Lamborghini Nitro-traktor - zoomed out",
                      "responsible" : "",
-                     "name" : "AV: Billede af Lamborghini Nitro-traktor - zoomed out"
+                     "description" : ""
                   },
                   {
                      "description" : "",
@@ -1261,9 +1228,9 @@
                      "name" : "AV: Billede af Lamborghini Nitro-traktor, zoomet ind på logoet."
                   },
                   {
+                     "name" : "AV: Dårligt familie-billede fra konfirmation, hvor B står med sin søn.",
                      "responsible" : "",
-                     "description" : "",
-                     "name" : "AV: Dårligt familie-billede fra konfirmation, hvor B står med sin søn."
+                     "description" : ""
                   },
                   {
                      "name" : "Lydeffekt: Lyden af en ko der muh'er.",
@@ -1271,12 +1238,46 @@
                      "responsible" : ""
                   }
                ],
+               "revuename" : "DIKUrevy",
                "version" : "1.0",
-               "revueyear" : "2017"
+               "title" : "A Nørr' Newel Pris",
+               "instructors" : [],
+               "author" : "Simon, René, Sebastian, Erik, Andreas, Nana",
+               "revueyear" : "2017",
+               "roles" : [
+                  {
+                     "actor" : "Torben",
+                     "title" : "Datalog, Mogens Torbensen",
+                     "abbr" : "P"
+                  },
+                  {
+                     "actor" : "Fritz",
+                     "abbr" : "S",
+                     "title" : "Datalog, Henk Fritzlein"
+                  },
+                  {
+                     "title" : "Bondemand; Mark Høgh-Balle - Jysk med tyk accent",
+                     "actor" : "René",
+                     "abbr" : "B"
+                  },
+                  {
+                     "abbr" : "J",
+                     "actor" : "Sebbe",
+                     "title" : "Jyrki (taler som Swedish Chef)"
+                  },
+                  {
+                     "actor" : "Mikkel Storgaard",
+                     "abbr" : "X",
+                     "title" : "Instruktør"
+                  }
+               ],
+               "location" : "sketches/noerre-nebel-prisen.tex",
+               "order" : 22,
+               "length" : "6"
             },
             {
-               "melody" : "Det burde ikk være sådan her",
-               "type" : "song",
+               "order" : 23,
+               "location" : "sange/aargang-2010.tex",
                "roles" : [
                   {
                      "actor" : "Jenny",
@@ -1284,110 +1285,120 @@
                      "title" : "Sanger"
                   },
                   {
-                     "abbr" : "S2",
                      "title" : "Sanger",
-                     "actor" : "Arinbjörn"
+                     "actor" : "Arinbjörn",
+                     "abbr" : "S2"
                   },
                   {
-                     "title" : "Instruktør",
-                     "abbr" : "X",
-                     "actor" : "Simba"
-                  },
-                  {
-                     "title" : "Sanginstruktør",
-                     "abbr" : "XX",
-                     "actor" : "Jeppe"
-                  }
-               ],
-               "length" : "3",
-               "status" : "Næsten lige så god som årgang 2011",
-               "revuename" : "DIKUrevy",
-               "author" : "",
-               "title" : "Årgang 2010",
-               "location" : "sange/aargang-2010.tex",
-               "revueyear" : "2017",
-               "props" : [],
-               "version" : "0.1",
-               "composer" : "Xander",
-               "instructors" : [],
-               "order" : 23
-            }
-         ],
-         "length" : 33.5,
-         "title" : "Akt 2",
-         "order" : 2
-      },
-      {
-         "length" : 24.5,
-         "materials" : [
-            {
-               "title" : "Systemduellen",
-               "author" : "Mia, Maya, Ejnar",
-               "location" : "sange/Systemduellen.tex",
-               "roles" : [
-                  {
-                     "actor" : "Ejnar",
-                     "title" : "Rus",
-                     "abbr" : "R"
-                  },
-                  {
-                     "actor" : "Mia",
-                     "abbr" : "D",
-                     "title" : "Djævel-samvittighed - pingvin med horn og trefork"
-                  },
-                  {
-                     "actor" : "Charlie",
-                     "title" : "Engel-samvittighed - har vinger som MSN-sommerfuglen.",
-                     "abbr" : "E"
-                  },
-                  {
-                     "actor" : "Freja",
+                     "actor" : "Simba",
                      "title" : "Instruktør",
                      "abbr" : "X"
                   },
                   {
-                     "actor" : "Jeppe",
                      "title" : "Sanginstruktør",
+                     "actor" : "Jeppe",
                      "abbr" : "XX"
                   }
                ],
-               "melody" : "Inside The Fire",
+               "composer" : "Xander",
+               "length" : "3",
+               "title" : "Årgang 2010",
+               "version" : "0.1",
+               "melody" : "Det burde ikk være sådan her",
+               "props" : [],
+               "revuename" : "DIKUrevy",
+               "status" : "Næsten lige så god som årgang 2011",
                "type" : "song",
-               "status" : "Færdig/ideer",
+               "revueyear" : "2017",
+               "author" : "",
+               "instructors" : []
+            }
+         ],
+         "length" : 33.5
+      },
+      {
+         "materials" : [
+            {
                "length" : "3",
-               "revuename" : "DIKUrevy",
-               "composer" : "Disturbed",
                "order" : 24,
-               "instructors" : [],
-               "revueyear" : "2017",
-               "version" : "1.0",
-               "props" : []
-            },
-            {
-               "author" : "Niels, Troels",
-               "title" : "VIDEO: Oldschool Mutant Ninja Hackers",
-               "location" : "video/oldschool-hackers.tex",
-               "roles" : [],
-               "type" : "video",
-               "length" : "1.5",
-               "status" : "Niels har styr på det",
-               "revuename" : "DIKUrevy",
-               "instructors" : [],
-               "order" : 25,
-               "revueyear" : "2017",
-               "version" : "1.0",
-               "props" : []
-            },
-            {
-               "length" : "3",
-               "status" : "Færdig",
-               "revuename" : "DIKUrevy",
-               "type" : "sketch",
+               "location" : "sange/Systemduellen.tex",
+               "composer" : "Disturbed",
                "roles" : [
                   {
-                     "title" : "Manden der forklarer analogier",
+                     "abbr" : "R",
+                     "actor" : "Ejnar",
+                     "title" : "Rus"
+                  },
+                  {
+                     "actor" : "Mia",
+                     "title" : "Djævel-samvittighed - pingvin med horn og trefork",
+                     "abbr" : "D"
+                  },
+                  {
+                     "actor" : "Charlie",
+                     "abbr" : "E",
+                     "title" : "Engel-samvittighed - har vinger som MSN-sommerfuglen."
+                  },
+                  {
+                     "actor" : "Freja",
+                     "abbr" : "X",
+                     "title" : "Instruktør"
+                  },
+                  {
+                     "abbr" : "XX",
+                     "actor" : "Jeppe",
+                     "title" : "Sanginstruktør"
+                  }
+               ],
+               "author" : "Mia, Maya, Ejnar",
+               "revueyear" : "2017",
+               "instructors" : [],
+               "version" : "1.0",
+               "title" : "Systemduellen",
+               "melody" : "Inside The Fire",
+               "revuename" : "DIKUrevy",
+               "props" : [],
+               "status" : "Færdig/ideer",
+               "type" : "song"
+            },
+            {
+               "length" : "1.5",
+               "roles" : [],
+               "order" : 25,
+               "location" : "video/oldschool-hackers.tex",
+               "instructors" : [],
+               "revueyear" : "2017",
+               "author" : "Niels, Troels",
+               "type" : "video",
+               "status" : "Niels har styr på det",
+               "revuename" : "DIKUrevy",
+               "props" : [],
+               "title" : "VIDEO: Oldschool Mutant Ninja Hackers",
+               "version" : "1.0"
+            },
+            {
+               "title" : "Analogi",
+               "version" : "0.1",
+               "revuename" : "DIKUrevy",
+               "props" : [
+                  {
+                     "name" : "AV: Et screenshot af en smartphone på Twitter hvor nogen beklager sig",
+                     "description" : "",
+                     "responsible" : "Søren?"
+                  }
+               ],
+               "status" : "Færdig",
+               "type" : "sketch",
+               "revueyear" : "2017",
+               "author" : "Troels, Phillip, Nana, med småændringer i 2017 af manuskriptkomiteen",
+               "instructors" : [],
+               "location" : "sketches/analogi.tex",
+               "order" : 26,
+               "roles" : [
+                  {
                      "abbr" : "A",
-                     "actor" : "Niels"
+                     "actor" : "Niels",
+                     "title" : "Manden der forklarer analogier"
                   },
                   {
                      "actor" : "Caroline",
@@ -1395,45 +1406,48 @@
                      "abbr" : "X"
                   }
                ],
-               "location" : "sketches/analogi.tex",
-               "title" : "Analogi",
-               "author" : "Troels, Phillip, Nana, med småændringer i 2017 af manuskriptkomiteen",
-               "version" : "0.1",
-               "props" : [
-                  {
-                     "description" : "",
-                     "name" : "AV: Et screenshot af en smartphone på Twitter hvor nogen beklager sig",
-                     "responsible" : "Søren?"
-                  }
-               ],
-               "revueyear" : "2017",
-               "order" : 26,
-               "instructors" : []
+               "length" : "3"
             },
             {
                "title" : "DIKUMemes",
+               "version" : "1.0",
+               "props" : [
+                  {
+                     "responsible" : "Lidt ligesom pest-masker, bare nuttet flamingo-agtig",
+                     "description" : "",
+                     "name" : "4 flamingo-masker"
+                  }
+               ],
+               "melody" : "Let It Be",
+               "revuename" : "DIKUrevy",
+               "type" : "song",
+               "status" : "",
+               "revueyear" : "2017",
                "author" : "René Løwe Jacobsen \\& Simon Outzen",
+               "instructors" : [],
                "location" : "sange/dikumemes.tex",
+               "order" : 27,
+               "composer" : "The Beatles",
                "roles" : [
                   {
                      "title" : "Sanger",
-                     "abbr" : "S",
-                     "actor" : "Ejnar"
+                     "actor" : "Ejnar",
+                     "abbr" : "S"
                   },
                   {
                      "actor" : "Simon",
-                     "abbr" : "SS",
-                     "title" : "Sceneshow"
+                     "title" : "Sceneshow",
+                     "abbr" : "SS"
                   },
                   {
-                     "abbr" : "SS",
                      "title" : "Sceneshow",
-                     "actor" : "Caroline"
+                     "actor" : "Caroline",
+                     "abbr" : "SS"
                   },
                   {
                      "actor" : "Arinbjörn",
-                     "abbr" : "SS",
-                     "title" : "Sceneshow"
+                     "title" : "Sceneshow",
+                     "abbr" : "SS"
                   },
                   {
                      "actor" : "Vivien",
@@ -1441,120 +1455,52 @@
                      "title" : "Sceneshow"
                   },
                   {
+                     "abbr" : "N",
                      "actor" : "",
-                     "title" : "Ninja til free-food-skilt",
-                     "abbr" : "N"
-                  },
-                  {
-                     "actor" : "Mikkel Storgaard",
-                     "abbr" : "X",
-                     "title" : "Instruktør"
-                  },
-                  {
-                     "title" : "Sanginstruktør",
-                     "abbr" : "XX",
-                     "actor" : "Cecilie"
-                  }
-               ],
-               "melody" : "Let It Be",
-               "type" : "song",
-               "length" : "4",
-               "status" : "",
-               "revuename" : "DIKUrevy",
-               "composer" : "The Beatles",
-               "order" : 27,
-               "instructors" : [],
-               "revueyear" : "2017",
-               "version" : "1.0",
-               "props" : [
-                  {
-                     "name" : "4 flamingo-masker",
-                     "description" : "",
-                     "responsible" : "Lidt ligesom pest-masker, bare nuttet flamingo-agtig"
-                  }
-               ]
-            },
-            {
-               "props" : [],
-               "version" : "0.1",
-               "revueyear" : "2017",
-               "order" : 28,
-               "composer" : "Kunstner",
-               "instructors" : [],
-               "status" : "Ikke færdig",
-               "length" : 0,
-               "revuename" : "DIKUrevy",
-               "melody" : "Originaltitel",
-               "type" : "song",
-               "roles" : [
-                  {
-                     "abbr" : "S",
-                     "title" : "Rolleforklaring",
-                     "actor" : ""
-                  }
-               ],
-               "location" : "sange/band-jingle.tex",
-               "title" : "Band Jingle",
-               "author" : "Forfattere"
-            },
-            {
-               "author" : "Niels, Simon, Sebbe",
-               "title" : "Privacy-kollektivet",
-               "location" : "sketches/privacy-kollektivet.tex",
-               "type" : "sketch",
-               "roles" : [
-                  {
-                     "abbr" : "P0",
-                     "title" : "Privacy-interesseret, rimelig fornuftig",
-                     "actor" : "Brandt"
-                  },
-                  {
-                     "actor" : "Mikkel Storgaard",
-                     "title" : "Privacy-interesseret, kendis-skør",
-                     "abbr" : "P1"
-                  },
-                  {
-                     "actor" : "Mads",
-                     "title" : "Privacy-interesseret, forenings-skør",
-                     "abbr" : "P2"
-                  },
-                  {
-                     "title" : "Privacy-interesseret, skør-skør",
-                     "abbr" : "P3",
-                     "actor" : "Kasper"
-                  },
-                  {
-                     "actor" : "Romeo",
-                     "abbr" : "S0",
-                     "title" : "Statist; privacy-interesseret, i baggrunden"
-                  },
-                  {
-                     "actor" : "Kim",
-                     "title" : "Statist; privacy-interesseret, i baggrunden",
-                     "abbr" : "S1"
-                  },
-                  {
-                     "title" : "Statist; privacy-interesseret, i baggrunden",
-                     "abbr" : "S2",
-                     "actor" : "Mathias"
-                  },
-                  {
-                     "abbr" : "S3",
-                     "title" : "Statist; privacy-interesseret, i baggrunden",
-                     "actor" : "Sebbe"
+                     "title" : "Ninja til free-food-skilt"
                   },
                   {
                      "title" : "Instruktør",
-                     "abbr" : "X",
-                     "actor" : "Simba"
+                     "actor" : "Mikkel Storgaard",
+                     "abbr" : "X"
+                  },
+                  {
+                     "actor" : "Cecilie",
+                     "title" : "Sanginstruktør",
+                     "abbr" : "XX"
                   }
                ],
-               "status" : "Pizzazztastic",
-               "length" : "3",
+               "length" : "4"
+            },
+            {
+               "roles" : [
+                  {
+                     "actor" : "",
+                     "title" : "Rolleforklaring",
+                     "abbr" : "S"
+                  }
+               ],
+               "composer" : "Kunstner",
+               "location" : "sange/band-jingle.tex",
+               "order" : 28,
+               "length" : 0,
+               "type" : "song",
+               "status" : "Ikke færdig",
+               "version" : "0.1",
+               "title" : "Band Jingle",
+               "props" : [],
+               "melody" : "Originaltitel",
                "revuename" : "DIKUrevy",
-               "order" : 29,
                "instructors" : [],
                "revueyear" : "2017",
+               "author" : "Forfattere"
+            },
+            {
+               "instructors" : [],
+               "author" : "Niels, Simon, Sebbe",
+               "revueyear" : "2017",
+               "type" : "sketch",
+               "status" : "Pizzazztastic",
                "props" : [
                   {
                      "responsible" : "",
@@ -1572,15 +1518,74 @@
                      "responsible" : ""
                   }
                ],
-               "version" : "1.0"
+               "revuename" : "DIKUrevy",
+               "title" : "Privacy-kollektivet",
+               "version" : "1.0",
+               "length" : "3",
+               "roles" : [
+                  {
+                     "abbr" : "P0",
+                     "actor" : "Brandt",
+                     "title" : "Privacy-interesseret, rimelig fornuftig"
+                  },
+                  {
+                     "abbr" : "P1",
+                     "actor" : "Mikkel Storgaard",
+                     "title" : "Privacy-interesseret, kendis-skør"
+                  },
+                  {
+                     "actor" : "Mads",
+                     "title" : "Privacy-interesseret, forenings-skør",
+                     "abbr" : "P2"
+                  },
+                  {
+                     "actor" : "Kasper",
+                     "title" : "Privacy-interesseret, skør-skør",
+                     "abbr" : "P3"
+                  },
+                  {
+                     "actor" : "Romeo",
+                     "title" : "Statist; privacy-interesseret, i baggrunden",
+                     "abbr" : "S0"
+                  },
+                  {
+                     "abbr" : "S1",
+                     "actor" : "Kim",
+                     "title" : "Statist; privacy-interesseret, i baggrunden"
+                  },
+                  {
+                     "actor" : "Mathias",
+                     "title" : "Statist; privacy-interesseret, i baggrunden",
+                     "abbr" : "S2"
+                  },
+                  {
+                     "title" : "Statist; privacy-interesseret, i baggrunden",
+                     "actor" : "Sebbe",
+                     "abbr" : "S3"
+                  },
+                  {
+                     "title" : "Instruktør",
+                     "actor" : "Simba",
+                     "abbr" : "X"
+                  }
+               ],
+               "location" : "sketches/privacy-kollektivet.tex",
+               "order" : 29
             },
             {
-               "revueyear" : "2017",
+               "melody" : "Mini Max",
                "props" : [],
+               "revuename" : "DIKUrevy",
+               "title" : "Minimax",
                "version" : "1.0",
+               "type" : "song",
+               "status" : "Trænger til alpha-beta pruning",
+               "revueyear" : "2017",
+               "author" : "Sebastian Paaske Tørholm",
                "instructors" : [],
-               "composer" : "Bullerfnis",
+               "location" : "sange/minimax.tex",
                "order" : 30,
+               "composer" : "Bullerfnis",
                "roles" : [
                   {
                      "actor" : "Simba",
@@ -1588,9 +1593,9 @@
                      "title" : "Sanger"
                   },
                   {
-                     "abbr" : "P",
+                     "actor" : "Vivien",
                      "title" : "Pige",
-                     "actor" : "Vivien"
+                     "abbr" : "P"
                   },
                   {
                      "actor" : "Arinbjörn",
@@ -1598,273 +1603,274 @@
                      "title" : "Sceneshow"
                   },
                   {
+                     "abbr" : "SS2",
                      "actor" : "Niels",
-                     "title" : "Sceneshow",
-                     "abbr" : "SS2"
+                     "title" : "Sceneshow"
                   },
                   {
-                     "abbr" : "SS3",
                      "title" : "Sceneshow",
-                     "actor" : "René"
+                     "actor" : "René",
+                     "abbr" : "SS3"
                   },
                   {
+                     "abbr" : "SS4",
                      "actor" : "Ronni",
-                     "title" : "Sceneshow",
-                     "abbr" : "SS4"
+                     "title" : "Sceneshow"
                   },
                   {
-                     "actor" : "Charlie",
                      "title" : "Sceneshow",
+                     "actor" : "Charlie",
                      "abbr" : "SS5"
                   },
                   {
-                     "actor" : "Jenny",
                      "title" : "Sceneshow",
+                     "actor" : "Jenny",
                      "abbr" : "SS6"
                   },
                   {
+                     "abbr" : "SS7",
                      "actor" : "Mia",
-                     "title" : "Sceneshow",
-                     "abbr" : "SS7"
+                     "title" : "Sceneshow"
                   },
                   {
+                     "abbr" : "SS8",
                      "actor" : "Cecilie",
-                     "title" : "Sceneshow",
-                     "abbr" : "SS8"
+                     "title" : "Sceneshow"
                   },
                   {
-                     "abbr" : "X",
                      "title" : "Instruktør",
-                     "actor" : "Caroline"
+                     "actor" : "Caroline",
+                     "abbr" : "X"
                   },
                   {
+                     "actor" : "Nicklas",
                      "title" : "Sanginstruktør",
-                     "abbr" : "XX",
-                     "actor" : "Nicklas"
+                     "abbr" : "XX"
                   }
                ],
-               "melody" : "Mini Max",
-               "type" : "song",
-               "length" : "3",
-               "status" : "Trænger til alpha-beta pruning",
-               "revuename" : "DIKUrevy",
-               "title" : "Minimax",
-               "author" : "Sebastian Paaske Tørholm",
-               "location" : "sange/minimax.tex"
+               "length" : "3"
             },
             {
-               "type" : "sketch",
+               "length" : "3.5",
+               "location" : "sketches/science-science.tex",
+               "order" : 31,
                "roles" : [
                   {
                      "actor" : "Vivien",
-                     "title" : "Studerende der lige har skrevet sin første videnskabelige artikel",
-                     "abbr" : "S"
+                     "abbr" : "S",
+                     "title" : "Studerende der lige har skrevet sin første videnskabelige artikel"
                   },
                   {
-                     "title" : "Agent/sælger der udgiver artikler mm.",
+                     "actor" : "Kim",
                      "abbr" : "A",
-                     "actor" : "Kim"
+                     "title" : "Agent/sælger der udgiver artikler mm."
                   },
                   {
-                     "title" : "Instruktør",
+                     "actor" : "Simba",
                      "abbr" : "X",
-                     "actor" : "Simba"
+                     "title" : "Instruktør"
                   }
                ],
-               "status" : "Faktisk sjov",
-               "length" : "3.5",
-               "revuename" : "DIKUrevy",
-               "title" : "Science of Nature Science of the Sciences",
                "author" : "Niels, Bitre-Mikkel, Simon, Sebbe",
-               "location" : "sketches/science-science.tex",
                "revueyear" : "2017",
-               "version" : "1.1",
+               "instructors" : [],
                "props" : [
                   {
-                     "name" : "Selvskreven videnskabelig artikel",
                      "description" : "Bare nogle papirer",
-                     "responsible" : ""
+                     "responsible" : "",
+                     "name" : "Selvskreven videnskabelig artikel"
                   },
                   {
-                     "name" : "En rulle citeringer",
+                     "responsible" : "",
                      "description" : "Skal fylde meget; se sketchkrop",
-                     "responsible" : ""
+                     "name" : "En rulle citeringer"
                   }
                ],
-               "order" : 31,
-               "instructors" : []
+               "revuename" : "DIKUrevy",
+               "version" : "1.1",
+               "title" : "Science of Nature Science of the Sciences",
+               "type" : "sketch",
+               "status" : "Faktisk sjov"
             },
             {
-               "melody" : "Fascination",
+               "length" : "3.5",
+               "composer" : "Alphabeat",
                "roles" : [
                   {
+                     "title" : "Sanger",
                      "actor" : "Charlie",
-                     "abbr" : "S1",
-                     "title" : "Sanger"
+                     "abbr" : "S1"
                   },
                   {
-                     "actor" : "Rasmus",
                      "abbr" : "S2",
+                     "actor" : "Rasmus",
                      "title" : "Sanger"
                   },
                   {
                      "actor" : "Mia",
-                     "title" : "Danser",
-                     "abbr" : "D1"
+                     "abbr" : "D1",
+                     "title" : "Danser"
                   },
                   {
-                     "title" : "Danser",
                      "abbr" : "D2",
-                     "actor" : "Caroline"
+                     "actor" : "Caroline",
+                     "title" : "Danser"
                   },
                   {
                      "abbr" : "D3",
-                     "title" : "Danser",
-                     "actor" : "Jenny"
+                     "actor" : "Jenny",
+                     "title" : "Danser"
                   },
                   {
+                     "actor" : "Freja",
                      "title" : "Instruktør",
-                     "abbr" : "X",
-                     "actor" : "Freja"
+                     "abbr" : "X"
                   },
                   {
+                     "title" : "Sanginstruktør",
                      "actor" : "Cecilie",
-                     "abbr" : "XX",
-                     "title" : "Sanginstruktør"
+                     "abbr" : "XX"
                   }
                ],
-               "type" : "song",
-               "status" : "Skal færdiggøres",
-               "length" : "3.5",
-               "revuename" : "DIKUrevy",
-               "title" : "Tab completion",
-               "author" : "Sebastian Paaske Tørholm",
                "location" : "sange/tab-completion.tex",
+               "order" : 32,
+               "instructors" : [],
+               "author" : "Sebastian Paaske Tørholm",
                "revueyear" : "2017",
+               "status" : "Skal færdiggøres",
+               "type" : "song",
+               "title" : "Tab completion",
                "version" : "0.1",
                "props" : [],
-               "order" : 32,
-               "composer" : "Alphabeat",
-               "instructors" : []
+               "melody" : "Fascination",
+               "revuename" : "DIKUrevy"
             }
          ],
+         "length" : 24.5,
          "order" : 3,
          "title" : "Akt 3"
       },
       {
-         "length" : 6.5,
+         "title" : "Ekstranumre",
+         "order" : 4,
          "materials" : [
             {
+               "instructors" : [],
+               "revueyear" : "2017",
+               "author" : "Sebastian, Simon",
+               "status" : "Sponsorpengene er sikret!",
+               "type" : "sketch",
+               "title" : "Sponsorsketchen",
                "version" : "1.0",
                "props" : [
                   {
-                     "name" : "Jobindex-arbejdsplads, plastret til med Jobindex-logoer",
                      "description" : "",
-                     "responsible" : ""
+                     "responsible" : "",
+                     "name" : "Jobindex-arbejdsplads, plastret til med Jobindex-logoer"
                   }
                ],
-               "revueyear" : "2017",
-               "instructors" : [],
-               "order" : 33,
-               "status" : "Sponsorpengene er sikret!",
                "revuename" : "DIKUrevy",
                "length" : "1",
                "roles" : [
                   {
-                     "title" : "Jobindexer",
+                     "actor" : "Sebbe",
                      "abbr" : "J",
-                     "actor" : "Sebbe"
+                     "title" : "Jobindexer"
                   },
                   {
+                     "actor" : "Simon",
                      "abbr" : "S",
-                     "title" : "Fattig studerende",
-                     "actor" : "Simon"
+                     "title" : "Fattig studerende"
                   },
                   {
+                     "actor" : "René",
                      "title" : "Voice over",
-                     "abbr" : "VO",
-                     "actor" : "René"
+                     "abbr" : "VO"
                   },
                   {
+                     "actor" : "Simba",
                      "abbr" : "X",
-                     "title" : "Instruktør",
-                     "actor" : "Simba"
+                     "title" : "Instruktør"
                   }
                ],
-               "type" : "sketch",
-               "location" : "sketches/sponsorsketch.tex",
-               "title" : "Sponsorsketchen",
-               "author" : "Sebastian, Simon"
+               "order" : 33,
+               "location" : "sketches/sponsorsketch.tex"
             },
             {
-               "location" : "video/bosser.tex",
+               "instructors" : [],
+               "revueyear" : "2017",
                "author" : "Simon",
-               "title" : "VIDEO: Bosser",
                "status" : "Færdig",
+               "type" : "video",
+               "title" : "VIDEO: Bosser",
+               "version" : "1.0",
+               "props" : [],
                "revuename" : "DIKUrevy",
                "length" : "1",
                "roles" : [
                   {
-                     "actor" : "Kasper",
                      "abbr" : "B0",
+                     "actor" : "Kasper",
                      "title" : "Revyboss"
                   },
                   {
                      "title" : "Revyboss",
-                     "abbr" : "B1",
-                     "actor" : "Jenny"
+                     "actor" : "Jenny",
+                     "abbr" : "B1"
                   }
                ],
-               "type" : "video",
-               "order" : 34,
-               "instructors" : [],
-               "version" : "1.0",
-               "props" : [],
-               "revueyear" : "2017"
+               "location" : "video/bosser.tex",
+               "order" : 34
             },
             {
-               "revueyear" : "2017",
                "version" : "1.0",
+               "title" : "Rus laver toast",
                "props" : [],
-               "composer" : "Ray Dee Ohh",
-               "order" : 35,
-               "instructors" : [],
                "melody" : "Jeg Vil La' Lyset Brænde",
+               "revuename" : "DIKUrevy",
+               "type" : "song",
+               "status" : "Skal nazificeres",
+               "revueyear" : "2017",
+               "author" : "Sebastian Paaske Tørholm",
+               "instructors" : [],
+               "location" : "sange/rus-laver-toast.tex",
+               "order" : 35,
+               "composer" : "Ray Dee Ohh",
                "roles" : [
                   {
-                     "abbr" : "R1",
+                     "actor" : "Rasmus",
                      "title" : "Rus",
-                     "actor" : "Rasmus"
+                     "abbr" : "R1"
                   },
                   {
-                     "abbr" : "R2",
                      "title" : "Rus",
-                     "actor" : "Charlie"
+                     "actor" : "Charlie",
+                     "abbr" : "R2"
                   },
                   {
                      "abbr" : "SS1",
-                     "title" : "Sceneshow",
-                     "actor" : "Brandt"
-                  },
-                  {
-                     "actor" : "Kasper",
-                     "title" : "Sceneshow",
-                     "abbr" : "SS2"
-                  },
-                  {
-                     "actor" : "Mads",
-                     "title" : "Sceneshow",
-                     "abbr" : "SS3"
-                  },
-                  {
-                     "actor" : "Ronni",
-                     "abbr" : "SS4",
+                     "actor" : "Brandt",
                      "title" : "Sceneshow"
                   },
                   {
+                     "actor" : "Kasper",
+                     "abbr" : "SS2",
+                     "title" : "Sceneshow"
+                  },
+                  {
+                     "actor" : "Mads",
+                     "abbr" : "SS3",
+                     "title" : "Sceneshow"
+                  },
+                  {
+                     "title" : "Sceneshow",
+                     "actor" : "Ronni",
+                     "abbr" : "SS4"
+                  },
+                  {
                      "title" : "Kor",
-                     "abbr" : "K1",
-                     "actor" : "Caroline"
+                     "actor" : "Caroline",
+                     "abbr" : "K1"
                   },
                   {
                      "actor" : "Jenny",
@@ -1872,33 +1878,27 @@
                      "abbr" : "K2"
                   },
                   {
-                     "abbr" : "K3",
                      "title" : "Kor",
-                     "actor" : "Arinbjörn"
+                     "actor" : "Arinbjörn",
+                     "abbr" : "K3"
                   },
                   {
-                     "actor" : "Caroline",
                      "title" : "Instruktør",
+                     "actor" : "Caroline",
                      "abbr" : "X"
                   },
                   {
+                     "actor" : "Cecilie",
                      "title" : "Sanginstruktør",
-                     "abbr" : "XX",
-                     "actor" : "Cecilie"
+                     "abbr" : "XX"
                   }
                ],
-               "type" : "song",
-               "status" : "Skal nazificeres",
-               "revuename" : "DIKUrevy",
-               "length" : "4.5",
-               "title" : "Rus laver toast",
-               "author" : "Sebastian Paaske Tørholm",
-               "location" : "sange/rus-laver-toast.tex"
+               "length" : "4.5"
             }
          ],
-         "title" : "Ekstranumre",
-         "order" : 4
+         "length" : 6.5
       }
    ],
+   "year" : "2017",
    "name" : "DIKUrevy"
 }
