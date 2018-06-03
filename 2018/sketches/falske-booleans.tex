@@ -1,0 +1,78 @@
+\documentclass[a4paper,11pt]{article}
+
+\usepackage{revy}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[danish]{babel}
+
+
+\revyname{DIKUrevy}
+\revyyear{2018}
+% HUSK AT OPDATERE VERSIONSNUMMER
+\version{1.0}
+\eta{$3$ minutter}
+\status{Færdig}
+
+\title{Falske booleans}
+\author{Emil, Sebbe, Simon}
+
+\begin{document}
+\maketitle
+
+\begin{roles}
+\role{E}[Sebbe] Efterforsker fra Bagmandspolitiet
+\role{P}[Mads] Programmør
+\role{X}[Caro] Instruktør
+\end{roles}
+
+\begin{props}
+\prop{Tavle}[Person, der skaffer]
+\prop{Tusch}[Person, der skaffer]
+\end{props}
+
+
+\begin{sketch}
+
+\scene{P sidder og koder. E træder dramatisk ind på scenen (midt for, front, til publikum)}
+\says{E} Jeg er fra Bagmandspolitiet, og det er kommet os for øre, at et program
+    har udført en ulovlig handling. Vi skal nok komme til bottom i denne sag!
+\says{E}[peger på P] Du dér! Hvor var du klokken 1527860220!? (red: unix time for 1. juni 2018 kl 13:37)
+\says{P} A' hva'? I går kl 13:37? Der sad jeg bare derhjemme og kodede.
+\says{E} Sååååeh! Sig mig, brugte du tilfældigvis{\ldots} booleans i dit program?
+\says{P} Jah, det gør jeg da tit.
+\says{E}[beskyldende] Nåååååeh! Nånånå! Så det gjorde du! Så du brugte \emph{booleans}!?
+\says{P} Jo, jeg havde da en if-then-else og sådan{\ldots}
+\says{E} Nånånånånå! Ser man det, ser man det. Så, disse{\ldots} såkaldte{\ldots} \emph{booleans} du bruger{\ldots} Hvor har du dem fra?
+\says{P} Øh, hvad mener du?
+\says{E} Lad mig{\ldots} omformulere mit spørgsmål. Disse{\ldots} \emph{booleans}{\ldots} var der nogen af dem der var{\ldots} falske?
+\says{P} Ja, det er der jo som regel!
+\says{E} Nånånånånå! Så du indrømmer det altså! Vi er jo ikke særligt glade for, at folk bruger \emph{falske} booleans.
+\says{P} Hvordan skal man så nå ind i else-grenen?
+\says{E} Nej, nej, nej -- du snakker om falske booleans. Jeg snakker om \emph{falske} booleans!
+\scene{E tegner et ``O'' på en tavle.}
+\says{E} Er denne boolean sand eller falsk?
+\says{P} Ja.
+\says{E} Nejnej{\ldots} Er denne boolean sand?
+\says{P} Nej, det ligger da på stranden.
+\says{E} Arh! Øh{\ldots} Denne boolean er falsk, ikke sandt?
+\scene{Følgende sekvens udføres ret hurtigt:}
+\says{P} Ja!
+\says{E} Nej! Eller jo.
+\says{P} Ja!
+\says{E} Eh, måske?
+\says{P} Nej!
+\says{E} (frustreret, kaster hænderne op) Arh, hvad ser du hér!?
+\says{P} Et nul!
+\says{E} Aha! Men det er det ikke! Det er et store-``O''! En \emph{ringe} efterligning.
+\says{P} \emph{gisp} Men det er jo sandt!
+\says{E} Præcis! Men det er falsk sand!
+\says{P} Det{\ldots} det er jo absurd!
+\says{E} Nemlig! Vi har længe efterforsket folk der har gået og klippet Store-O'er ud
+   af algoritmebogen, og sat dem til salg på det rød-sorte marked. Og der sætter jeg stregen! \act{tegner en streg over O'et}
+\says{P} Men nu er det jo et Ø?
+\says{E}[venligt, mod publikum] Eller et nul, med den rigtige font!
+
+\scene{Lys ned, tæppe for}
+
+\end{sketch}
+\end{document}

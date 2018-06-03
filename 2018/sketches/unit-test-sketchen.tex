@@ -1,0 +1,137 @@
+\documentclass[a4paper,11pt]{article}
+
+\usepackage{revy}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[danish]{babel}
+
+
+\revyname{DIKUrevy}
+\revyyear{2018}
+% HUSK AT OPDATERE VERSIONSNUMMER
+\version{1.0}
+\eta{$3.5$ minutter}
+\status{Færdig}
+
+\title{Unit-test-sketchen}
+\author{Torben Milhøj, Sebbe, Simon}
+
+\begin{document}
+\maketitle
+
+\begin{roles}
+\role{A}[Torben] Fornavn Efternavn
+\role{B}[Sean] Fornavn \emph{Mellemnavn} Efternavn
+\role{X}[Simon] Instruktør
+\end{roles}
+
+\begin{props}
+\prop{Clipboard}[]
+\prop{trafikkegle eller lignende}[]
+\end{props}
+
+
+\begin{sketch}
+
+\scene{AV: For at sikre publikum den bedst mulige oplevelse af DIKUreyven 2018, vil vi nu foretage en grundig test af vores materiale.}
+\scene{AV: Vi beklager ulejliheden.}
+
+\scene{A træder ind på scenen, clipboard i hånden og kigger sig omkring. A stiller sig hen på lokation 0.}
+\says{A} Mit navn er Fornavn Efternavn og jeg skal præsentere en sketch!
+
+\says{A} Jeg kan bekræfte, at der til start af sketchen er publikum, når jeg står på lokation 0. Så jeg siger hej publikum!
+
+\scene{A hiver en lap papir op af baglommen og læser op fra den}
+\says{A} Har I hørt den om ham der skiftede fra vim til emacs?
+\scene{A fniser for sig selv og lægger sedlen væk.}
+
+\says{A} Antallet af jokes fortalt: 1. Jeg tester nu, at publikum stadigvæk er her på lokation 0.
+\scene{A kigger ud på publikum.}
+
+\says{A} Efter én joke, kan jeg bekræfte, at publikum stadigvæk er på lokation 0.
+
+\says{A} Jeg tester nu, om publikum stadigvæk er der, hvis jeg går til lokation 1.
+\scene{A går til lokation 1 og spejder ud over publikum.}
+\says{A} Jeg kan bekræfte, at publikum stadig er til stede på lokation 1.
+
+\scene{A hiver en lap papir op af baglommen og læser op fra den}
+\says{A} Har IAhh, et gammelt sprog hørt den om ham der skiftede fra vim til emacs?
+\scene{A fniser for sig selv, lægger sedlen væk og spejder ud over publikum.}
+
+\says{A} Jeg kan nu bekræfte, at joke 0 godt kan fortælles fra lokation 0 og lokation 1 uden at publikum forsvinder.
+
+\scene{B træder ind på scenen på lokation 0.}
+
+\says{B} Goddag. Mit navn er Fornavn Mellemnavn Efternavn og jeg skal være med i denne test.
+
+\scene{A kigger på sit clipboard og bekræfter.}
+\says{A} Antallet af personer på scenen efter joke 0 fortalt på lokation 1: 2 personer. Jeg kan derfor bekræfte, at du skal være på scenen nu.
+
+\says{A} Hej Fornavn Mellemnavn Efternavn. Mit navn er stadigvæk Fornavn Efternavn og jeg kan bekræfte, at det i dette øjeblik er godt at møde dig.
+
+\scene{A spejder ud over publikum}
+
+\says{A} Jeg kan ydermere bekræfte, at publikum stadig er til stede, selv når der er personer med mere end blot fornavn og efternavn.
+
+\scene{B går hen til midten af scenen, ryggen mod publikum.}
+
+\says{B} Jeg er nu på lokation 2, og vil fremføre joke 0.
+
+\scene{B hiver en lap papir op af baglommen og læser op fra den}
+\says{B} Virkelig?
+\says{B} Har I hørt den om ham der skiftede fra vim til emacs?
+\scene{B fniser for sig selv og lægger sedlen væk. A fniser med.}
+
+\scene{B spejder ligeud, hvilket er væk fra publikum.}
+
+\says{B} Jeg kan nu bekræfte, at publikum ikke længere er til stede.
+
+\says{A}[checker sit clipboard] Holdt! Det strider mod testplanen. Den siger, at efter Fornavn Mellemnavn Efternavn fremfører joke 0 på lokation 2, da bør publikum stadig være til stede.
+
+\says{A} For at bekræfte, at systemet ikke er gået ned, vil jeg nu gå over til lokation 0 og gentage den første test.
+\scene{A går hen til lokation 0.}
+
+\scene{A hiver en lap papir op af baglommen og læser op fra den}
+\says{A} Har I hørt den om ham der skiftede fra vim til emacs?
+\scene{A fniser for sig selv og lægger sedlen væk. B fniser med.}
+
+\scene{A kigger ud på publikum.}
+\says{A} Efter gentagen kørsel af den første test, kan jeg bekræfte at publikum stadig er til stede.
+
+\says{B} Hypotese: Joken er lort - ahem - Testen er flaky. Lad os køre den igen.
+
+\scene{B hiver en lap papir op af baglommen og læser op fra den}
+\says{B} Har I hørt den om ham der skiftede fra vim til emacs?
+\scene{B fniser for sig selv og lægger sedlen væk. A fniser med.}
+
+\scene{B spejder ligeud, hvilket er væk fra publikum.}
+
+\says{B} Jeg kan bekræfte, at publikum stadig ikke er til stede.
+         Jeg kan hermed konkludere, at enten er jeg i stykker, eller lokation 2 er i stykker.
+
+\scene{ B stiller en trafikkegle på lokation 2 }
+
+\says{A} Lad os bytte plads, og gentage vores tests.
+
+\scene{A stiller sig over på lokation 2 (center-stage, væk fra publium.; B stiller sig over på lokation 0.}
+
+\scene{A+B hiver en lap papir op af baglommen og læser op fra den}
+\says{A+B} Har I hørt den om ham der skiftede fra vim til emacs?
+\scene{A+B fniser for sig selv og lægger sedlen væk.}
+
+\scene{A+B spejder ud mod publikum.}
+
+\says{B} Jeg kan bekræfte, at publikum er til stede ved lokation 0\ldots
+\says{A} \ldots og at de er væk ved lokation 2.
+\scene{A går hen til lokation 0 og viser B sit clipboard.}
+\says{A} Vi kan hermed konkludere, at lokation 2 er i stykker. Fjern lokation 2.
+
+\scene{B sætter sceneelement foran lokation 2}
+
+\says{B} Hypotese: Måske er det blot joke 0, der går i stykker ved lokation 2. Hvad hvis vi fortæller en anden joke?
+\says{A} Fjollede Fornavn Mellemnavn Efternavn. Vi dataloger kender da kun én joke.
+
+\scene{Lys ned, tæppe for}
+
+\end{sketch}
+\end{document}

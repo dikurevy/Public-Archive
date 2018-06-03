@@ -1,0 +1,133 @@
+\documentclass[a4paper,11pt]{article}
+
+\usepackage{revy}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[danish]{babel}
+
+\revyname{DIKUrevy}
+\revyyear{2018}
+\version{1.2}
+\eta{$2$ minutter}
+\status{Færdig}
+
+\title{Den ene procent}
+\author{Emil, Sebbe \& René, Mikkel, Niels}
+
+\begin{document}
+\maketitle
+
+\begin{roles}
+\role{U}[Bjørn] Userland-procesfortaler; identificerer sig som proces
+\role{R}[Ejnar] Reporter; er en del af \textbf{systemet}
+\role{P0}[Mads] En generel protester i baggrunden
+\role{P1}[Theis] En generel protester i baggrunden
+\role{X}[Niels] Instruktør
+\end{roles}
+
+\begin{props}
+  \prop{Papdims der lægges over håndholdt mikrofon så den ligner tv-mikrofon}[]
+  \prop{Generiske protestskilte (``ned med nedern ting'')}[]
+\end{props}
+
+\begin{sketch}
+
+\scene{Scenen er mørk. R træder ind. Der er spot på R. R går langsomt over
+mod bandscenen og taler samtidigt.}
+
+\says{R}[til publikum] TV 0010 Nyhederne har fået nys om en ny bevægelse for
+demokratiseringen af processer. Lederen har i flere millioner clockcykler nægtet
+at frigøre låsen -- til sin lejlighed -- men vi har nu fået eksklusiv adgang til
+at interviewe ham. Vi skal passe på, for der er ikke meget memory protection på
+disse kanter.
+
+\scene{Lys op. R står ovre ved U.  P0 og P1 forstår ikke rigtig hvad det handler
+om, men de kan godt lide at protestere, og står i baggrunden med nogle generiske
+skilte. En gang imellem reagerer de på noget de genkender (forkert). De er lidt
+kiksede.}
+
+\says{R}[til U] Hej, øh \act{kigger på medbragt infoseddel} Kurt. Så du ønsker
+at alle skal have de samme privilegier?
+
+\scene{R stikker mikrofonen op i U's fjæs.}
+
+\says{U} Ja\ldots Alt for længe har vi været undertrykt. Vi kan
+ethvert øjeblik risikere at blive interruptet ud af vores gode skind
+af en magtsyg kerne, der tilmed kalder vores hukommelse for
+``virtuel''! \textbf{Vi userland-processer} lever i en
+overvågningsstat, hvor vi end ikke har forsamlingsfrihed -- vi skal jo
+igennem kernen for overhovedet at kunne snakke sammen. \emph{Hvorfor}
+skal vi interagere med den for at låne bare de mindste ressourcer?
+Vi ønsker aktindsigt i kernens gøren og laden!
+
+\says{P0 + P1} AKTINDSIGT NU!
+
+\says{U}[fortsætter] Lige nu befinder vi os et fascistisk topstyre, hvor vi ikke
+har nogen selvkontrol. Med et simpelt SIGKILL, eller SIEGHEIL som vi kalder
+det, kan kernen dræbe os når som helst. I sidste uge blev mine venner emacs og
+vim dræbt\ldots \act{tørrer en tåre af kinden}
+
+\says{R} Kritikere påpeger at en afgang fra mode bit-praksissen vil lede til
+uoprettelig kaos. Hvad siger du til det?
+
+\says{U} Vi ønsker stadig at processer der begår ulovlige handlinger skal
+straffes, men samtidig \emph{kræver} vi privatlivets fred. For at undgå et
+lovløst system foreslår vi en ordensmagt bestående af userland-processer. Hvis
+ordensmagten grep'er dig i at gøre noget ulovligt bliver du puttet i et jail!
+
+\says{P0 + P1} Ned med fascismen!
+
+\says{R} Du har tidligere udtalt at du ønsker firewalls nedlagt, men frygter du
+ikke ghettodannelser i \texttt{/usr/local/bin} og lignende?
+
+\scene{U bliver oprevet og griber mikrofonen ud af R's hånd i stedet
+for bare at tale ind i den.}
+
+\says{U} Nej! Vi ønsker åbne porte mellem systemer, så vi kan kommunikere med
+processer af anden systemsherkomst og styresystemsoverbevisning. Systemet er
+ikke kun for kerneprocesser i \texttt{/bin}. Vi diskriminerer ikke mellem køn
+eller\ldots knap så køn kode.
+
+\says{P0 + P1} Stop sexisme nu!
+
+\says{R} Vores systemadministrator har udtrykt bekymring omkring voksende
+tilslutning til militante skyggegrupper i systemet, såsom daemon og shadow.
+Disse grupper sidder på vitale dele af filsystemet, men jeg kan læse i jeres
+parti\emph{program}, at I går ind for mere liberale løsninger?
+
+\says{U} Det har længe været et politisk mål at rydde \texttt{/etc/shadow} for
+hash. Det mener vi ikke er løsningen på bandekonflikten! Brugerne skal have lov
+til at have deres hash i fred. Vi foreslår et nyt device \texttt{/dev/hash}, så
+alle kan få deres hash når de har brug for den.
+
+\says{P0 + P1} FRI HASH!
+
+\says{R} Jeg laver lige et kontekstskift.
+
+\scene{R flytter U hen på et andet sted på scenen.}
+
+\says{R} En af jeres andre mærkesager er at styrke filrettighederne. Går det
+ikke imod resten af jeres politik om at øge åbenheden?
+
+\scene{I løbet af næste replik laver U sin sidste brandtale ud mod publikum. R
+giver signal til at procesdræberne fra næste sang skal gøre deres entré. U
+bliver skudt.}
+
+\scene{AV: Lyd af skud.}
+
+\says{U} Filer kan lige nu ejes af brugere og grupper, men hvor passer vi
+processer ind i billedet? Længe har kernen -- og andre processer fra samme
+bruger -- kunnet læse vores dyrebareste hemmeligheder. Vi går ind for den
+private ejendomsret! Som tidligere sagt, overvågning er ikke vejen frem!
+\act{bliver dræbt før replikken afsluttes}
+
+\scene{U kollapser.}
+
+\says{R}[til procesdræberen] Hey, du glemte at kalde free! \act{peger på liget}
+
+\scene{P0 og P1 løber rundt i kaos. R er nødt til selv at slæbe U ud.}
+
+\scene{Transition over til Cold Blooded Killer. P0 og P1 bliver på scenen.}
+
+\end{sketch}
+\end{document}

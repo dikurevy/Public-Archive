@@ -1,0 +1,131 @@
+\documentclass[a4paper,11pt]{article}
+
+\usepackage{revy}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[danish]{babel}
+\usepackage{hyperref}
+
+\revyname{DIKUrevy}
+\revyyear{2018}
+\version{1.0}
+\eta{$4$ minutter}
+\status{Færdig}
+
+\title{Vi skal kode i C}
+\author{Sebastian Paaske Tørholm, Rene Løwe, Mikkel Storgaard}
+\melody{Det Brune Punktum: ``Ud i det blå''}
+% (\url{http://www.youtube.com/watch?v=NNwS4Br6F34})
+
+\begin{document}
+\maketitle
+
+
+
+% præmis: gamle mennesker konkurrerer/diskuterer hvor nederen nye ting er
+% catchphrase: baaaaaaaah!
+
+% der er godt nok sket meget på de 19 år
+
+\begin{roles}
+\role{C0}[René] C-koder
+\role{C1}[Sebbe] C-koder
+\role{C2}[Nicklas] C-koder
+\role{N0}[Amalie] Ninja
+\role{N1}[Romeo] Ninja
+\role{X}[Caro] Instruktør
+\end{roles}
+
+\begin{sketch}
+  \scene{Der sidder tre gamle bitre dataloger ved et busstoppested. Tænk stok,
+    skæg, rullekufferter og leverpletter. Jo flere gammel-agtige ting de kan
+    have, jo bedre. C2 sidder og læser Jyllands-Posten.}
+
+  \scene{Måske idler de bare indtil publikum har fået ro over sig selv.}
+
+  \says{C0}[kigger op fra avisen] Hrrrmf! Nu er ``machine learning'' åbenbart
+  blevet moderne... Skulle det nu være noget særligt..?
+  \says{C0}[kigger med i avisen] ``TensorFlow'' i ``Pyyyyyython''? Baaaaaah...
+  \says{C0+C2} Python? Baaaaaaaaaah!
+  \says{C2}[laver ung stemme, barnligt] wah wah wah se mig, jeg er Python...
+  \scene{C1 falder lidt i søvn indover sin stok}
+  \says{C2}[fortsat] jeg bruger dynamiske typer
+  \says{C1}[Vågner!] Dynamiske typer?? BAAAAAAAAAAAAAAH! \act{kaster sin hat i
+    gulvet i vrede}
+  \says{C0}[enig, til C1] Ja, baaaaaaah!
+  \says{C1}Kan man måske kode kerne i Python?
+  \says{C2}Kode kerne i Python??
+  \scene{kort kunstpause}
+  \says{C2}Nej, det kan man da naturligvis ikke, det er da absurd! Ha ha ha ha!
+  \says{C0+C1} Ha ha ha ha!
+  \says{C0} Lortesprog! (vigtig at o'et i lortesprog er [o] og ikke [å])
+  \scene{C0+C1+C2 griner meget selvsmagende til og med publikum. De må gerne
+    smaske lidt.}
+  \says{C2} Nej, da jeg var rus.. \act{kigger drømmende ud i luften} i det
+  gamle årtusind, var alting smukt.. jeg husker at eksamenerne var sværere..
+  \says{C1} Ja.. og øllerne koldere..
+  \says{C2} og vi var smukkere..
+  \says{C0} Ja.. så vidt jeg husker var det cirka.. sådan her!
+  \scene{Musik på! C0+C1+C2 springer op, smider deres skæg og er lækre og gør
+    klar til lækker sang!}
+\end{sketch}
+
+\begin{song}
+\sings{C0} %
+    Nu er det sommer.
+    Pawel er væk indtil AD næst' år
+    så skal der kodes lidt,
+    men i hvad? Ja, prøv bare at gæt'.
+
+\sings{C1} %
+    Ikke i Java --- det er \emph{objekt}-tivt noget juks
+    (Og) typerne i F\# gør det svært at få noget gjort
+    Giv mig heller' unions, structs og void pointers
+
+\sings{C*} %
+    Vi skal kode i C,
+    der hvor alting kan ske
+    lad os se hvor beskidt det kan bli'.
+    Selv allokere, segfaulte mere
+    fordi der ik' var noget at free
+
+\sings{C2} %
+    Jeg kører koden
+    imod al forventning går det lidt langsomt
+    Skal der inlines nu
+    eller skal der en makro til?
+    Optimerer? Nej, vi præprocesserer!
+
+\sings{C*} %
+    Vi skal kode i C,
+    der hvor alting kan ske
+    lad os se hvor beskidt det kan bli'.
+    \#definere \texttt{MAX\_INT} til fire (\#definere synges \emph{hash definere})
+    for så kan den bruges som $\pi$.
+
+\sings{C*} %
+    Vi skal kode i C,
+    der hvor alting kan ske
+    lad os se hvor beskidt det kan bli'.
+    Dereferere en \texttt{void*} mere (\texttt{void*} synges \emph{void pointer})
+    for at se hvad der ligger deri.
+
+\scene{Mellemspil}
+
+\sings{C*} %
+    Vi skal kode i C,
+    der hvor alting kan ske
+    lad os se hvor beskidt det kan bli'.
+    Inkrementere det vi definerer
+    når \texttt{i = i++ + i;} (synges: \emph{i lig i plus plus plus i})
+
+\sings{C*} %
+    Vi skal kode i C,
+    der hvor alting kan ske
+    lad os se hvor beskidt det kan bli'.
+    Omgå compiler, når nu at den fejler
+    med lidt inline assembleri.
+
+\end{song}
+
+\end{document}

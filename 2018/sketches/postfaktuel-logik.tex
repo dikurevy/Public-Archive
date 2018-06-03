@@ -1,0 +1,246 @@
+\documentclass[a4paper,11pt]{article}
+
+\usepackage{revy}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[danish]{babel}
+
+% LOGIC
+\usepackage{mathtools}
+\usepackage{boxproof}
+\usepackage{tikzsymbols}
+\usepackage{wasysym}
+
+\let\implies\rightarrow
+\def\elim#1{{{#1}{\cal E}}}
+\def\intro#1{{{#1}{\cal I}}}
+\newcommand{\prem}[0]{\mbox{præmis}}
+\newcommand{\ass}[0]{\mbox{rygte}}
+\newcommand{\fact}[0]{\mbox{fakta}}
+
+\newcommand{\rygte}{\rightleftharpoons}
+\newcommand{\blamefor}{\hookrightarrow}
+
+
+\revyname{DIKUrevy}
+\revyyear{2018}
+% HUSK AT OPDATERE VERSIONSNUMMER
+\version{1.0}
+\eta{$6$ minutter}
+\status{Der er ved at være noget godt}
+
+\title{Postfaktuel logik}
+\author{Bette-Mikkel, Niels, Troels, Phillip}
+
+\begin{document}
+\maketitle
+
+\begin{roles}
+\role{A}[Simon] Andrzej Filinski
+\role{X}[Niels] Instruktør
+\end{roles}
+
+\begin{props}
+  \prop{Lænestol}
+  \prop{Bunker af papir}[bare tag nogle fra Andrzejs kontor]
+  \prop{Lille guldstatue}
+  \prop{Logik-bogen (``Logic in Computer Science'')}[Phillip]
+  \prop{AV: Slideshow}[Niels]
+  \prop{AV: Slide fra logikbogen}[Phillip]
+  \prop{AV: Sammenklipning af tvivlsom TV-logik}[Phillip]
+\end{props}
+
+
+\begin{sketch}
+
+  \scene{Der er halvmørkt på scenen. Midt på scenen står en lænestol, omgivet af høje bunker papir.}
+
+  \scene{En ukendt person (A) sidder i lænestolen med ryggen mod publikum.}
+
+  \scene{På OverTeX vises 10-20 sekunders klip fra Fox News, TV2 News, o.lign., hvor indholdet er meget dumt. Det er klippet sammen på en måde så det ser ud som om at personen i lænestolen zapper rundt mellem forskellige kanaler.}
+
+  \scene{TV'et på OverTeX slukkes. Lys helt op. A rejser sig (eller drejer stolen) og vender sig mod publikum.}
+
+  \says{A} Godaften, og velkommen til første forelæsning i Postfaktuel logik.
+
+  \says{A} Fysikerne ved jo at man kan bruge mange år på at gylpe nogle græske bogstaver ned i en videnskabelig artikel, og så er der nogen som bygger en partikel-accelerator og viser at man tog fejl.
+
+  \says{A} Logik har på lignende vis været ramt af teoretisk isolering.
+
+  \says{A} Vi har brug for empirisk efterprøvning: Hvordan bruger folk formel logik i den virkelige verden?
+
+  \says{A} Det er nu for første gang lykkedes mig at observere den virkelige verden \act{peger i retningen af OverTeX-TV'et}, og jeg har opdateret kursusnoterne til Logik derefter.
+
+
+\scene{Fra her af kommer der et slide på OverTeX med en masse box proofs. Det er meningen at hver linje i boksbeviset kommer i takt med at A snakker om den.}
+
+{\scene AV: Vis formel.}
+\begin{align*}
+p \implies \lnot q, q \lor r \vdash p \land q \land r.
+\end{align*}
+
+\says{A}[peger på slidet] Lad os tage et eksempel. Vi vil gerne bevise at, givet at $p$ medfører ikke-$q$, og givet at enten $q$ eller $r$ gælder, kan det udledes at $p$ og $q$ og $r$ gælder.
+
+\says{A} Det er nok ikke alle der har haft Logik for nyligt, så lad os lige tage en hurtig opsummering.
+
+\scene{A tager Logik-bogen frem fra stolen og bladrer meget hurtigt igennem den. På HøjTeX kommer der en masse slides meget hurtigt.}
+
+\says{A} Og nu hvor alle er med, kan vi skrive vores præmisser op.
+
+{\scene AV: Følgende boksbevis kommer løbende op på OverTeX.}
+\begin{proofbox}
+\[
+\: p \implies \lnot q \=\prem\\
+\: q \lor r \=\prem\\
+\[
+\: p \= \ass\\
+\: \lnot q \= \text{MP}(1, 3)\\
+\]
+\: \Smiley\ \lnot q \= \intro\Smiley\\
+\: \lnot q \= \text{SE}(4, 5)
+\]
+\end{proofbox}
+
+\says{A} Man kan til enhver tid introducere en indlejret rygteboks. Jeg har i hvert fald hørt folk sige at $p$ er korrekt. Og så kan vi bruge modus ponens af første og tredje linje til at vise $\lnot q$.
+
+\says{A} I dagens politiske klima er det rart at være \textit{imod noget}, så vi kan bruge føles-godt-operatoren på \textbf{ikke}-$q$.
+
+\says{A} Jeg har lavet en regel der siger at hvis der er et rygte om et term $v$, og man godt kan lide $v$, så gælder $v$.
+
+{\scene AV: Vis regel på separat slide.}
+\begin{align*}
+\rygte v \land \Smiley\ v \vdash v
+\end{align*}
+
+{\scene AV: Skift tilbage til boksbeviset.}
+
+\says{A} Vi kalder dette for skepsiseliminering.
+
+{\scene AV: Følgende boksbevis kommer løbende op på OverTeX.}
+\begin{proofbox}
+\[
+\: p \implies \lnot q \=\prem\\
+\: q \lor r \=\prem\\
+\: \lnot q \=\fact\\
+\: \exists? s \=\intro{\exists?}(3)\\
+\: s \Sadey \=\intro\Sadey\\
+\: s \blamefor \lnot q \=\intro\blamefor(5, 3)\\
+\: q \=\text{FN}\\
+\]
+\end{proofbox}
+
+\says{A} Men vi ville jo bevise $p \land q \land r$ -- og nu er vi kommet frem til $\lnot q$. Det er en såkaldt ufrivillig implikation. Dem kan man komme ud af ved at bruge ``men-hvad-med''-operatoren, som vi gør det med variablen $s$.
+
+\says{A} Nu er $s$ i en ``men-hvad-med''-kontekst. %Den holder ikke forevigt, men nok til at vi kan navigere over i en alternativ fakta.
+
+\says{A} Nu tænker I måske at $s$ hverken er en del af vores præmis eller konklusion. Faktisk lyder $s$ ret \act{frastødt} fremmedt, så vi introducerer et føles-ikke-særligt-godt-udtryk. Den sure smiley skal stå til højre, da det er omvendt boolsk notation.
+
+\says{A} Her træder skyldreglen i kraft: Hvis man har en gammel fakta $v$ og en variabel $w$ der ikke føles god, kan man introducere skyde-skylden-på-operatoren, så vi siger at $w$ er skyld i $v$.
+
+{\scene AV: Vis regel på separat slide.}
+\begin{align*}
+\text{gammelt}(v) \land w \Sadey \vdash w \blamefor v
+\end{align*}
+
+{\scene AV: Skift tilbage til boksbeviset.}
+
+\says{A} Her ville man normalt bruge et modstridsbevis, men i stedet laver vi et såkaldt \textit{mod}-modstridsbevis. Den virker ved at vi gør det \textit{mod}satte af at bevise noget, så vi gør\ldots ingenting. De to ``mod'' cancellerer hinanden ud, og vi står tilbage med et \textit{stridsbevis}! \act{glad}
+
+\says{A} Man kan bruge et stridsbevis til at tilegne sig en modsatrettet fakta fra en fjende, her $s$. Fjende-variablen $s$ mener tydeligvis at $\lnot q$ holder, men \textbf{SÅ SKAL MAN BARE RÅBE HØJT NOK OG LÆNGE NOK TIL MAN FÅR RET OG OVERDØVER MODPARTENS HOLDNING}.
+
+\says{A} Et stridsbevis kaldes derfor også for brug af ``\textbf{f}jendtlig \textbf{n}egation'', eller som de siger i USA: ``fake news''. Og vi har nu vores første fakta, $q$!
+
+{\scene AV: Følgende boksbevis kommer løbende op på OverTeX.}
+\begin{proofbox}
+\[
+\: p \implies \lnot q \=\prem\\
+\: q \lor r \=\prem\\
+\: q \=\fact\\
+\: r \=\text{INDOK}(2, 3)\\
+\]
+\end{proofbox}
+
+\says{A} Nu skal vi vise at $r$ holder. Det kan vi vise med et \textit{indoktrin}-bevis. Vi ved allerede at $q \lor r$ er sandt.
+
+{\scene AV: Skift til sandhedstabel-slides.}
+\begin{center}
+\begin{tabular}{r|r|l}
+$q$ & $r$ & $q \lor r$\\\hline
+T & T & T\\\hline
+F & T & T\\\hline
+T & F & T
+\end{tabular}
+\end{center}
+
+\says{A} Når $q$ er falsk, er $r$ nødt til at være sand for at $q \lor r$ holder.
+
+\begin{center}
+\begin{tabular}{r|r|l}
+$q$ & $r$ & $q \lor r$\\\hline
+T & T & T\\\hline
+F & \textbf{T} & T\\\hline
+T & F & T
+\end{tabular}
+
+\begin{align*}
+\lnot q, q \lor r \vdash r
+\end{align*}
+\end{center}
+
+\says{A} Dét er vores basistilfælde!
+
+\says{A} I \textit{indoktrin-skridtet} gentager vi basistilfældet -- at $r$ holder -- indtil det til sidst må være sandt.
+
+\says{A}[gentager sidste sætning] I \textit{indoktrin-skridtet} gentager vi basistilfældet -- at $r$ holder -- indtil det til sidst må være sandt.
+
+
+\begin{center}
+\begin{tabular}{r|r|l}
+$q$ & $r$ & $q \lor r$\\\hline
+T & T & T\\\hline
+F & \textbf{T} & T\\\hline
+T & \textbf{T} & T
+\end{tabular}
+
+$\downarrow$
+
+\begin{tabular}{r|r|l}
+$q$ & $r$ & $q \lor r$\\\hline
+T & \textbf{T} & T\\\hline
+F & \textbf{T} & T\\\hline
+T & \textbf{T} & T
+\end{tabular}
+\end{center}
+
+
+{\scene AV: Følgende boksbevis kommer løbende op på OverTeX.}
+\begin{proofbox}
+\[
+\: p \implies \lnot q \=\prem\\
+\: q \lor r \=\prem\\
+\: q \=\fact\\
+\: r \=\fact\\
+\(
+\: p \=\ass\\
+\: \mars p \=\intro\mars(5)\\
+\+
+\: \lnot p \=\ass\\
+\: \female \lnot p \=\intro\female(5)\\
+\)
+\: p \=\text{QED}\\
+\]
+\end{proofbox}
+
+\says{A} Nu mangler vi kun at konkludere $p$ som fakta. Her er det nødvendigt med en kombination af flere bevisstrategier.
+
+\says{A} Først starter vi -- med hjælp fra venner -- \textit{både} rygter om $p$ \textit{og} $\lnot p$. Vi kan sige at... Rune synes at $p$ holder, og... Susanne synes at $\lnot p$ holder. Så kan vi introducere de kønnede operatorer. Så undgår vi også at være politisk korrekte -- og dermed ukorrekte.
+
+\says{A} Loven om excluded middle fortæller os at midtsøgende holdninger er \textit{svage}, og at der derfor altid er et ekstremum som er mest rigtigt. Hvis for eksempel en mand siger noget, er det vigtigere end hvis en kvinde siger det. QED, altså, ``Qvinder er dumme''!
+
+
+  \says{A} Nå, vi er da vist også gået over tid--\act{går sin vej}
+
+  \scene{Sluk bål. Sebbe for. Mammut til frokost.}
+
+\end{sketch}
+\end{document}
