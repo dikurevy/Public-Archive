@@ -1,0 +1,158 @@
+\documentclass[a4paper,11pt]{article}
+
+\usepackage{revy}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[danish]{babel}
+
+
+\revyname{DIKUrevy}
+\revyyear{2019}
+\version{0.1}
+\eta{$4$ minutter}
+\status{Færdig}
+
+\title{Et Bedre Sprog}
+\author{Carl, Isak, Simon, Niels}
+
+\begin{document}
+\maketitle
+
+\begin{roles}
+  \role{P0}[Sean] Preben - Professor (dum)
+  \role{P1}[Matilde] Preben - Professor (ikke helt så dum?)
+  \role{X}[Simon] Instruktør (slet ikke dum)
+\end{roles}
+
+\begin{props}
+  \prop{Skål}[]
+  \prop{Kop 'med kaffe'}[]
+  \prop{Tom kop kan gå i 3 stykker}[]
+\end{props}
+
+\begin{sketch}
+
+\scene{ AV: introslide}
+
+\scene{Alle binær tal udtales som cifre (fx. et-nul)}
+\scene{evt. et spot midt på scenen, så må de slås om at være i det.}
+
+\says{P0} Hos DIKUs nye sprogafdeling står vi foran et stort problem. Det danske sprog er lort.
+
+\says{P0} Lad os demonstere:
+
+\says{P0}[til publikum] Skååååål!
+
+\scene{Publikum skåler.}
+
+\scene{P1 tager en rigtig skål frem, og ser bebrejdende mod publikum som om de burde have vidst at det var det han mente.}
+
+\says{P1} Der kan I se - men bare rolig. Vi har udviklet et helt nyt sprog, der løser alle 3 problemer med Dansk.
+
+\scene{Problemerne kommer på overtex når de nævnes.}
+\scene{AV: slide}
+\says{P1} 0: Dansk er tvetydig
+\scene{AV: slide}
+\says{P1} 1: man skal kunne dansk for at forstå Dansk
+\scene{AV: slide}
+\says{P0}[Afbryder] og c: æ,ø,å
+
+\says{P1} Vores nye sprog er specielt elegant fordi, det kun har 2 aksiomer:
+\scene{Følgende tal skrives på overtex.}
+\scene{AV: slide}
+\says{P0} 0 betyder 0,
+\scene{AV: slide}
+\says{P1} og 1 betyder 1.
+
+\says{P0} Så bliver alfabetremsen nemmere: \act{synger} 0, 1
+
+\says{P1} ...og vi kan nøjes med meget små tastaturer
+
+\says{P0} Lad os tage et eksempel: Hvis jeg fx. får 12 i compsys
+\says{P1}[afbryder] Så kan vi sige: Det er umuligt - så 0.
+\says{P0}[ser lidt bister ud] Vi kan kombinere vores aksiomer, 0 og 1, til at danne nye begreber.
+\says{P0} Tag fx denne kop kaffe \act{tager en kop kaffe frem}, vi har jo brugt 0 som 0, og 1 som 1, så vi må kalde koppen 10.
+\scene{AV: slide}
+
+\says{P1} Har vi fx. en tom kop \act{tager en tom kop frem} skal vi kunne differentiere dem, så vi kalder
+den tomme kop 11.
+\scene{AV: slide}
+
+\scene{P* skåler, men P1's kop går i stykker}
+
+\scene{AV: slide på 100, 101 og 110 }
+\says{P1}[samler stykker op] øhh her har vi 100, 101, 110 - ja det kan jo være at vi skal referere til den
+  kop som P0 lige smadrede, så vi kan ikke genbruge 11.
+
+\scene{betydningerne indtil videre er på AV - 0: 0, 1: 1, 10: kop kaffe, 11: tom kop, 100: et skår, 101: også et skår, 110: også også et skår}
+
+\says{P1} Det giver problemet at vi skal navngive samtlige genstande i hele universet og distribuere ideerne til alle mennesker.
+Det ville normalt være en ret tidskrævende process, men heldigvis har jeg udviklet en teknologi, som udtrykkes elegant i vores nye sprog:
+001101...
+
+\says{P0}[afbryder] Så nemt er det!
+
+\says{P0} Og hvis man så vil lave en sætning, kan man bare sætte id'erne sammen!
+\scene{AV: slide på cola \& 1111}
+\says{P0} Hvis vi fx. har sætningen ``\emph{en} cola\", og vi er nået til id'et 111, må det være navnet for cola i vores nye geniale sprog. Ifølge sætningen har vi \emph{en} altså \emph{et}, og derfor bliver \emph{en} cola til 1111.
+
+\says{P1} ...og hvis vi vil sætte koppen sammen, kan vi addere id'erne for hvert stykke:
+
+\scene{P1 begynder at regne binært på hænderne og kommer derfor til at række fuckfingeren til fysikerne.}
+\says{P1}[Sætter koppen 11 sammen, mumler] 100 + 101 + 110 altså 1111
+\says{P1} Det har i øvrigt den følgevirkning at intet nyt id må være en sum af tidligere id'er.
+
+\says{P0}[tager den ødelagte kop] Dermed kan vi konkludere at denne 11 er en cola
+\scene{AV: '11 = 1111' tilføjes til overtex}
+
+\scene{P0 prøver at drikke af sin samlede kop, men får et skår i munden. Han spytter uden at få skåret ud.}
+\scene{AV: '11 = 1111' bliver til '11 $\neq$ 1111' (rød $\neq$)}
+
+\scene{P1 tager skåret ud af munden på P0, og ser på det}
+\says{P1}[hvisker] Jeg tror du har lavet en fejl i vores sprog
+
+\says{P0}[hvisker lidt fornærmet tilbage] NEJ, nej, jeg mener det er okay... øhhh... vi skal bare bruge... et hjælpetegn
+
+\says{P1} Som jeg var ved at sige, har mit sprog et 3. tegn: 2
+
+\scene{Viser slidet med aksiomer, '2 er " "' er tilføjet i rødt.}
+
+\says{P0} Så hvis man har en kop cola, bliver det 12102111
+\scene{AV: 12102111: en kop kaffe cola}
+
+\says{P0}[som afledning] Nu introducerer vi tal til MIT sprog. Det ville være super praktisk hvis tallene kommer i rækkefølge,
+altså 0 er 0, 1 er 1, 2... øhh.. og så videre, fordi så kender vi allerede regnereglerne.
+
+\scene{AV: Slide med aksiomer, 0 er 0, 1 er 1 og 2 er " " er nu streget over med rødt, og der er tilføjet. 'Tal er tal'.}
+
+\says{P1}[puffer til P0] Men nu er 10 ti - og ti er ikke en kop kaffe - så vi skal gøre noget ved de genstande
+   vi allerede har navngivet... Jeg har det! Vi bruger bare bogstaver - a til z.
+
+\scene{AV: Slide med aksiomer, 0 er 0, 1 er 1 og 2 er " " er nu streget over med rødt, og der er tilføjet. 'Tal er tal, ikke-tal er bogstaver'.}
+
+\says{P0} a til z, er det nok? Der er jo uendelig mange ting i universet, så vi skal bruge uendelig mange tegn.
+\says{P1} Det løser jeg let ved at kombinere forskellige bogstaver. Fx. bliver denne tidligere 10 til 'kaffekop'. Ha, hvor er jeg bare klog!
+\says{P0} Nå! Hvis du er så klog - har du så et ord for denne her? \act{ruller en fuckfinger frem}
+\says{P1} Måske har du et ord for en der ødelægger vores præsentation ved at være barnlig?
+\says{P0} Måske har du er ord for en der skriver sin makkers navn ud af artiklen?
+\says{P1} Du har jo ikke lavet en skid!
+\says{P0} Det er da mig, der har valgt 0 og 1!!!
+\says{P1}[vred] Argh... Så tilføjer vi stort A til stort Z så JEG KAN RÅBE AF DIG!
+
+\scene{P1 kommer i tanke om publikum og fatter sig}
+\says{P1} For at gøre det nemt at oversætte mellem dansk og vores nye sprog, lader vi tegnkombinationen i det nye sprog
+   svare til tegnkombinationen i det gamle sprog.
+
+\says{P0} Fx. Bliver ØL i det gamle sprog til L - nååh nej \act{bebrejdende overfor P1} så kender vi jo ikke forskel på ål og øl, og der vil jeg altså nødig tage fejl.
+\says{P0} og man kan jo slet ikke oversætte skål vel - man kan jo ikke sige \emph{skl}!?
+\scene{P0 prøver at sige \emph{skl} til publikum}
+\scene{P1 sukker og sætter skålen over hovedet på P0}
+
+\says{P1} Nej vi bliver vist nødt til at introducere nye tegn for æ ø og å - fx. æ ø og å. Det giver mening.
+
+\scene{AV: konklusion slide}
+\says{P*} \emph{Nu har vi altså en let tilgængelig erstatning til det danske sprog} - eller som vi ville sige i MIT nye sprog: \emph{Nu har vi altså en let tilgængelig erstatning til det danske sprog}
+
+\scene{Sluk bål, mammut for.}
+\end{sketch}
+\end{document}
