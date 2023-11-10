@@ -1,0 +1,157 @@
+% Oprindeligt filnavn: salgafkurser.tex
+\documentclass[a4paper,11pt]{article}
+
+\usepackage{revy}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[danish]{babel}
+
+
+\revyname{DIKUrevyens 50 års jubilæum}
+\revyyear{(1978)}
+\version{1.0}
+\eta{$n$ minutter}
+\status{Færdig}
+
+\title{Hvem vil købe et førstedelskursus?}
+\author{EM, JBC}
+
+\begin{document}
+\maketitle
+
+\begin{roles}
+\role{S}[Kim] Sælger
+\role{L1}[Torben M] Lærer
+\role{L2}[Brandt] Lærer
+\role{X}[Troels] Instruktør
+\end{roles}
+
+\begin{props}
+  \prop{2 kasser øl}[]
+  \prop{En flaske Gammel Dansk}[]
+  \prop{AV: et dias}[Troels]
+  \prop{AV: billeder til den dårlige hundejoke}[Troels]
+\end{props}
+
+
+\begin{sketch}
+
+  \scene{Et bord med vore lærere omkring.  En sælger i passende
+    mundering er ved at indlede sin salgstale.}
+
+  \says{S} Før jeg begynder på en detaljeret gennemfang at mit
+  compagnys produkter, vil jeg godt sige, at jeg -- og hele mit firma
+  -- er meget happy for at have fået lov til at komme her til
+  datalogisk institut, og jeg er proud over, at hele lærerforsamlingen
+  vil lisne til, hvad jeg har at sige.
+
+  Vores firma lever af at sælge 1. delskurser til vore kunder.  Ikke
+  blot kurserne, vi er også leveringsdygtige i studiekoordineringer,
+  bifag (de har måske set nogle af vores reklamer) forelæsninger, ja
+  alt til faget hørende.  Efter denne lille indledning, vil jeg så
+  sige velkommen til vores workshop.
+
+\says{L1} Voksok?  Hvad betyder det?
+
+\says{L2} Det er nok en butik, hvor man sælger arbejdere.
+
+\says{S} Dagens emne er fornyelse af undervisningsmateriale på Deres
+undergraduate kurser.
+
+\says{L2} Er vi nu også undergraduerede?  Jeg troede kun vi var underbemandede.
+
+\says{S} Vores organisation har lavet et program specielt sammensat
+til deres behov.  Jeg kan belyse det med en case.
+
+\scene{Planche:}
+
+\begin{verbatim}
+case kursus of
+  dat0: instroduction to computing
+  dat1: advanced computing
+  dat2: management information systems
+esac
+\end{verbatim}
+
+\says{S} Som det fremgår, lægger vi op til en radikal sanering af
+deres virksomhed.
+
+\says{L1} Det kan ikke blive før i '85, for før er mine transparenter
+ikke slidt op.
+
+\says{L2} Og jeg har allerede lavet eksamensopgaverne til næste år; jeg
+tager blot dem fra i år og retter fejlene.
+
+\says{L1} På mit kursus har jeg en mikrofilm af en afskrift af en kopi af
+original til de reviderede autoforelæsninger.  Så der kan vi jo ikke
+lave meget om.
+
+\says{S}[fortsætter uforstyrret] Som svar på et udpræget consumer survey har vi
+endvidere gjort vores product solution mere jordnær og dagligdags.  Hunde!  Vi
+har udvalgt en hund til at illustrere hvert emne: engelsk pointer til pointers,
+irsk setter til oversættere, og read-ehvalp-paw-print-loop til fortolkere.
+
+\scene{Evt. AV: Billeder på OverTeX.}
+
+\says{L2} Jeg er hunderæd for, at disse her planer er lidt for vov'ede.
+
+\says{L1} Desuden kan vi da ikke anvende en så løs og udenlandsk terminologi.
+
+\scene{Spredt mumlen.  Lærerne synes ikke om oplægget.}
+
+\says{S} Jeg kan forstå på d'personers holdning, at De ville
+foretrække en prøve på vores gamle danske terminologi. \act{Trækker en
+  flaske Gammel Dansk op, L1 og L2 er pludselig interesserede og
+  trækker snapseglas frem fra inderlommerne. S skænker.}
+
+\says{L2} Det var måske ikke så tosset at indøve nogle bottom-up varianter.
+
+\scene{L1 og L2 skåler og bunder.}
+
+\says{S} Så vil det måske også interessere Dem at se vores
+undervisningsmateriale til illustration af matricer? \act{Haler en
+  kasse øl frem.}
+
+\says{L2} Den matrix giver en god forståelse i flydende regning. \act{Tager en øl op.}
+
+\says{L1} Bare det nu ikke er en tynd matrix? \act{Tager også en øl
+  op.} Kan du se om flaskene er tomme?
+
+\says{L2} Det må gøres til genstand (!) for en algoritmeanalyse.
+
+\says{L1} Det skulle ikke være svært at finde flaskehalsen.
+\act{Knapper flaskerne op.}
+
+\scene{L1 og L2 skåler og drikker.}
+
+\says{S} Ja, ja, men den kan meget mere.  Her kan vi også øve os i at
+fjerne etiketter \act{demonstrerer på en ølflaske} og programmøren kan
+jo dårligt hoppe nogen steder hen uden etiketter.
+
+\says{L2} Glimrende, jeg kan allerede nu se resultater af
+undervisningen.  Jeg er for eksempel ikke nu i stand til at hoppe
+nogen steder.
+
+\says{S} Ofte vil det være nødvendigt med dobbelt buffer for at få
+et tilstrækkeligt hurtigt gennemløb i systemet.  \act{Haler endnu en
+  kasse øl frem.}
+
+\says{L1} Han er nu slet ikke så tosset, ham den sælger. Se nu hvordan
+jeg kan sortere de røde fra de grønne hutigere end du kan søge
+$O(n\log(n))$. \act{Flytter rundt på flaskerne i kassen.}
+
+\says{L2} \act{Har en øl i hver hånd.} Så kan du måske samtidig lære
+at kende forskel på en venstre Tuborg og en højre Tuborg?
+
+\says{S} Mens d'personer lader indtrykkene synke til bunds, vil jeg
+tillade mig en hurtig og koncis gennemgang af rækkereduktion.
+
+\scene{S tager favnen fuld af flasker.  Lys ned hurtigt.}
+
+\end{sketch}
+\end{document}
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:
