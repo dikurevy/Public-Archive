@@ -1,0 +1,57 @@
+\documentclass[a4paper,11pt]{article}
+
+\usepackage{revy}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[danish]{babel}
+
+\revyname{DIKUrevy}
+\revyyear{2022}
+\version{1.0}
+\eta{$4$ minutter}
+\status{Færdig}
+
+\title{Slik xor ballade}
+\author{Bjørn, Eva}
+
+\begin{document}
+\maketitle
+
+\begin{roles}
+\role{X} [Sean] Instruktør
+\role{B}[Schauser] Barn
+\role{D}[Sejer] Datalog
+\end{roles}
+
+\begin{props}
+\prop{Haloween udklædning}
+\prop{Klikker}
+\prop{Dør}
+\prop{2 stole hvor mindst en kan dreje}
+\prop{pap-mobil må gerne ligne apple lort}
+\prop{noget at have holloween slik i}
+\prop{noget at ligge i den overstående beholder}
+\end{props}
+
+
+\begin{sketch}
+\scene{Hjemme hos en datalog}
+
+\says{B}“Slik eller ballade!”
+\says{D}“Slik eller ballade… Se nu her Rus, det udsagn stemmer logisk set slet ikke overens med den semantiske betydning, du forsøger at tilegne det.
+\says{D}“Opskriv følgende logiske tabel og lad P være en bool, som evaluerer til true hvis og kun hvis slik gives, og Q være ækvivalent defineret, men for variablen ballade. Dermed kan vi opskrive følgende sandhedstabel for dit udsagn “Slik eller ballade:”
+
+\scene{D står og skriver ivrigt en sandhedstabel op imens B står og stirrer med tomt blik på D’s vanvid*}
+\says{D} “Se, det eneste tidspunkt, hvor “Slik eller Ballade” ikke evaluerer til true, er når både slik OG ballade er falsk. Dermed sætter du mig i en situation, hvor jeg kan risikere at komme i ballade på trods af at have givet dig slik, som indikeret i øverste række hvor både P og Q er sand. “
+\says{D} “Næh, hvis du ønsker at skabe en bedre brugeroplevelse, der giver en tryghedsfornemmelse hos brugeren, vil jeg anbefale dig at følge denne sandhedstabel, hvor vi genbruger den semantiske betydning for variablerne P og Q og lader X kendetegne den ukendte, binære logiske operator vil agere på P og Q:”
+\says{D} \act{fortsætter sin vanvittige skribling og forklarer sig sine tanker undervejs} Se, vigtigst af alt er naturligvis, at brugeren ikke kan risikere at komme i ballade på trods af at have udleveret slik. Dvs. at når P og Q er sand, da ønsker vi udsagnet P X Q skal evaluere til falsk. Når P = T og Q = F ønsker vi, at P X Q skal evaluere til True idet vi da giver slik og ikke modtager ballade. Naturligvis ønsker vi samme evaluering når Q = T og P = F - hvorfor efterlader vi som en øvelse til læseren.
+\says{D} Og til sidst er det op til fortolkning, hvordan vi ønsker P X Q skal evaluere når P = Q = F. Anser vi din sætning “Slik X Ballade” som et ultimatum hvormed du kræver et svar, vil det give mest logisk mening at lade F X F evaluere til False for at indikere, at nøjagtigt en af Slik eller Ballade skal være sand. Hermed får vi altså følgende sandhedstabel:”
+\scene{D viser (måske for) ivrigt sandhedstabellen til B, som stadigvæk står og forundret og kigger på D’s langsomme nedstigning til galskab}
+\says{D} Nu er du så heldig, at jeg har snydt hjemmefra så…
+
+\says{D}... jeg har selvfølgelig en generisk XOR-sandhedstabel liggende. Vi bemærker, at denne sandhedstabel for udsagnet P XOR Q er logisk ækvivalent med vores udsagn P X Q. Den logiske operatorer, vi har søgt efter, har altså været XOR hele tiden! Ved et variabelskift ser vi nu, at sætningen “Slik XOR Ballade!” er den, du faktisk søger!”
+\scene{D smækker døren i hovedet på B, der ser dybt forvirret på den lukkede dør et øjeblik og derefter går tomhændet derfra. Scenen efter ser man så D sætte sig ned foran døren, hvor han afventer sit næste offer}
+\scene{Lys ned.}
+\end{sketch}
+
+\end{document}

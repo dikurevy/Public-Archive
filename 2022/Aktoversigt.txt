@@ -1,0 +1,58 @@
+Akt 1 
+sange/VarmVelkomst.tex
+sketches/ParralleliseretUTS.tex
+sange/DatalogDame.tex
+videoer/NejTilAnsvar1.tex
+sketches/IPVX.tex
+sange/AaDHacket.tex
+sketches/MLDO.tex
+sange/SuperSpreder.tex
+
+
+sang 4
+sketch 3
+videoer 1
+
+
+Akt 2
+sange/VimErSej.tex
+sketches/SlikXORBallade.tex
+videoer/NejTilAnsvar2.tex
+sange/BipBop.tex
+sketches/Skabelses.tex
+sange/AlleDumper.tex
+sketches/WeighInpt1.tex
+sketches/FlersprogligEksamen.tex
+sange/TroPaaMig.tex
+
+
+sang 4
+sketch 4
+videoer 1
+
+
+Akt 3 
+Sange/DumperDinKode.tex
+Sketches/LovernesHule.tex
+videoer/Solid.tex
+Sange/Strafbong.tex
+Sketches/Weighinpt2.tex
+Video/DetBedsteAfDeBillige.tex
+sketches/paytobestaa.tex
+sang/storo.tex
+
+
+sang 3
+sketch 3
+videoer 2
+
+
+Ekstranumre
+sang/cafeen.tex
+videoer/pawelpoint
+sketches/stemming.tex
+sang/scenen.tex
+
+sang 2 
+video 1
+sketch 1 

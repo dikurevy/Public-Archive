@@ -1,0 +1,393 @@
+% revy.sty  Created 12.08.1993 by Arne Jonh Glenstrup, DIKU,
+%                         University of Copenhagen (panic@diku.dk)
+% DIKUrevy style
+%
+% 08.06.00 (Uffe Friis Lichtenberg)
+%                Added the optional parameter for \role{...}[...]
+%                Changed layout of the roles environment (lesser
+%                linespacing)
+%
+% 05.06.00 (Uffe Friis Lichtenberg)
+%                Added the \eta{...} command
+%
+% 25.05.00 (Uffe Friis Lichtenberg)
+%                Added the \status{...} command
+%
+% 13.03.98 (Uffe Friis Lichtenberg):
+%                Default \frenchspacing
+%
+% 22.04.95 (Arne John Glenstrup):
+%                Added the \act{...} command
+%
+% 03.04.95 (Arne John Glenstrup):
+%                Added headings for even pages in twoside mode
+%
+% 25.01.95 (Arne John Glenstrup):
+%                \revyname, \propname, \rolename,
+%                \writtenbyname, \melodyname added
+%
+% 12.01.95 (Arne John Glenstrup):
+%                \revyyear command added
+%
+% 27.04.94 (Arne John Glenstrup):
+%                song environment added
+%                props environment added
+%                \melody command added
+%                \author is now optional
+%                document info is now written to auxillary file
+%                bug in headings and \maketitle fixed
+%                older revy-quotation approved
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% This style produces nice sketch documents for the DIKUrevy
+%
+% HEADINGS:
+%   The heading of each page indicates the year of the revy, the
+%   title of the sketch, the version number, the LaTeX date, and a
+%   ``page <current> of <number-of-pages>''. Therefore, the text
+%   must be LaTeX'ed twice to get the references right.
+%
+% ENVIRONMENTS:
+%   A ``roles'' environment is defined for listing the roles of
+%   the sketch. Each role is indicated by the command
+%
+%      \role{<role name>} <explaining text>
+%
+%   This environment is intended to list the roles before the
+%   actual text comprising the sketch.
+%
+%   The ``props'' environment is identical, except that the command
+%
+%      \prop{<prop name>} <explaining text>
+%
+%   is used instead and it is
+%   intended for describing the props used in the sketch.
+%
+%
+%   A ``sketch'' environment is defined for the actual sketch 
+%   text. In this environment, each line of speech shoud be
+%   indicated by the command
+%
+%      \says{<role name>}[<fashion>] <line of speech>
+%
+%   where <fashion> is an optional parameter, denoting the way
+%   the text should be spoken (e.g. softly, loud, whispering).
+%
+%
+%   A ``song'' environment is likewise defined for song text.
+%   In this environment, each time a new singer is to sing a line,
+%   it should be indicated by the command
+%
+%      \sings{<role name>}[<fashion>] <line of song>
+%
+%   where <fashion> is an optional parameter, denoting the way
+%   the text should be sung (e.g. softly, loud, whispering).
+%   NOTE: In the song environment ALL LINEBREAKS IN THE INPUT
+%         FILE ARE INTERPRETED AS LINEBREAKS!
+%         If you want to split a line of input, terminate the
+%         first line with a `%'.
+%
+%   The position of the <role name> can be controlled by the
+%   commands \flushsingsleft (default) and \flushsingsright
+%
+%   Also, for scene descriptions (e.g. ``The scene is empty and 
+%   Macbeth enters, clad in womens clothing.'') the command
+%
+%      \scene  <scene text>
+%
+%   is provided, and the command
+%
+%      \act{<acting fashion>}
+%
+%   can be used in the middle of a line of speech to indicate how
+%   to act (e.g. ``What can I do for you, mister \act{looks down at
+%   his notebook} ... Smith?'')
+%
+% COMMANDS:
+%
+%   \title{<sketch title>}         Indicates the title
+%   \melody{<melody name>}         Indicates the melody
+%   \author{<author(s) name(s)>}   Indicates the author(s) name(s)
+%   \version{<version number>}     Indicates the version number
+%   \status{<short status text>}   Indicates the status (eg. ``nearly done'')
+%   \eta{<time estimate>}          Indicates the Estimated Time to Pe(A)rform
+%   \revyyear{<revy year>}         Indicates the year of the revy
+%                                    Should be eg. `1995' not `95'
+%                                    (default=compile time year)
+%   \revyname{<revy name>}         Indicates the name of the revy
+%                                    (default=`DIKUrevy')
+%   \propname{<prop heading>}      Indicates the props list heading
+%                                    (default=`Rekvisitter:')
+%   \rolename{<role heading>}      Indicates the role list heading
+%                                    (default=`Roller:')
+%   \writtenbyname{<text>}         Indicates the pre-author text
+%                                    (default=`skrevet af')
+%   \melodyname{<text>}            Indicates the `melody:' text
+%                                    (default=`Melodi:')
+%   \maketitle                     Makes the actual title
+%
+%   \role{<role name>}[<who>]      Indicates a role in the ``roles''
+%                                  environment and who actually plays it in
+%                                  the revue
+%
+%   \prop{<prop name>}             Indicates a prop in the ``props''
+%                                  environment
+%
+%   \says{<role name>}[<fashion>]  Indicates a line of speech, with
+%                                  an optional way how the text is
+%                                  to be spoken. Should be used in 
+%                                  the ``sketch'' environment
+%   \sings{<role name>}[<fashion>] Indicates a line of a song, with
+%                                  an optional way how the text is
+%                                  to be sung. Should be used in 
+%                                  the ``song'' environment
+%   \scene  <scene text>           Indicates text describing the scene
+%   \act{<acting fashion>}         Indicates in mid-line how to act
+
+\makeatletter
+
+\gdef\ps@revyheadings{
+  \def\@oddhead{\vbox to 0pt{\vss\hbox{\rm\strut\@revyname{} \@revyyear}
+                      \hbox to \textwidth{Version \@version\quad\today
+                            \hfil {\large\sl\@title}\hfil 
+                            Side \rm\thepage/\pageref{lastpage}}
+                      \hrule}}
+  \def\@evenhead{\vbox to 0pt{\vss\hbox{\rm\strut\@revyname{} \@revyyear}
+                      \hbox to \textwidth{Side \rm\thepage/\pageref{lastpage}
+                            \hfil {\large\sl\@title}\hfil 
+                            Version \@version\quad\today}
+                      \hrule}}
+  \def\@oddfoot{}\def\@evenfoot{}}
+
+\newif\if@author\newif\if@melody\newif\if@status\newif\if@eta
+\@authorfalse\@melodyfalse\@statusfalse\@etafalse
+
+\edef\@revyyear{\number\year}
+\def\revyyear#1{\def\@revyyear{#1}}
+
+\def\@revyname{DIKUrevy}
+\def\revyname#1{\def\@revyname{#1}}
+
+\def\version#1{\def\@version{#1}}
+
+\def\status#1{\def\@status{#1}\@statustrue}
+
+\def\eta#1{\def\@eta{#1}\@etatrue}
+
+\def\author#1{\def\@author{#1}\@authortrue}
+
+\def\auteurs#1{\def\@author{#1}\@authortrue}
+
+\def\melody#1{\def\@melody{#1}\@melodytrue}
+
+\def\@title{En sketch}  % Default title
+
+\def\@version{\@ifundefined{the@version}
+{\typein[\versionsnr]{Indtast revytekstens versionsnummer: }%
+\global\let\the@version=\versionsnr}{}\the@version}
+
+\def\@melody{}
+
+\def\@author{}
+
+\def\@status{}
+
+\def\@eta{}
+
+\def\@propname{Rekvisitter:}
+\def\propname#1{\def\propname{#1}}
+
+\def\@micname{Mikrofoner:}
+\def\propname#1{\def\propname{#1}}
+
+\def\@rolename{Roller:}
+\def\rolename#1{\def\rolename{#1}}
+
+\def\@instructorname{Instrukt\o{}rer:}
+\def\instructorname#1{\def\instructorname{#1}}
+
+\def\@writtenbyname{skrevet af}
+\def\writtenbyname#1{\def\@writtenbyname{#1}}
+
+\def\@melodyname{Melodi:}
+\def\melodyname#1{\def\@melodyname{#1}}
+
+\def\@statustext{Status:}
+\def\statustext#1{\def\@statustext{#1}}
+
+\def\maketitle{{\centering{\Large\@revyname{} \@revyyear}\vspace{5pt}\\
+{\LARGE \bf \@title}\vspace{5pt}\\
+\if@author{\large\@writtenbyname{} \@author}\vspace{5pt}\\\fi
+\if@melody{\sl\@melodyname{} \@melody}\vspace{5pt}\\\fi
+\if@status{\@statustext{} \@status}\vspace{5pt}\\\fi
+\if@eta{(\@eta)}\vspace{5pt}\\\fi
+\vskip 5pt}}
+
+% Put in a label just before the end of the document to count the
+% number of pages and write document data in auxillary file.
+\let\revyinfo=\relax
+\newtoks\@titletoks
+\newtoks\@authortoks
+\newtoks\@melodytoks
+\newtoks\@revyrevynametoks
+\newtoks\@revyrevyyeartoks
+\let\end@document=\enddocument
+\def\enddocument{\label{lastpage}\write\@auxout
+  {\string\@ifundefined{revyinfo}{\string\def\string
+  \revyinfo\string##1\string##2\string##3\string
+  ##4\string##5\string##6\string##7\string##8{}}{}}\@titletoks=
+  \expandafter{\@title}\@titletoks=
+  \expandafter{\@title}\@authortoks=
+  \expandafter{\@author}\@melodytoks=
+  \expandafter{\@melody}\@revyrevynametoks=
+  \expandafter{\@revyname}\@revyrevyyeartoks=
+  \expandafter{\@revyyear}\write\@auxout
+  {\string\revyinfo{\the\@titletoks}{\@version}
+  {\today}{\the\@authortoks}{\the\@melodytoks}{}{\the\@revyrevynametoks}{\the\@revyrevyyeartoks}}\end@document}
+
+\def\@role#1{\item [{\bf #1} \hfill] }
+\def\@roleas#1[#2]{\item [{\bf #1} (#2) \hfill] }
+
+\def\role#1{\@ifnextchar [{\@roleas{#1}}{\@role{#1}}}
+\let\prop=\role
+\let\mic=\role
+\let\extra=\role
+\let\ninja=\role
+\def\instructor[#1]{\item [{\bf #1} \hfill] }
+
+\def\scene{\medskip\par\it\noindent\relax}
+
+\def\act#1{{\it(#1)\/}}
+
+\def\@saysas#1[#2]{\rm\item [{\bf #1 }{\it (#2)\,}\hfill:]}
+\def\@says#1{\rm\item [{\bf #1\,}\hfill:]}
+
+\def\says#1{\@ifnextchar [{\@saysas{#1}}{\@says{#1}}}
+
+% Padding to the left and right of the `sings' <actor> text
+\newskip\@leftsingpad
+\newskip\@rightsingpad
+
+\def\flushsingsright{\@leftsingpad 0pt plus 1fill\@rightsingpad 0pt\relax}
+\def\flushsingsleft{\@leftsingpad 0pt\@rightsingpad 0pt plus 1fill\relax}
+\flushsingsleft % Default
+
+\def\@singsas#1[#2]{\rm\item [\hskip\@leftsingpad{\bf #1 }{\it 
+  (#2)\,}:\hskip\@rightsingpad]\hskip-\songhangindent}
+\def\@sings#1{\rm\item [\hskip\@leftsingpad{\bf #1\,}:\hskip
+  \@rightsingpad]\hskip-\songhangindent\relax}
+
+\def\sings#1{\@ifnextchar [{\@singsas{#1}}{\@sings{#1}}}
+
+% Dirty stuff
+% \obeycr = make carriage returns into linebreaks,
+% double returns into paragraph separators
+\newif\if@newpar
+\def\lin@break{\if@newpar\par\else\\\fi\@newparfalse}
+\def\linebr@ak{\if@newpar\bigskip\par\fi\@newparfalse}
+{\catcode`\^^M=13 \gdef\@carriagereturn{\@ifnextchar^^M%
+  {\@newpartrue}{\@ifnextchar\end{}{\@ifnextchar\sings{\linebr@ak}{\lin@break}}}}%
+  \gdef\obeycr{\catcode`\^^M=13 \let^^M=\@carriagereturn\@gobblecr}%
+  \gdef\restorecr{\catcode`\^^M=5 }} %} BRACE MATCHING
+
+
+\newdimen\sketchleftmargin
+\sketchleftmargin 3em
+\newenvironment{sketch}{\rm\begin{list}{}{
+                        \labelwidth 2em 
+                        \leftmargin \sketchleftmargin 
+                        \rightmargin 0em 
+                        \labelsep 0.5em 
+                        \listparindent 2em 
+                        \topsep 1ex 
+                        \partopsep 1ex 
+                        \parsep 0ex 
+                        \itemsep 1ex\relax}\item \rule{0.2em}
+                          {0em}\vspace{-1em}\par}{
+                        \end{list}}
+
+\newdimen\songleftmargin
+\songleftmargin 7em 
+\newdimen\songhangindent
+\songhangindent 2em
+\newskip\songparskip
+\songparskip.6\baselineskip
+\newenvironment{song}{\rm\begin{list}{}{\raggedright
+                        \labelwidth 4.5em 
+                        \leftmargin \songleftmargin 
+                        \rightmargin 0em 
+                        \labelsep 2.5em 
+                        \listparindent -\songhangindent 
+                        \topsep 0ex 
+                        \partopsep \bigskipamount 
+                        \parsep \songparskip 
+                        \itemsep -\songparskip\relax}\item[]
+   \rule{0.2em}{0em}\vspace{-\baselineskip}\strut\par
+\tolerance10000\hfuzz21cm\obeycr}{\end{list}}
+
+\newenvironment{roles}{{\bigskip\noindent\Large\bf\@rolename}
+                       \begin{list}{}{
+                       \labelwidth 8em 
+                       \leftmargin 10em 
+                       \rightmargin 0em 
+                       \labelsep 1em 
+                       \listparindent 0em 
+                       \topsep 1ex 
+                       \partopsep 0ex 
+                       \parsep 1ex 
+                       \itemsep -1ex\relax}}{
+                       \end{list}\smallskip\hfil\rule{6cm}{0.1mm}\medskip\par}
+
+\newenvironment{props}{{\smallskip\noindent\Large\bf\@propname}
+                       \begin{list}{}{
+                       \labelwidth 8em 
+                       \leftmargin 10em 
+                       \rightmargin 0em 
+                       \labelsep 1em 
+                       \listparindent 0em 
+                       \topsep 1ex 
+                       \partopsep 0ex 
+                       \parsep 1ex 
+                       \itemsep -1ex\relax}}{
+                       \end{list}\smallskip\hfil\rule{6cm}{0.1mm}\medskip\par}
+
+\newenvironment{instructors}{{\bigskip\noindent\Large\bf\@instructorname}
+                       \begin{list}{}{
+                       \labelwidth 8em 
+                       \leftmargin 10em 
+                       \rightmargin 0em 
+                       \labelsep 1em 
+                       \listparindent 0em 
+                       \topsep 1ex 
+                       \partopsep 0ex 
+                       \parsep 1ex 
+                       \itemsep -1ex\relax}}{
+                       \end{list}\smallskip\hfil\rule{6cm}{0.1mm}\medskip\par}
+
+\newenvironment{mics}{{\smallskip\noindent\Large\bf\@micname}
+                       \begin{list}{}{
+                       \labelwidth 8em
+                       \leftmargin 10em
+                       \rightmargin 0em
+                       \labelsep 1em
+                       \listparindent 0em
+                       \topsep 1ex
+                       \partopsep 0ex
+                       \parsep 1ex
+                       \itemsep -1ex\relax}}{
+                       \end{list}\smallskip\hfil\rule{6cm}{0.1mm}\medskip\par}
+
+
+\pagestyle{revyheadings} % make the revy-pageheadings active
+
+\frenchspacing{}
+
+% Set pdfLaTeX to compile to PDF 1.4
+% This is done due to PDF::Reuse used to make manuscripts, etc. not supporting PDF 1.5.
+\pdfminorversion=4
+
+% Produce A4-output rather than letter
+\pdfpagewidth=\paperwidth
+\pdfpageheight=\paperheight
+
