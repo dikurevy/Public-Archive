@@ -1,0 +1,78 @@
+\documentclass[a4paper,11pt]{article}
+
+\DeclareTextCommandDefault{\textvisiblespace}{%
+  \mbox{\kern.06em\vrule \@height.3ex}%
+  \vbox{\hrule \@width.3em}%
+  \hbox{\vrule \@height.3ex}}
+  
+\usepackage{revy}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[danish]{babel}
+
+\revyname{DIKUrevy}
+\revyyear{2023}
+\version{1.0}
+\eta{Estimeret tid}
+\status{Work in progress/Almost Done/Done}
+
+\title{CoCo Forelæsning}
+\author{Noah, Lukas, Albert, og Seeberg}
+
+\begin{document}
+\maketitle
+
+\begin{roles}
+\role{Prof}[Morten] CoCo Professor
+\role{X}[Elbo] Instruktør
+\end{roles} 
+
+\section*{Noter}
+I det oprindelige dokument står der både noget i sort og noget i gråt det her er det der står i sort
+
+\begin{props}
+\prop{}
+\prop{}
+\prop{}
+\prop{}
+\prop{}
+\prop{}
+\end{props}
+
+
+
+\begin{sketch}
+\scene{lys op}
+\scene{Forelæser kommer ind med jeg-ejer-hele-verden-vibe}
+\says{Prof} Velkommen til forelæsningen! I dag skal vi gennemgå følgende emner.
+\scene{AV Theorem P =NP .\\et-eller-andet.\\et-eller-andet-andet.}
+%\scene{Skipper hurtigt igennem slides, der beviser teoremet og kommer til sidst frem til...}
+\says{Prof} Nu har i jo selvfølgelig læst til i dag, så jeg antager at vi kan komme hurtigt forbi det første emne. Men for en god ordens skyld, er alle med på at vi har vist at P=NP?
+\scene{Prof kigger afventende ud på publikum.}
+\says{Prof} Er I med?! altså vi er enige i at P=NP ik?
+\scene{Kigger igen ud på publikum, nu en smule skeptisk.}
+\says{Prof} Altså? P=NP? Det er jo trivielt! Altså hvis i da havde læst det.. i min bog.
+\scene{Tydeligt irriteret over at de ikke har læst, men også lidt begejstret for at få lov til at fortælle om det.}
+\scene{Savitch's theorem}
+\says{Prof}Vi ved som sagt fra tidligere at PSPACE er klassen af funktioner som er decidable i et polynomielt rum på en determinisk Turing maskine. Med andre ord..
+\scene{AV: PSPACE = $\bigcup\limits_{k \in n} SPACE(n^k)$.}
+\says{Prof} PSPACE er altså foreningsmængden over pladsforbruget over alle polynomier.
+\says{Prof} Ydermere definerer vi NPSPACE er defineret på samme måde, blot over den nondertermistiske klasse.
+\says{Prof} MEN, hvis vi anvender Savitch’s theorem får vi jo tydeligvis...
+\scene{Av skifter slides til PSPACE = NPSPACE}
+\says{Prof} Er I med nu? Altså \texttt{P\textvisiblespace=NP\textvisiblespace}?!
+\says{Prof} Det er jo for useriøst, man skulle næsten tro i var fulde!
+\says{Prof} Har I slet ikke læst min blog! Jeg har jo redegjort.. til fulde.. for at Space er en anti-social konstruktion opfundet af magteliten på HCØ.
+\says{Prof} Det eksisterer sku ikke! Det er de fysikere der endnu en gang vil holde os uden for, mens de går og hiver forskningspenge ind fra højre og venstre og bygger raketter og rekvisitter og hvad fanden de nu ellers har gang i.
+\says{Prof} Nææ nej, jeg har skam gennemskuet dem. Jeg fandt ud af at hvis man trækker en - sådan næsten - lige linje gennem HCØ og NBB så peger den direkte i retning mod Dilans.
+\says{Prof} Jeg er sikker på at det er der de gemmer alle hemmelighederne. Jeg kalder det for PizzaGate.
+\says{Prof} Jeg var lige ved at afsløre dem. Jeg var så tæt på, men jeg havde ingen ide om at deres magt strakte så langt! Da jeg var lige ved at gennemskue hvor på Dilans beviserne var gemt, fik de staten til at lukke det hele ned.
+\says{Prof} Wuhan! Nu må jeg le. Og mundbind, det må jeg give dem, det var genialt. Så kunne de vandre rundt blandt os uden vi vidste det. I modstandsbevægelsen kalder vi dem for fezwalkers. Jeg har set dem så langt væk som på mBar. Og i sidste uge!.. 
+\scene{Prof ser lidt forvirret ud}
+\says{Prof} Hov nå, ja, hvor kom jeg fra, nåå ja, altså så Space eksisterer ikke, så ja altså P = NP. Trivielt bevis.
+\says{Prof} Nå men vi må videre, vi vil nu vise at Scratch på kvantecomputere er Turingkomplet....
+\says{Prof} (lyd fader ud imens) Vi starter med at bringe scratchkatten i en superposition af to kvantetilstande og her ses det trivielt.....
+\scene{lys ned og lyd ned}
+\end{sketch}
+
+\end{document}

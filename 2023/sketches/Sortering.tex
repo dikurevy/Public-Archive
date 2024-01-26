@@ -1,0 +1,115 @@
+\documentclass[a4paper,11pt]{article}
+
+\usepackage{revy}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[danish]{babel}
+
+\revyname{DIKUrevy}
+\revyyear{2023}
+\version{1.0}
+\eta{Estimeret tid}
+\status{Work in progress/Almost Done/Done}
+
+\title{TED-Talk: Sortering i konstant tid}
+\author{Bertil}
+
+\begin{document}
+\maketitle
+
+\begin{roles}
+\role{E}[Eva] as herself
+\role{B}[Bertil] as himself
+\role{T} [Nicholas] Toaster
+\role{S} [Kristoffer] Stol
+\role{V} [Markus] Ven (ølautomaten)
+\role{X}[Elbo] Instruktør
+\role{N}[Lotte]
+
+
+\end{roles} 
+
+\section*{Noter}
+Det refereres både til en tavle og til AV i sketchen, det skal nok laves så det kun er et AV powerpoint show, siden sidste års revy viste os at tavler er svære at bære ind og ud af scenen.
+
+\begin{props}
+\prop{Tavle F skal skrive på ? }
+\prop{AV Slideshow}
+% add props as needed
+\end{props}
+
+% sketch titel: En Smartere K@ntine
+
+\begin{sketch}
+\scene{lys op. T, S, og V starter inde på scenen.}
+
+% introsketch ide: Smart Kantineappliances.
+
+\says{V} Nøjjj, tænk at DIKU endelig har betalt for at alle os kantineting er blevet smart!
+
+\says{T} Ja, nu kan jeg sende dig en notifikation så snart din toast er brændt på! 
+
+\says{V} Og jeg kan udtrykke meget tydeligere hvorfor jeg ikke vil give dig en øl!
+
+\says{S} Og jeg kan sige 'av' når du sætter dig på mig !
+
+\says{T} Hmmm, altså ølautomat, jeg forstår godt hvorfor du er blevet smart. Og jeg forstår også godt hvorfor jeg er blevet smart. Men stol, hvorfor er du egentlig blevet smart?
+
+\says{S} Jo nu skal du høre ...
+
+\scene{Bandet begynder på 'Havet er skønt' mens stol siger replikken ovenfor}
+
+\says{S} Os stole bli'r set som dumme
+\says{S} i forhold til andre ting
+\says{S} men borde er meget dummer'
+
+\scene{todo: skriv et par linjer mere til stolen, så der er mere at synge mens E afbryder}
+
+\scene{I tredje linje kommer E på scenen og råber Bertil, først uden mikrofon og tager så backup mikrofon og...)}
+
+\says{E} BERTIL
+
+\says{E} Jeg tror sgu jeg har fundet ud af det!
+
+% fyld mere præcist ud hvad replikkerne er her
+\says{B} Vilt brormand. Jeg kommer ned med det samme!
+
+\says{E} Hey i der, jeg skal bruge scenen!
+\scene{Ligger backup mic, går om og tager tavle fra ninja bag bagtæppe, og håndholdt.}
+
+\scene{F begynder at skrive op på tavle}
+\says{E} Lad mig forklare: givet et array A af størrelse n er det muligt at sortere A i konstant tid!
+\says{B} Umuuuuuligt brooormaaaaand!
+\says{E} Vi starter med at lave et nyt array af størrelsen \textbf{MAX\_SIZE} - altså den maksimale størrelse et array kan have - hvilket for eksempel er omkring 2 147 483 647 i Scratch. Dette nye array kalder vi A’, og alle dets værdier er nil.
+
+\says{B} Neeeej hvaaaaad maaaand, de kan da ikke aaallesaaammen være nil!? Det er jo for vaaaanviiittiiiigt!?
+
+\scene{AV viser A’ = \textbf{new nil array(MAX\_SIZE)}}
+
+\says{E} Nu indsætter vi A i A’, så de første n værdier i A’ svarer til A.
+
+\says{B} Neeej, hvor er det viiildt, mand!
+
+\scene{AV viser A’[0:A.length] = A}
+\says{E} Og nu sorterer vi A’ med for eksempel mergesort, der har en køretid på O(n log n), men da A’ er af størrelsen \textbf{MAX\_SIZE}, der er en konstant får vi O(\textbf{MAX\_SIZE } log \textbf{ MAX\_SIZE}) = O(1).
+
+\says{B} Fuuuck maaand, hvor er det fucking geniaaaalt maaand! Så sorterer de bare med mergesort med n som en konstant???
+
+\scene{AV viser mergesort(A’) og tilhørende matematik ved siden af}
+
+\says{E}Vi kan nu hente A ved at tage de n første elementer af A’
+
+\says{B}Nej, nej, neeeej!!! Hvor det fucking VILDT mand! Band, hører I det samme som mig!?
+
+\scene{AV viser return A’[0:A.length]}
+
+\says{E} Og dermed har vi sorteret A i konstant tid!
+
+\says{B} BWA-... 
+\scene{R abryder sig selv og bliver eftertænksom}
+\says{B} Øhm, men kommer det ikke til at tage flere timer at køre algoritmen?
+\says{E} Jo!
+\scene{lys ned}
+\end{sketch}
+
+\end{document}

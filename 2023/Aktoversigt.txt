@@ -1,0 +1,41 @@
+
+Akt 1 
+sange/UAKogt.tex
+sketches/DarligSketch.tex
+sange/FiskeHejre.tex
+video/ICE1Fisk.tex
+sketches/Tilvalgsstuderende.tex
+sange/LadDetCompiler.tex
+sketches/Hofeber.tex
+sange/DetTrivielt.tex
+sketches/AltErBin.tex
+sange/Scratch.tex
+
+
+Akt 2
+sange/UdMedScratch.tex
+video/cunk.tex
+sange/02Hustlers.tex
+sketches/KonsulentPenge.tex
+sange/Spilpsykopat.tex
+video/ICE2Fisk.tex
+sketches/PGP.tex
+sange/BryderGDPR.tex
+
+
+Akt 3 
+sange/Kantineparty.tex
+sketches/CoPilot.tex
+sange/StudieGruppe.tex
+sketches/CoCo.tex
+sange/HvorFuckErMinFejl.tex
+sketches/Sortering.tex
+sange/FaaUbuntu.tex
+
+
+
+Ekstranumre
+sange/DIKUBar.tex
+sketches/FysikerUndercove.tex
+sange/Nogler.tex
+
