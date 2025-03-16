@@ -1,0 +1,114 @@
+\documentclass{article}
+\usepackage{revy}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[danish]{babel}
+
+\revyname{DIKUrevy}
+\revyyear{2024}
+\version{1.0}
+\eta{4:30}                      % ÆNDR HÉR
+\status{3/7}                   % ÆNDR HÉR
+
+\title{Anti matters}                   % ÆNDR HÉR
+\author{Lukas Schilling}  % ÆNDR HÉR
+\begin{document}                
+\maketitle
+\section*{Notes}
+THE ETA HAS NOT BEEN ADJUSTED TO REAL MEASUREMENTS!
+
+Slides for AV? Maybe just different pictures of microprocessors indicating the different things being talked about?
+When to switch between the slides should probably also be mentioned in the script.
+
+\begin{roles}
+\role{x} [Simon]
+\role{S0} [Schilling] Student 0
+\role{S1} [Marcus] Student 1
+\end{roles}
+
+\begin{props}
+    \prop{1 Table}
+    \prop{1 Chair}
+    \prop{1 Fake computer}
+\end{props}
+
+\newpage%
+\begin{sketch}
+\scene{}
+\scene{S1} is sitting at a table on the stage with a laptop.
+[Lights up]
+
+\says{S0}[Rushing onto the stage]
+I GOT IT!! I SOLVED IT
+
+\says{S1}
+You did?? How?!
+
+\says{S0}
+You see the bottleneck in our code is not our $O(n^2)$ sorting algorithm, but rather the architecture of the CPU we are using! 
+
+\says{S1}
+I don’t think I am following you
+
+\says{S0}
+Don’t worry, I brought slides to explain it!
+
+\scene{AV:} Show initial slide.
+
+\says{S0}
+As you can see on this slide. A significant bottleneck of CPUs is the distance that data has to travel.
+
+\says{S0}
+At first glance, you might think that the solution is to make the CPU smaller. But as we all know, we are slowly approaching the minimum theoretical size of silicone transistors, so this solution is not future proof at all!
+
+\says{S1}
+So you found a new revolutionary alternative to the silicon transistor?
+
+\says{S0}
+What? No. What I have come up with is in fact, much, much better than a new type of transistor.
+
+\says{S0}
+You see, the rate of communication is determined by two factors: The speed and distance. As previously mentioned, we are quite limited in terms of minimising the distance, so what about maximizing the speed?
+
+\says{S1} What?
+
+\says{S0}
+Well you see, the speed is obviously upper bounded by the speed of light.
+
+\says{S1}
+And that is already pretty fucking fast, I don’t quite understand what you’re getting at.
+
+\says{S0}
+Well, well you know how the speed of light is faster in a vacuum, than through a medium, like air or water?
+
+\says{S1}
+Wait, are you suggesting what I think you are suggesting?
+
+\says{S0}
+Mhm
+
+\says{S1}
+Well we could of course vacuum seal the vacuum seal the CPUs to improve performance?
+
+\says{S0}
+Yes… But what if we took it a step further? Essentially, light moves faster the less matter there is.
+
+\says{S1}
+Yes?
+
+\says{S0}
+Well, a silly rus might think a vaccum is the best we can get, in terms of minimizing the amount of matter… But what if we use ANTI MATTER!!
+
+\says{S0}
+The more anti matter we have - the less matter we have, therefore as the amount of anti matter approaches infinity, so does the speed of our program! AND THEREFORE OUR PROGRAM WILL FINISH INSTANTLY!
+
+\says{S1}
+Aaaaaand we got a segfault
+
+\says{S0}
+Well, at least it doesn’t \textbf{matter} ;)
+
+
+\end{sketch}
+
+\end{document}

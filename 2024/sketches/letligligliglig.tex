@@ -1,0 +1,117 @@
+\documentclass{article}
+\usepackage{revy}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[danish]{babel}
+
+\revyname{DIKUrevy}
+\revyyear{2024}
+\version{1.0}
+%\eta{3:30}                      % ÆNDR HÉR
+\status{4/7}                   % ÆNDR HÉR
+
+\title{Let (==) = (=)}                   % ÆNDR HÉR
+\author{Casper Frandsen og Filippa Biil}  % ÆNDR HÉR
+\begin{document}                
+\maketitle
+\section*{Noter}   
+Av bruges ret meget i den her sketch. Der skal laves korte videoer (eller slides, hvis det er nemmere) af rus' kode, og billeder af hvad rus' kode producerer (Compilefejl og SKÅL!). Det skal op på AV. Gerne rødt lys når koden ikke kompilerer.
+
+\begin{roles}
+\role{R}[Anna Liv] Pop Rus
+\role{T}[Amira] Pop TA
+\role{X}[Simon] Instruktør
+\end{roles}
+
+\begin{props}
+    \prop{1-2 Borde}
+    \prop{2 stole}
+    \prop{1-2 fake computere}
+    \prop{En kæmpe kompilérknap}
+    \prop{Rushat}
+    \prop{Professorterning}
+\end{props}
+
+\newpage%
+\begin{sketch}
+\scene{} På scenen sidder en TA og en studerende hver for sig. Den studerende sidder og koder.
+\scene{AV}: \\
+1 echo "SKÅL!"
+\scene{R} Trykker på Compilérknappen
+\scene{AV:} \\ COMPILE ERROR
+\says{R}[Går frustreret hen til TA med sin computer] Hvorfor kan jeg ikke printe noget til terminalen? Jeg vil bare have den til at sige “Skål!”
+\says{T} Nårh! Der er ikke nogen funktion der hedder echo i F\#. Du skal bruge printfn
+\says{R} Men jeg vil bare bruge echo!
+\says{T}[lettere forvirret] Men der er ikke nogen funktion der hedder echo?!
+\says{R} Hvad mener du, det er der da i php?!
+\says{T} Men det her er ikke php, det er fsharp
+\says{R} Kan du ikke bare skrive koden for mig?
+\says{T}[Forvirret] Nej?
+\says{R} Jo
+\says{T}[bestemt] nej
+\says{R} Hvorfor kan jeg ikke bare gøre som jeg plejer?
+\says{T}[Frustreret] Ah. altså
+\says{T}[Tager dyb indåndning]
+\says{T} Jo. Det kan du godt, ved du hvad, giv mig lige computeren
+\scene{T tager computeren, button masher of definerer echo. På AV står der}
+\scene{AV:  \\
+1 let echo = printfn \\
+2 echo “Skål!”
+}
+\says{R} Ah! Mange tak
+\scene{Rus kører programmet, (vha. compilérknappen) og der står “Skål!” på AV. Rus går tilbage til sin plads og koder videre}
+
+\scene{Når rus har kodet færdigt står der på AV: \\
+1 let a = 4243\\
+2 let echo = printfn\\
+4 if a == 42 then:\\
+5    \quad true\\
+6 else \\
+7 \quad echo “Skål!”\\
+8 \quad false\\
+}
+\scene{Rus trykker på compilerknappen, og får compilefejl. Rus går tilbage til TA
+}
+\says{R} Det virker stadig ikke
+\says{T}[stirrer på skærmen med et tomt blik et øjeblik]Hvad fanden er det du laver?
+\says{R}[Lettere irriteret som om de har haft denne snak før]Hør, jeg er her ikke for at diskutere med dig. Hvorfor virker mit if-statement ikke?
+\says{T}[Forvirret, bedende]Hvorfor returnerer du ikke bare a == 42?
+\says{R}[irriteret]Hvad snakker du om-,
+\says{R}[Dyb, irriteret indånding]TA, hør, jeg vil bare vide, hvorfor virker min kode ikke?
+\says{T}[Forvirret]Det er fsharp? Du laver ikke sammenligninger sådan?
+\says{R}Hvordan laver jeg så sammenligning?
+\says{T}Med ligmed?
+\says{R}[Irriteret]Jeg har brugt ligmed!
+\says{T}[Irriteret]Nej, altså ikke ligmed ligmed, bare ligmed
+\says{R}[Vred]Jeg ved godt der står echo, du behøver ikke gentage dig selv!
+\says{T}[Vred]Men du brugte ligmed ligmed!
+\says{R}[Råber]JA JEG HAR BRUGT LIGMED, HVORFOR GENTAGER DU DIG SELV!
+\says{T}[Råber]DU BRUGTE LIGMED LIGMED!
+\says{R}[Råber]JA JEG HAR BRUGT LIGMED!
+\scene{TA Stopper med at råber, kigger irriteret på rus et øjeblik, og grounder sig selv}
+\says{T}[sagt meget langsomt og på grænsen til sammenbrud] Okay, nu tager vi den helt stille og roligt. Ligmedx2 er \textbf{\textit{ikke}} en ting i fsharp. Det har aldrig været en ting. Det er bare ligmed.
+\says{R}[Epiphany]Nåååååh, ligmedx2 er ikke ligmed ligmed
+\says{T}[I lettelse] Præcis! Ligmedx2 er ikke ligmed ligmed!
+\says{R} Men hvad med ligmedx3?
+\says{T} ligmedx3 ligner ligmedx2 ligesom ligmed ligner ligmedx2, men det er ikke ligmed ligmedx2
+\says{R}Nååårh! Nu jeg med!!
+\says{T}Men hvis du vil have at ligmedx2 er ligmed ligmed, kan du bare gøre sådan her!”
+\scene{TA tager computeren og begynder at button mashe}
+\says{T}[Sagt som (==) defineres på AV]Let ligmedx2 ligmed ligmed
+\scene{AV: \\
+1 let (==) = (=)\\
+2 let a = 4243\\
+3 let echo = printfn\\
+4 if a == 42 then:\\
+5    \quad true\\
+6 else \\
+7   \quad echo “SKÅL!”\\
+8   \quad false\\
+}
+\scene{Der trykkes på compilérknappen og der står nu kun SKÅL! på AV}
+\says{R}[Chef's kiss] Men hvad så med ligmedx4?
+\says{T}Ej, er du helt væk, det kan man slet ikke sige
+
+\end{sketch}
+
+\end{document}

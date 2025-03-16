@@ -1,0 +1,130 @@
+\documentclass[a4paper,11pt]{article}
+
+\usepackage{revy}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[danish]{babel}
+
+\revyname{DIKUrevy}
+\revyyear{2023}
+\version{1.2}
+\eta{4 minutter}
+\status{Done og finpudset}
+
+\title{Alt er Binært}
+\author{Lukas Schilling, Ejnar Håkonsen, Bjørn}
+
+\begin{document}
+\maketitle
+
+\begin{roles}
+\role{P}[Ejnar] Professor der holder DIKUBits.
+\role{O}[Lukas] Offer med sort pose over hovedet der knæler for bøddel .
+\role{X}[Bjørn]
+\end{roles} 
+
+\section*{Noter}
+Version 2 bruges.
+
+\begin{props}
+\prop{Sort hætte til offer (som når man føres til bøddel)}
+\prop{Stor økse}
+\end{props}
+
+
+
+\begin{sketch}
+\scene{lys op}
+\scene{P skubber O ind.}
+
+% VERSION 1.1 af starten 
+%\says{P} Ja, så har vi voteret.
+%
+%Din kodeskik er et brud på 16 internationale konventioner og har fået Amnesty til at advokere for genetisk udrensning.
+%
+%Knæl.
+%\scene{O sætter sig på knæ og bøjer hovedet frem som til en halshugning.}
+
+%\scene{P tager en stor algoritmebog og gør mine til at henrette O med den.}
+%\says{P} Hov vent, mens jeg har dig skal du lige høre om mit forskning.
+%\scene{P hiver en stak papirer frem (hvis nogen kigger er der bare et stort 0 eller 1 på hver side).}
+
+%Har du nogensinde overvejet at man slet ikke har brug for så mange bits?
+% VERSION 2 af starten
+\scene{P skubber O ned på knæ, 0 bøjer hovedet frem som til en halshugning.}
+%\says{P} Hør alle ! Jeg læser kongens ord! Lad alle som ser dette bevidne at denne mand har begået en ugerning! at han er en  usling! en nidding! en skarnsunge! denne kætter har drukket øl!  på en søndag! på guds dag! Og derfor skal han dø. Hans hoved skal skilles fra hans skuldre. og forblive således.  Indtil.  han er død. 
+
+\scene{P hæver sin økse og hæver den til sving. lige inden han rammer halsen stopper han og kigger eftertænksomt ud mod publikum.}
+
+\says{P} du.. har du travlt? 
+
+\scene{O kigger forvirret i P retning og siger noget alla huh}
+
+%\says{P} nej? okay! Så jeg skal holde en præsentation om en uge og tænkte jeg ville give den en test kørsel inden.
+
+%Ahem ...
+
+\says{P} Har du nogensinde overvejet at vi bruger alt for mange bits?
+
+\scene{P trykker på fjernbetjening. Smider evt. sin kåbe og har forelæser-tøj på indenunder.}
+\scene{AV: Overtex viser DIKUBITS præsentation: Binær repræsentation}
+Du ved, gigabits, kilobits.. decibits.. Det er spild! Enhver ting kan jo repræsenteres af blot 1 bit.
+
+\scene{P trykker på fjernbetjening}
+\scene{AV: Overtex skifter til samme billede men med stor grim overstregning af S i DIKUBITS så der står DIKUBIT}
+\says{P} Jaja, jeg kan se din rushjerne ikke har forstået det endnu. Så lad mig skære det ud i pap. Forestil dig vi har noget data. Det har kun 2 muligheder, altså 1 bit: Enten kan det repræsenteres af 1 bit, ellers kan det ikke.
+
+Nu skal vi blot vise, at sættet af ting der ikke kan repræsenteres af 1 bit, faktisk godt kan blive repræsenteret af blot 1 bit.
+
+%så lad os bevise dette:
+%Vi ved at, hvis en regel gælder for alle cases vi kan komme i tanke om, så må den også nødvendigvis gælde for alle cases vi  ikke kan komme i tanke om. Simpel induktion. tror jeg. Så lad os tænke på alle cases, vi kan komme i tanke om.
+
+Du virker ikke overbevist? Men har du nogensinde lagt mærke til at vejret kun er 1 bit?
+
+Regner det? Ja/Nej. 1 bit.
+Skinner solen? Ja/Nej. 1 bit.
+
+
+(Klapper O på hovedet) Jaja, nu begynder du at indse hvor revolutionerende det er.
+
+Men jeg kan se at du anstrenger dig for at forstå hvordan i alverden vi vil repræsentere komplekse systemer. Simpelt! Tag bare Københavns metrosystem:
+Enten kører metroen frem - ellers kører den tilbage.
+
+Og her har den vakse studerende fanget at metroen har 1 state til, når den holder stille. Det er let løst. Forestil dig at vi har en kasse. I denne kasse er vores metro. Vi ved ikke om metroen kører frem eller tilbage, indtil vi observerer den. Dermed er metroen en superposition mellem at køre frem og tilbage på samme tid, altså holder stille, lige indtil den er observeret. Så når du vil stige på metroen, skal du blot lukke dine øjne, så du ikke observerer den, og løbe ud på skinnerne.
+
+\scene{P holder en hånd foran øjnene og går hastigt ud mod publikumsrækkerne}
+
+\says{P} (Tager entusiastisk om O) Det er spændende ikke? Men bare rolig, der er meget mere.
+
+\scene{O er utilfreds, lader hovedet falde til jorden og prøver at gnide det mod øksen.}
+
+\says{P} For det viser sig at 1 bit faktisk er et upper bound og vi nogle gange kan klare os med mindre.
+
+Har jeg ret? Der er svaret tydeligvis “Ja”. I dette tilfælde behøver vi slet ikke muligheden for et “Nej”. Det viser sig at vi kan repræsentere spørgsmålet “Har jeg ret?” som en konstant - 0 bits!
+
+Jeg kan se du forstår.
+\scene{Kigger rent faktisk på O og ser våbenet.}
+
+\says{P} Nej nej, forelæsningen er ikke slut endnu.
+
+Men! 0 bits er jo faktisk lidt redundant. I visse tilfælde kan vi nøjes med et negativt antal bits.
+Her er der tale om anti-viden, der cancellerer brugbar viden. Et koncept vi kender fra fysik.
+
+%Ja, i lang tid troede vi egentlig det var et rent teoretisk begreb. Men så lykkedes det nogle fysikere at observere det, da de lyttede på sig selv.
+
+Ja og hos matematik har vi set at 1-bit kandidatgrad faktisk kan repræsenteres rigeligt med imaginære bits...
+
+\scene{Tager en af sine arme frem (der så ud til at være bundet bag ryggen) og rækker hånden op.}
+
+\scene{Awkward tøven, O får lov at stille spørgsmål. Trækker en mikrofon frem fra sin anden hånd bag ryggen.}
+
+\says{O} Ja, sorry for lige at afbryde. Du har jo tydeligvis helt ret. Jeg har bare lige et spørgsmål. Hvordan vil du med kun 1 bit repræsentere køn?
+
+\scene{P virker først tryg og kager så mere og mere rundt i at tælle på fingre m.m. mens publikum råber.}
+\says{P} ... Fuck
+\scene{P krøller sin forskning sammen.}
+
+\scene{lys ned}
+\end{sketch}
+
+\end{document}
